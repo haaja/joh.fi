@@ -5,12 +5,12 @@
     <h3 class="footer-heading">{{ site.title }}</h3>
 
     <div class="site-navigation">
-    	
+
     	<p><strong>Site Map</strong></p>
       <ul class="pages">
         {% for page in site.pages %}
         {% if page.title and page.main_nav != false %}
-          <li class="nav-link"><a href="{{ page.url | remove_first: '/' | prepend: site.baseurl }}">{{ page.title }}</a>
+          <li class="nav-link"><a href="{{ page.url | remove_first: '/' | prepend: site.baseurl | prepend: site.url }}">{{ page.title }}</a>
         {% endif %}
         {% endfor %}
       </ul>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="site-signature">
-    	<p class="rss-subscribe text"><strong>Subscribe <a href="{{ "feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
+      <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "feed.xml" | prepend: site.baseurl | prepend: site.url }}">via RSS</a></strong></p>
       <p class="text">{{ site.description }}</p>
     </div>
 
