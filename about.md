@@ -1,17 +1,25 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
 
-<img src="{{ site.baseurl }}assets/profile-placeholder.gif" title="Profile Picture" class="profile">
+<img src="{{ site.baseurl }}assets/janne.png" title="Profile Picture" class="profile">
 
-Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
+My name is Janne Haapsaari and I'm a CS student living in Helsinki, Finland.
+I also write code for a [living](http://airbusdefenceandspace.com/). It should
+be clear without saying but this is my personal journal and opinnions
+reflected here are my own.
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
+## Things I do:
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+* I write bugs.
+* I forget to write tests.
+* I tell lousy jokes.
+* I love to travel.
+* Free software <3
 
-[centrarium]: https://github.com/bencentra/centrarium
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
+## Feel free to contact me:
+
+* Email: haaja@iki.fi
+* PGP: [0x2FB9DEF6](/pgp/haaja_public_key.asc) or
+[0x2FB9DEF6](http://pgp.mit.edu/pks/lookup?search=0x2FB9DEF6)
