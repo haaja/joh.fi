@@ -9,8 +9,9 @@ subtitle: ""
 email: haaja@iki.fi
 name: Janne Haapsaari
 description: ""
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://joh.fi/" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://joh.fi" # the base hostname & protocol for your site
+#url: "http://127.0.0.1:4000" # the base hostname & protocol for your site
 cover: "assets/header_image.jpg"
 logo: "assets/logo.png"
 
@@ -36,60 +37,60 @@ disqus_shortname: haaja
 # ga_tracking_id: "UA-XXXX-1"
 
 # Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
-
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
-
-  - cat: "Trip 2009"
-    desc: "Posts from my 2009 trip to Southeast Asia"
-
-  - cat: Valmistelut
-    desc: "Getting ready"
-
-  - cat: Thailand
-    desc: "Posts from Thailand"
-
-  - cat: Cambodia
-    desc: "Posts from Cambodia"
-
-  - cat: Vietnam
-    desc: "Posts from Vietnam"
-
-  - cat: Linux
-    desc: "Posts that have something to do with linux"
-
-  - cat: Programming
-    desc: "Posts that have something to do with programming"
-
-  - cat: Python
-    desc: "Python Yay!"
-
-  - cat: Spotify
-    desc: "Don't stop the music!"
-
-  - cat: Fedora
-    desc: "The famous baby of Red Hat Inc."
-
-  - cat: KDE
-    desc: "The second best desktop environment ;)"
-
-  - cat: ssh
-    desc: "Secure SHell"
-
-  - cat: Google
-    desc: "The necessary evil?!"
-
-  - cat: RSS
-    desc: "Probably the best way to read news in the world"
-
-  - cat: IPv6
-    desc: "Used to be futuristic"
-
-  - cat: GnuPG
-    desc: "Please don't read my email"
+#descriptions:
+#  - cat: jekyll
+#    desc: "Posts describing Jekyll setup techniques."
+#
+#  - cat: dummy
+#    desc: "Just some placeholder posts, lorem ipsum and the rest."
+#
+#  - cat: "Trip 2009"
+#    desc: "Posts from my 2009 trip to Southeast Asia"
+#
+#  - cat: Valmistelut
+#    desc: "Getting ready"
+#
+#  - cat: Thailand
+#    desc: "Posts from Thailand"
+#
+#  - cat: Cambodia
+#    desc: "Posts from Cambodia"
+#
+#  - cat: Vietnam
+#    desc: "Posts from Vietnam"
+#
+#  - cat: Linux
+#    desc: "Posts that have something to do with linux"
+#
+#  - cat: Programming
+#    desc: "Posts that have something to do with programming"
+#
+#  - cat: Python
+#    desc: "Python Yay!"
+#
+#  - cat: Spotify
+#    desc: "Don't stop the music!"
+#
+#  - cat: Fedora
+#    desc: "The famous baby of Red Hat Inc."
+#
+#  - cat: KDE
+#    desc: "The second best desktop environment ;)"
+#
+#  - cat: ssh
+#    desc: "Secure SHell"
+#
+#  - cat: Google
+#    desc: "The necessary evil?!"
+#
+#  - cat: RSS
+#    desc: "Probably the best way to read news in the world"
+#
+#  - cat: IPv6
+#    desc: "Used to be futuristic"
+#
+#  - cat: GnuPG
+#    desc: "Please don't read my email"
 
 
 # Social icons and sharing options
