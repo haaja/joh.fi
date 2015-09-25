@@ -35,106 +35,106 @@ Here is a quick tutorial of the steps that I did.
 First I created a new folder called Clojure and two subdirectories called
 exercises and material.
 
-```sh
-    $ tree Clojure/
-    Clojure/
-    ├── exercises
-    └── material
-```
+{% highlight sh %}
+$ tree Clojure/
+Clojure/
+├── exercises
+└── material
+{% endhighlight %}
 
 Then I initialized an empty git repository to the Clojure directory.
 
-```sh
-    $ cd Clojure/ && git init
-```
+{% highlight sh %}
+$ cd Clojure/ && git init
+{% endhighlight %}
 
 Next I created a subdirectory which I will use as a prefix to a following
 merge.
 
-```sh
-    mkdir exercises/old_project
-```
+{% highlight sh %}
+mkdir exercises/old_project
+{% endhighlight %}
 
 Now it was just a matter of adding the old repository as a remote repository
 to our newly created main repository.
 
-```sh
-    git remote add -f old_project http://www.example.com/repo/old_project.git
-```
+{% highlight sh %}
+git remote add -f old_project http://www.example.com/repo/old_project.git
+{% endhighlight %}
 
 Then do the merge without doing the actual commit.
 
-```sh
-    git merge -s ours --no-commit old_project/master
-```
+{% highlight sh %}
+git merge -s ours --no-commit old_project/master
+{% endhighlight %}
 
 Next we actually add the old_project repository to our new repository. This
 happens with git read-tree command which reads the master tree of the
 old_project repository and stores it under the path given with prefi
 argument.
 
-```sh
-    git read-tree --prefix=exercises/old_project -u old_project/master
-```
+{% highlight sh %}
+git read-tree --prefix=exercises/old_project -u old_project/master
+{% endhighlight %}
 
 Now we are almost done. Final step is to actually do the commit.
 
-```sh
-    git commit -m "Merged old_project repository to Clojure repository"
-```
+{% highlight sh %}
+git commit -m "Merged old_project repository to Clojure repository"
+{% endhighlight %}
 
 In my case I had multiple repositories so I just repeated those steps for
 every repository I wanted to combine. My final repository structure looks like
 the one below.
 
-```sh
-    $ tree -d Clojure/
-    Clojure/
-    ├── exercises
-    │   ├── blorg
-    │   │   ├── src
-    │   │   │   └── blorg
-    │   │   └── test
-    │   │       └── blorg
-    │   ├── i-am-a-horse-in-the-land-of-booleans
-    │   │   ├── src
-    │   │   └── test
-    │   ├── looping-is-recursion
-    │   │   ├── src
-    │   │   └── test
-    │   ├── one-function-to-rule-them-all
-    │   │   ├── doc
-    │   │   ├── src
-    │   │   └── test
-    │   ├── p-p-p-pokerface
-    │   │   ├── src
-    │   │   └── test
-    │   ├── predicates
-    │   │   ├── src
-    │   │   └── test
-    │   ├── recursion
-    │   │   ├── src
-    │   │   └── test
-    │   ├── structured-data
-    │   │   ├── src
-    │   │   └── test
-    │   ├── sudoku
-    │   │   ├── src
-    │   │   │   └── sudoku
-    │   │   └── test
-    │   │       └── sudoku
-    │   └── training-day
-    │       ├── src
-    │       ├── target
-    │       │   ├── classes
-    │       │   └── stale
-    │       └── test
-    └── material
-        └── 120-hour-epic-sax-marathon
-                ├── bin
-                        ├── css
-                                └── img
-```
+{% highlight sh %}
+$ tree -d Clojure/
+Clojure/
+├── exercises
+│   ├── blorg
+│   │   ├── src
+│   │   │   └── blorg
+│   │   └── test
+│   │       └── blorg
+│   ├── i-am-a-horse-in-the-land-of-booleans
+│   │   ├── src
+│   │   └── test
+│   ├── looping-is-recursion
+│   │   ├── src
+│   │   └── test
+│   ├── one-function-to-rule-them-all
+│   │   ├── doc
+│   │   ├── src
+│   │   └── test
+│   ├── p-p-p-pokerface
+│   │   ├── src
+│   │   └── test
+│   ├── predicates
+│   │   ├── src
+│   │   └── test
+│   ├── recursion
+│   │   ├── src
+│   │   └── test
+│   ├── structured-data
+│   │   ├── src
+│   │   └── test
+│   ├── sudoku
+│   │   ├── src
+│   │   │   └── sudoku
+│   │   └── test
+│   │       └── sudoku
+│   └── training-day
+│       ├── src
+│       ├── target
+│       │   ├── classes
+│       │   └── stale
+│       └── test
+└── material
+    └── 120-hour-epic-sax-marathon
+            ├── bin
+                    ├── css
+                            └── img
+{% endhighlight %}
 
 The first level subdirectories below exercise and material directories were
 originally separate git repositories. Now I have one single repository that

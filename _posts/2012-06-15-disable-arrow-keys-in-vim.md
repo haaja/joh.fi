@@ -16,7 +16,7 @@ to drop all old habits! Therefore we will disable the arrow keys so that you
 are forced to use h, j, k, l to navigate. So without further ado here are the
 changes one should add to their .vimrc file.
 
-```sh
+{% highlight sh %}
 noremap "
 noremap!
 noremap ""
@@ -25,7 +25,7 @@ noremap ""
 noremap!
 noremap ""
 noremap!
-```
+{% endhighlight %}
 
 
 Happy viming!

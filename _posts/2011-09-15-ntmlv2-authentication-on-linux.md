@@ -31,29 +31,30 @@ the installation part, it should apply to other distributions as well.
 
 1. Install cntlm
 
-```sh
+{% highlight sh %}
 # yum install cntl
-```
+{% endhighlight %}
 
 2. Test your authentication method
 
-```sh
+{% highlight sh %}
 # cntlm -I -M http://www.google.fi
-```
+{% endhighlight %}
 
 The command should output something like this:
 
-```sh
+{% highlight sh %}
 ----------------------------[ Profile 0 ]------
 Auth NTLMv2
 PassNTLMv2 DA95C27958430DESH829C0E38985484A
 ------------------------------------------------
-```
+{% endhighlight %}
+
 
 
 3. Use this auth information in your /etc/cntlm.conf file.
 
-```sh
+{% highlight sh %}
 Username        your_username
 Domain          your_domain
 
@@ -64,26 +65,26 @@ Proxy           your_proxy:your_proxy_port
 
 # This is the port number where Cntlm will listen
 Listen        3128
-```
+{% endhighlight %}
 
 4. Configure your system to use the local proxy:
 
-```sh
+{% highlight sh %}
 export http_proxy=http://localhost:3128
 export https_proxy=http://localhost:3128
-```
+{% endhighlight %}
 
 5. Start cntlm by executing:
 
-```sh
+{% highlight sh %}
 # /etc/init.d/cntlmd start
-```
+{% endhighlight %}
 
 If everything works, you should be able to access internet normally. Remember
 you need to create new hash every time your password changes!
 
 Also you might want to start cntlm automatically on start-up:
 
-```sh
+{% highlight sh %}
 chkconfig --level 35 cntlmd on
-```
+{% endhighlight %}

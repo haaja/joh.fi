@@ -19,12 +19,12 @@ I was writing my script called [osinfo](https://github.com/haaja/osinfo) and
 found out that gnome-session gave exit value 1 when called with --version
 argument. This was easily tested doing the following.
 
-```sh
+{% highlight sh %}
 [haaja@jarvis ~]$ gnome-session --version
 gnome-session 3.6.2
 [haaja@jarvis ~]$ echo $?
 1
-```
+{% endhighlight %}
 
 Exit value 1 with non-error cases is problematic because usually exit values
 other than 0 are interpreted as an error. This was also the case with

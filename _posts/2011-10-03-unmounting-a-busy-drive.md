@@ -20,10 +20,10 @@ problems with my external docking station.
 Usually the error is something like this:
 
 
-```sh
+{% highlight sh %}
 # umount /media/storage1
 umount: /media/storage1: device is busy
-```
+{% endhighlight %}
 
 
 Luckily there is a great tool called
@@ -34,10 +34,10 @@ process.
 
 To find out which process is keeping your drive busy
 
-```sh
+{% highlight sh %}
 # fuser -mv /dev/sdXY
 /dev/sdc1: 6772
-```
+{% endhighlight %}
 
 In the command letter X is the drive letter and letter Y is the number of
 partition. The output gives the process id that prevents mounting/unmounting
@@ -45,11 +45,10 @@ the drive by using the resources. Even though fuser can kill the processes
 using resources, it is generally safer to first find out what you going to
 kill.
 
-```sh
+{% highlight sh %}
 ps auxw|grep 6772
 haaja 6772 0.4 2.7 219212 56792 ? SLl Oct 3 02:25 banshee
-```
-
+{% endhighlight %}
 
 Here we can see that I have banshee open and still accessing media files on my
 external hard drive. This was just a staged situation where I intentionally

@@ -30,19 +30,19 @@ provide for [Debian](http://www.debian.org/).
 
 Download the packages from the apt repository.
 
-```sh
+{% highlight sh %}
 $ wget http://repository.spotify.com/pool/non-free/s/spotify/spotify-client-gnome-support_0.5.2.84.g6d797eb-1_all.deb
 $ wget http://repository.spotify.com/pool/non-free/s/spotify/spotify-client-qt_0.6.1.309.gb871a7d-1_amd64.deb
-```
+{% endhighlight %}
+
 
 
 deb packages are ar archives which we can easily open (note that it is ar not
 tar ;) ).
 
-```sh
+{% highlight sh %}
 $ ar vx spotify-client-gnome-support_0.5.2.84.g6d797eb-1_all.deb
-```
-
+{% endhighlight %}
 
 Both packages have similar content so extract them into different directories
 or follow this guide for one package at a time. Following files should be
@@ -53,13 +53,12 @@ This step will require root privileges. Copy data.tar.gz into system root, cd
 yourself to root, extract the data.tar.gz and finally remove the data.tar.gz
 file.
 
-```sh
+{% highlight sh %}
 # cp data.tar.gz /
 # cd /
 # tar -xzvf data.tar.gz
 # rm data.tar.gz
-```
-
+{% endhighlight %}
 
 Repeat the procedure for the spotify-client as well.
 
@@ -68,10 +67,10 @@ launch with following errors. You only get the first error until spotify can
 successfully find libssl.so, but to save time I've listed both errors here. On
 a side note ldd is a great tool for finding out dynamic library dependencies.
 
-```sh
+{% highlight sh %}
 spotify: error while loading shared libraries: libssl.so.0.9.8: cannot open shared object file: No such file or directory
 spotify: error while loading shared libraries: libcrypto.so.0.9.8: cannot open shared object file: No such file or directory
-```
+{% endhighlight %}
 
 
 Fedora uses newer versions of openssl and Spotify does not check the version
@@ -79,7 +78,7 @@ of the library correctly. First make sure you have openssl-devel package
 installed and then help spotify to find libssl.so by creating a symbolic link
 to the correct path depending on your architecture.
 
-```sh
+{% highlight sh %}
 # This is for 64 bit installations
 ln -s /usr/lib64/libssl.so /usr/lib64/libssl.so.0.9.8
 ln -s /usr/lib64/libcrypto.so /usr/lib64/libcrypto.so.0.9.8
@@ -87,8 +86,7 @@ ln -s /usr/lib64/libcrypto.so /usr/lib64/libcrypto.so.0.9.8
 # This is for 32 bit installations
 ln -s /usr/lib/libssl.so /usr/lib/libssl.so.0.9.8
 ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.0.9.8
-```
-
+{% endhighlight %}
 
 Now you should be able to start Spotify and enjoy some great music with native
 linux client!

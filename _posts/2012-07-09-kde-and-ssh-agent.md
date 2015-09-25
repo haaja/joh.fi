@@ -27,38 +27,36 @@ guide.
 1. Open your favorite text editor and create file ~/.kde/env/ssh-agent.sh.
 Add following lines into file and save it.
 
-```sh
+{% highlight sh %}
 #!/bin/bash
 eval `ssh-agent`
-```
+{% endhighlight %}
+
 
 
 2. Create file ~/.kde/Autostart/ssh-add.sh and add following lines.
 
-```sh
+{% highlight sh %}
 #!/bin/bash
 export SSH_ASKPASS=/usr/bin/ksshaskpass
 /usr/bin/ssh-add
-```
-
+{% endhighlight %}
 
 3. Create file ~/.kde/shutdown/ssh-agent.sh and add following lines.
 
-```sh
+{% highlight sh %}
 #!/bin/bash
 eval `ssh-agent -k`
-```
-
+{% endhighlight %}
 
 4. As a last step you need to give execute rights for the scripts that we just
 created.
 
-```sh
+{% highlight sh %}
 chmod +x ~/.kde/env/ssh-agent.sh
 chmod +x ~/.kde/Autostart/ssh-add.sh
 chmod +x ~/.kde/shutdown/ssh-agent.sh
-```
-
+{% endhighlight %}
 
 That's it! Now simply log out and log back in and notice how kde-wallet will
 prompt for password and also your ssh-key password will be asked. In case you

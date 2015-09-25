@@ -48,7 +48,7 @@ directory.
 
 I changed the existing
 
-```sh
+{% highlight sh %}
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
@@ -59,10 +59,11 @@ RewriteRule ^apps/([^/]*)/(.*\.(css|php))$ index.php?app=$1&getfile=$2
 [QSA,L]
 RewriteRule ^remote/(.*) remote.php [QSA,L]
 </IfModule>
-```
+{% endhighlight %}
+
 To
 
-```sh
+{% highlight sh %}
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
@@ -73,24 +74,26 @@ RewriteRule ^apps/([^/]*)/(.*\.(css|php))$ index.php?app=$1&getfile=$2
 [QSA,L]
 RewriteRule ^remote/(.*) remote.php [QSA,L]
 </IfModule>
-```
+{% endhighlight %}
 
 Spotting the difference is left as an exercise. :D Nah, just kidding it's the
 HTTP_AUTHORIZATION line and the added ,L at the end.
 
 One problem solved but then apache started complaining about permissions.
 
-```sh
+{% highlight sh %}
 [Thu Jan 10 23:51:14 2013] [error] [client xx.xxx.xxx.xxx] client denied
 by server configuration: <INSTALL_DIR>/owncloud/remote.php
-```
+{% endhighlight %}
+
 
 As as solution I added to the .htaccess file following lines.
 
-```sh
+{% highlight sh %}
 Order allow,deny
 Allow from all
-```
+{% endhighlight %}
+
 
 Voilá and the sync client managed to synchronize everything.
 

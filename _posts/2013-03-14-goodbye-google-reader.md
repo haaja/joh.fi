@@ -15,8 +15,6 @@ Thunderbird as I already use it for email.
 
 Good riddance!
 
-```sh
-From your 55 subscriptions, over the last 30 days you read 9,443 items,
-clicked 480 items, starred 1 items, and emailed 0 items. Since May 21,
-2010 you have read a total of 237,212 items.
-```
+{% highlight sh %}
+From your 55 subscriptions, over the last 30 days you read 9,443 items, clicked 480 items, starred 1 items, and emailed 0 items. Since May 21, 2010 you have read a total of 237,212 items.
+{% endhighlight %}

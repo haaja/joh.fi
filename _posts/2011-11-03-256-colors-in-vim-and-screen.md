@@ -15,18 +15,18 @@ screen.
 
 1. Add to you .vimrc file
 
-```sh
+{% highlight sh %}
 set t_Co=256
-```
+{% endhighlight %}
 
 
 2. Add following lines to your .screenrc file
 
-```sh
+{% highlight sh %}
 attrcolor b ".I"
 termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 defbce "on"
-```
+{% endhighlight %}
 
 
 Also check that your terminal supports or has 256 colors enabled. At least

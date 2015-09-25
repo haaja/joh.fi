@@ -19,10 +19,10 @@ disabling the feature was easy enough.
 
 Here is how you do it:
 
-```sh
+{% highlight sh %}
     1. Open new tab and write about:config
     2. Search for option browser.urlbar.trimURL
     3. Set the value to false by double-clicking the option.
-```
+{% endhighlight %}
 
 Yay, you're all set!
