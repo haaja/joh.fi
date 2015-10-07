@@ -4,7 +4,7 @@ author: Janne Haapsaari
 layout: post
 comments: true
 title: "Project Euler"
-categories: Programming Python
+categories: "Programming, Python"
 cover:  "assets/header_image.jpg"
 ---
 

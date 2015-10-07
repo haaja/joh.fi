@@ -4,7 +4,7 @@ author: Janne Haapsaari
 layout: post
 comments: true
 title: "Unmounting a busy drive"
-categories: Linux
+category: linux
 cover:  "assets/header_image.jpg"
 ---
 

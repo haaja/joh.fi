@@ -3,7 +3,7 @@ layout: post
 title:  "How to fix your damaged gnupg database"
 author: Janne Haapsaari
 date:   2015-01-02 11:18:14
-categories: gnupg
+category: gnupg
 cover:  "assets/header_image.jpg"
 ---
 Some time ago I had troubles with my gnupg installation. Namely gpg was unable

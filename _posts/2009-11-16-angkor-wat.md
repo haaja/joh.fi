@@ -5,7 +5,7 @@ layout: post
 slug: angkor-wat
 comments: true
 title: "Angkor Wat"
-categoriwa: Trip 2009 Cambodia
+categories: "Trip 2009, Cambodia"
 cover:  "assets/header_image.jpg"
 ---
 

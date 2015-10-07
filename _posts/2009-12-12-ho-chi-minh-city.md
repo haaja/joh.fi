@@ -4,7 +4,7 @@ layout: post
 author: Janne Haapsaari
 comments: true
 title: "Ho Chi Minh City"
-categories: Trip 2009 Vietnam
+categories: "Trip 2009, Vietnam"
 cover:  "assets/header_image.jpg"
 ---
 

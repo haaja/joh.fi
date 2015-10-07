@@ -3,7 +3,7 @@ title: "Implementing binary heap without an array"
 author: Janne Haapsaari
 date: 2011-11-17 17:06:00
 comments: true
-categories: Programming Java Binary Heap
+categories: "Programming, Java, Binary Heap"
 cover:  "assets/header_image.jpg"
 ---
 

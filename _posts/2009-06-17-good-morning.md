@@ -5,7 +5,7 @@ author: Janne Haapsaari
 slug: good-morning
 comments: true
 title: "Good Morning!"
-categories: Valmistelut
+categories: "Trip 2009, Valmistelut"
 cover:  "assets/header_image.jpg"
 ---
 

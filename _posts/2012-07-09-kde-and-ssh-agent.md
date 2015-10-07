@@ -4,7 +4,7 @@ author: Janne Haapsaari
 layout: post
 comments: true
 title: "KDE and ssh-agent"
-category: KDE ssh linux
+categories: "kde, ssh, linux"
 cover:  "assets/header_image.jpg"
 ---
 

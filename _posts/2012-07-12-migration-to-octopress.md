@@ -4,7 +4,7 @@ title: "Migration to Octopress"
 author: Janne Haapsaari
 date: 2012-07-12 21:43:00
 comments: true
-category: Octopress Blog Wordpress Octopress
+categories: "octopress, blog, wordpress, octopress"
 cover:  "assets/header_image.jpg"
 ---
 

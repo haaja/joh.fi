@@ -4,7 +4,7 @@ author: Janne Haapsaari
 layout: post
 comments: true
 title: "256 colors in vim and screen"
-categories: vim screen linux
+categories: "vim, screen, linux"
 cover:  "assets/header_image.jpg"
 ---
 

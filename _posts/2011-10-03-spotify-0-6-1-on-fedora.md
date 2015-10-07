@@ -4,7 +4,7 @@ author: Janne Haapsaari
 layout: post
 comments: true
 title: "Spotify 0.6.1 on Fedora 15/16"
-categories: Linux fedora spotify
+categories: "linux, fedora, spotify"
 cover:  "assets/header_image.jpg"
 ---
 

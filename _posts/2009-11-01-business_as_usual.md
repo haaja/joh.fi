@@ -5,13 +5,13 @@ author: Janne Haapsaari
 slug: business-as-usual
 comments: true
 title: "Business as usual"
-categories: Trip 2009 Thailand
+categories: "Trip 2009, Thailand"
 cover:  "assets/header_image.jpg"
 ---
 
 Huomenta pöytään!
 
-Vaihdoin sitten eilen guest housea _My House_en ja kyllä kannatti. My House on
+Vaihdoin sitten eilen guest housea My Houseen ja kyllä kannatti. My House on
 vähän syrjemmässä tuosta backpacker ghettosta, joten siellä saa suht rauhassa
 nukkua. Tämä huone on varusteltu kaikella tarpeellisella, tuuletin, suihku,
 vessa ja ikkuna löytyvät. Ensimmäisestä guest housesta oppineena voin todeta

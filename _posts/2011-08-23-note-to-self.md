@@ -4,7 +4,7 @@ layout: post
 author: Janne Haapsaari
 comments: true
 title: "Note to self"
-categories: Reissut Miscellaneous Valmistelut
+categories: "Reissut, Miscellaneous, Valmistelut"
 cover:  "assets/header_image.jpg"
 ---
 

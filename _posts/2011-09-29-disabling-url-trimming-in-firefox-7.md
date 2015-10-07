@@ -4,7 +4,7 @@ author: Janne Haapsaari
 layout: post
 comments: true
 title: "Disabling URL trimming in Firefox 7"
-categories: Firefox
+category: Firefox
 cover:  "assets/header_image.jpg"
 ---
 
