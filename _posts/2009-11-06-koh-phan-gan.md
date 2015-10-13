@@ -5,7 +5,9 @@ author: Janne Haapsaari
 slug: koh-phan-gan
 comments: true
 title: "Koh Phan-gan"
-categories: "Trip 2009, Thailand"
+categories:
+    - Trip 2009
+    - Thailand
 cover:  "assets/header_image.jpg"
 ---
 

@@ -4,7 +4,12 @@ date: 2013-06-15 17:56:00
 author: Janne Haapsaari
 layout: post
 title: "Waiting for Haswell Macbook Pros"
-categories: "Macbook, Apple, Gadgets, Linux, OS X"
+categories:
+    - Macbook
+    - Apple
+    - Gadgets
+    - Linux
+    - OS X
 cover:  "assets/header_image.jpg"
 ---
 

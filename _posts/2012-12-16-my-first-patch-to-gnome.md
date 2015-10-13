@@ -4,7 +4,11 @@ title: "My first patch to GNOME"
 author: Janne Haapsaari
 date: 2012-12-16 19:22:00
 comments: true
-categories: "gnome, linux, open source, programming"
+categories:
+    - gnome
+    - linux
+    - open source
+    - programming
 cover:  "assets/header_image.jpg"
 ---
 

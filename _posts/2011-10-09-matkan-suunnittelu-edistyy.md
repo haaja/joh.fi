@@ -4,7 +4,9 @@ author: Janne Haapsaari
 layout: post
 comments: true
 title: "Matkan suunnittelu edistyy"
-categories: "Trip 2011, Indonesia"
+categories:
+    - Trip 2011
+    - Indonesia
 cover:  "assets/header_image.jpg"
 ---
 

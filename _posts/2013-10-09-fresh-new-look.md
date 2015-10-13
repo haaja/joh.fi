@@ -4,7 +4,10 @@ title: "Fresh new look"
 author: Janne Haapsaari
 date: 2013-10-09 20:28:00
 comments: true
-categories: "blog, theme, octopress"
+categories:
+    - blog
+    - theme
+    - octopress
 cover:  "assets/header_image.jpg"
 ---
 

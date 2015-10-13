@@ -4,7 +4,9 @@ layout: post
 author: Janne Haapsaari
 comments: true
 title: "Back in Bangkok"
-categories: "Trip 2009, Thailand"
+categories:
+    - Trip 2009
+    - Thailand
 cover:  "assets/header_image.jpg"
 ---
 

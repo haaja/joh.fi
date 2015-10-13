@@ -5,7 +5,9 @@ author: Janne Haapsaari
 slug: rokotuksia
 comments: true
 title: "Rokotuksia"
-categories: "Trip 2009, Valmistelut"
+categories:
+    - Trip 2009
+    - Valmistelut
 cover:  "assets/header_image.jpg"
 ---
 

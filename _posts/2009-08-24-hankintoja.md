@@ -5,7 +5,9 @@ author: Janne Haapsaari
 slug: hankintoja
 comments: true
 title: "Hankintoja"
-categories: "Trip 2009, valmistelut"
+categories:
+    - Trip 2009
+    - valmistelut
 cover:  "assets/header_image.jpg"
 ---
 

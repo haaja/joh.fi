@@ -3,7 +3,9 @@ date: 2009-12-18 17:22:00
 layout: post
 comments: true
 title: "Jungle Beach"
-categories: "Trip 2009, Vietnam"
+categories:
+    - Trip 2009
+    - Vietnam
 cover:  "assets/header_image.jpg"
 ---
 

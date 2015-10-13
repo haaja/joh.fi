@@ -5,7 +5,9 @@ author: Janne Haapsaari
 slug: muutos-suunnitelmiin
 title: "Muutos suunnitelmiin"
 comments: true
-categories: "Trip 2009, Thailand"
+categories:
+    - Trip 2009
+    - Thailand
 cover:  "assets/header_image.jpg"
 ---
 

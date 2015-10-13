@@ -5,7 +5,9 @@ author: Janne Haapsaari
 slug: business-as-usual
 comments: true
 title: "Business as usual"
-categories: "Trip 2009, Thailand"
+categories:
+    - Trip 2009
+    - Thailand
 cover:  "assets/header_image.jpg"
 ---
 

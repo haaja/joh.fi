@@ -5,7 +5,9 @@ author: Janne Haapsaari
 layout: post
 slug: post-status-format
 yitle: "Post status format"
-categories: "status, wordpress"
+categories:
+    - status
+    - wordpress
 cover:  "assets/header_image.jpg"
 ---
 

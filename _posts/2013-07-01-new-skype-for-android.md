@@ -4,7 +4,9 @@ date: 2013-07-01 17:16:00
 author: Janne Haapsaari
 layout: post
 title: "New Skype for Android"
-categories: "skype, android"
+categories:
+    - skype
+    - android
 cover:  "assets/header_image.jpg"
 ---
 

@@ -4,7 +4,9 @@ layout: post
 author: Janne Haapsaari
 comments: true
 title: "Goodbye Jungle Beach"
-categories: "Trip 2009, Vietnam"
+categories:
+    - Trip 2009
+    - Vietnam
 cover:  "assets/header_image.jpg"
 ---
 

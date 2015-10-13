@@ -4,7 +4,9 @@ layout: post
 author: Janne Haapsaari
 comments: true
 title: "Juomiskulttuureista"
-categories: "Trip 2009, Cambodia"
+categories:
+    - Trip 2009
+    - Cambodia
 cover:  "assets/header_image.jpg"
 ---
 
