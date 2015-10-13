@@ -122,8 +122,8 @@ social:
 
   - name: Facebook
     icon: facebook
-    username: jhaapsaari
-    url: https://www.facebook.com/jhaapsaari
+    username:
+    url:
     desc: Friend me on Facebook
     share_url: //www.facebook.com/sharer.php
     share_title: ?t=
@@ -140,8 +140,8 @@ social:
 
   - name: LinkedIn
     icon: linkedin
-    username: Janne Haapsaari
-    url: https://www.linkedin.com/in/jannehaapsaari
+    username:
+    url:
     desc: Connect with me on LinkedIn
     share_url: //www.linkedin.com/shareArticle
     share_title: ?mini=true
@@ -149,8 +149,8 @@ social:
 
   - name: Google+
     icon: google-plus
-    username: +JanneHaapsaari
-    url: https://plus.google.com/+JanneHaapsaari/
+    username:
+    url:
     desc: Add me to your Circles
     share_url: //plus.google.com/share
     share_title: ?title=
