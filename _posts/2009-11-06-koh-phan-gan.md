@@ -6,7 +6,7 @@ slug: koh-phan-gan
 comments: true
 title: "Koh Phan-gan"
 categories:
-    - Trip 2009
+    - trip2009
     - Thailand
 cover:  "assets/header_image.jpg"
 ---

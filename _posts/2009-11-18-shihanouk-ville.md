@@ -6,7 +6,7 @@ slug: shihanouk-ville
 comments: true
 title: "Shihanouk Ville"
 categories:
-    - Trip 2009
+    - trip2009
     - Cambodia
 cover:  "assets/header_image.jpg"
 ---

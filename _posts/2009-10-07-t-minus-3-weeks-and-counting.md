@@ -6,7 +6,7 @@ slug: t-minus-3-weeks-and-counting
 comments: true
 title: "T-minus 3 weeks and counting"
 categories:
-    - Trip 2009
+    - trip2009
     - Valmistelut
 cover:  "assets/header_image.jpg"
 ---

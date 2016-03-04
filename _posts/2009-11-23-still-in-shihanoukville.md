@@ -6,7 +6,7 @@ slug: still-in-shihanoukville
 comments: true
 title: "Still in Shihanoukville"
 categories:
-    - Trip 2009
+    - trip2009
     - Cambodia
 cover:  "assets/header_image.jpg"
 ---

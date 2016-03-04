@@ -6,7 +6,7 @@ slug: muutos-suunnitelmiin
 title: "Muutos suunnitelmiin"
 comments: true
 categories:
-    - Trip 2009
+    - trip2009
     - Thailand
 cover:  "assets/header_image.jpg"
 ---

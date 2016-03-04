@@ -5,7 +5,7 @@ author: Janne Haapsaari
 comments: true
 title: "Uutta reissua pukkaa"
 categories:
-    - Trip 2011
+    - trip2011
     - Valmistelut
 cover:  "assets/header_image.jpg"
 ---

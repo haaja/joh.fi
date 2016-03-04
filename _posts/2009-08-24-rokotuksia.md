@@ -6,7 +6,7 @@ slug: rokotuksia
 comments: true
 title: "Rokotuksia"
 categories:
-    - Trip 2009
+    - trip2009
     - Valmistelut
 cover:  "assets/header_image.jpg"
 ---

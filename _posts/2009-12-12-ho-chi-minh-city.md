@@ -5,7 +5,7 @@ author: Janne Haapsaari
 comments: true
 title: "Ho Chi Minh City"
 categories:
-    - Trip 2009
+    - trip2009
     - Vietnam
 cover:  "assets/header_image.jpg"
 ---

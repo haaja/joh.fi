@@ -6,7 +6,7 @@ slug: business-as-usual
 comments: true
 title: "Business as usual"
 categories:
-    - Trip 2009
+    - trip2009
     - Thailand
 cover:  "assets/header_image.jpg"
 ---
