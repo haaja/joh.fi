@@ -72,7 +72,7 @@ drive.
 4. Choose the unlock method. I chose to enter password but USB drive is better if you don't mind using USB drive every time you boot to Windows.
 5. Save the recovery key to somewhere safe.
 6. Use the new encryption algorithm if possible.
-7. Encrypt the used space or whole drive. The latter is better but requires more time.
+7. Encrypt the used space or whole drive. The latter is safer but requires more time.
 
 And we are done. Reboot the machine and boot into Windows to begin the
 encryption process. After the encryption has finished you should have a nice
