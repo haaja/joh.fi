@@ -7,3 +7,4 @@ _site
 # Bundler
 Gemfile.lock
 .bundle/
+vendor/
