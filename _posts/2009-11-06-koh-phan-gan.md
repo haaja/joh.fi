@@ -8,7 +8,7 @@ title: "Koh Phan-gan"
 categories:
     - trip2009
     - Thailand
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Kuten otsikosta voi päätellä suunnitelmat menivät uusiksi kovan merenkäynnin

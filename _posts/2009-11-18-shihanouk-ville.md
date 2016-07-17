@@ -8,7 +8,7 @@ title: "Shihanouk Ville"
 categories:
     - trip2009
     - Cambodia
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Jees, taas on viime päivityksestä kulunut hetkonen. Tultiin siis bussilla Siem

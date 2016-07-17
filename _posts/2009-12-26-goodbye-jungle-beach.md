@@ -7,7 +7,7 @@ title: "Goodbye Jungle Beach"
 categories:
     - trip2009
     - Vietnam
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Viimeinkin on jäähyväisten aika. Reilu viikko täällä vierähti ja sääkin oli

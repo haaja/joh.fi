@@ -8,7 +8,7 @@ title: "Business as usual"
 categories:
     - trip2009
     - Thailand
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Huomenta pöytään!

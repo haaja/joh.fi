@@ -8,7 +8,7 @@ title: "Good Morning!"
 categories:
     - trip2009
     - Valmistelut
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Katsotaanpa jos sitä jaksais pitää reissusta jonkinlaista blogia. Voi tosin

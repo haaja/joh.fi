@@ -7,7 +7,7 @@ title: "Project Euler"
 categories:
     - Programming
     - Python
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 [Project Euler](http://projecteuler.net) is a website containing computational

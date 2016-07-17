@@ -7,7 +7,7 @@ title: "NTMLv2 authentication on Linux"
 categories:
     - NTLMv2
     - linux
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Today at work I was trying to get my virtual machine, running Fedora, to

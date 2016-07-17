@@ -9,7 +9,7 @@ categories:
     - linux
     - open source
     - programming
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 I've used open source software for many years now but I haven't really

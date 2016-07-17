@@ -8,7 +8,7 @@ categories:
     - owncloud
     - kapsi
     - shared hosting
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 I've been using [Dropbox](https://www.dropbox.com/) and

@@ -8,7 +8,7 @@ title: "Angkor Wat"
 categories:
     - trip2009
     - Cambodia
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Eilen oli jälleen sarjassa aikainen herätys. Herätyskello soi 04:30, eli

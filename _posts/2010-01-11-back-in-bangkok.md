@@ -7,7 +7,7 @@ title: "Back in Bangkok"
 categories:
     - trip2009
     - Thailand
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Viimeisiä viedään. Tultiin tuossa eilen aamulla takaisin tänne Bangkokiin.

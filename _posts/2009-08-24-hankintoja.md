@@ -8,7 +8,7 @@ title: "Hankintoja"
 categories:
     - trip2009
     - valmistelut
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Terve taas!

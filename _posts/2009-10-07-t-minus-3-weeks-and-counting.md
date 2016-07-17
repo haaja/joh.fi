@@ -8,7 +8,7 @@ title: "T-minus 3 weeks and counting"
 categories:
     - trip2009
     - Valmistelut
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Morjensta pöytään!

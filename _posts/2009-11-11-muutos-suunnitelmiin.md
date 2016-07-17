@@ -8,7 +8,7 @@ comments: true
 categories:
     - trip2009
     - Thailand
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Saavuttiin tänne Bangkokiin viime yönä kolmen aikoihin. Bussimatka oli yhtä

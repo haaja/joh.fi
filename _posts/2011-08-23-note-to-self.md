@@ -8,7 +8,7 @@ categories:
     - Reissut
     - Miscellaneous
     - Valmistelut
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Kun olet lentolippusi ostanut, unohda lentoliput äläkä missään nimessä enää

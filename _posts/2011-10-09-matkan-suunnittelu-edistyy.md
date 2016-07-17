@@ -7,7 +7,7 @@ title: "Matkan suunnittelu edistyy"
 categories:
     - trip2011
     - Indonesia
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Pitkästä aikaa on jotain kerrottavaa matkasta. Olen tässä jonkin aikaa jo

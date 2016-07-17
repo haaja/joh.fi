@@ -4,7 +4,7 @@ title:  "How to fix your damaged gnupg database"
 author: Janne Haapsaari
 date:   2015-01-02 11:18:14
 category: gnupg
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 Some time ago I had troubles with my gnupg installation. Namely gpg was unable
 to read keys from my trusted.db. I figured this had something to do with the

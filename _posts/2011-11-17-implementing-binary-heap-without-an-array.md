@@ -8,7 +8,7 @@ categories:
     - Programming
     - Java
     - Binary Heap
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 So I had this school assignment to implement a

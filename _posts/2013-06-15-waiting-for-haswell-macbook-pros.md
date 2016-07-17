@@ -10,7 +10,7 @@ categories:
     - Gadgets
     - Linux
     - OS X
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 I am a strong believer of mobile computing and to me a perfect setup is a

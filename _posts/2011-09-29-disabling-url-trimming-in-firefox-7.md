@@ -5,7 +5,7 @@ layout: post
 comments: true
 title: "Disabling URL trimming in Firefox 7"
 category: Firefox
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Mozilla released

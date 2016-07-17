@@ -8,7 +8,7 @@ title: "Rokotuksia"
 categories:
     - trip2009
     - Valmistelut
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Noniin alkaa tuo reissu tuolla muutaman kuukauden päässä lähestyä ja ajattelin

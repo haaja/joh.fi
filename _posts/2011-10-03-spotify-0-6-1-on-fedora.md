@@ -8,7 +8,7 @@ categories:
     - linux
     - fedora
     - spotify
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Edit: This works for version 0.6.2 as well.

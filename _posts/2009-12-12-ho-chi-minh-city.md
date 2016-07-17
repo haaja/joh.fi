@@ -7,7 +7,7 @@ title: "Ho Chi Minh City"
 categories:
     - trip2009
     - Vietnam
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Terveisiä Vietnamista!

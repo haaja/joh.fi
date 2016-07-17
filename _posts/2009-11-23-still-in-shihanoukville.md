@@ -8,7 +8,7 @@ title: "Still in Shihanoukville"
 categories:
     - trip2009
     - Cambodia
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Pikainen päivitys vain tällä kertaa.. Ollaan edelleen täällä

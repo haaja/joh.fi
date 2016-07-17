@@ -5,7 +5,7 @@ author: Janne Haapsaari
 comments: true
 title: "Disable arrow keys in Vim"
 category: vim
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 I know this information can be found in n+1 other places but I will write it

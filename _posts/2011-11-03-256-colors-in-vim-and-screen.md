@@ -8,7 +8,7 @@ categories:
     - vim
     - screen
     - linux
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 For some strange reason at least [Fedora](http://fedoraproject.org/) ships

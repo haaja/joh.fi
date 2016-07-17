@@ -9,7 +9,7 @@ categories:
   - encryption
   - uefi
   - dual-boot
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 I will start this with a note that this is not a tutorial type of post. It's just

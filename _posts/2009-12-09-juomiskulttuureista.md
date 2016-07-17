@@ -7,7 +7,7 @@ title: "Juomiskulttuureista"
 categories:
     - trip2009
     - Cambodia
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Viellä ollaan täällä Phon Penhissä, tosin viisumit Vietnamiin on jo hankittu.

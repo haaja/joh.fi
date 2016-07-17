@@ -5,7 +5,7 @@ layout: post
 comments: true
 title: "Unmounting a busy drive"
 category: linux
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 My computer setup consists of

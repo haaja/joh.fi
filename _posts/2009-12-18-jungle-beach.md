@@ -6,7 +6,7 @@ title: "Jungle Beach"
 categories:
     - trip2009
     - Vietnam
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Terve!

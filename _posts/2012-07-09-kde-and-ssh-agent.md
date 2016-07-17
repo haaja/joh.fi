@@ -8,7 +8,7 @@ categories:
     - kde
     - ssh
     - linux
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Hello lazyweb!

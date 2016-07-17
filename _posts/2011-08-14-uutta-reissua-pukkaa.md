@@ -7,7 +7,7 @@ title: "Uutta reissua pukkaa"
 categories:
     - trip2011
     - Valmistelut
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Morjensta pöytään!

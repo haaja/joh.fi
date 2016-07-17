@@ -7,7 +7,7 @@ title: "Phnom Pehn part 2"
 categories:
     - trip2009
     - Cambodia
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Huomenta pöytään!

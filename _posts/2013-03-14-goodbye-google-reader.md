@@ -7,7 +7,7 @@ comments: true
 categories:
     - google
     - rss
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 So yesterday Google announced that they will retire Google Reader. At first

@@ -9,7 +9,7 @@ categories:
     - blog
     - wordpress
     - octopress
-cover:  "assets/header_image.jpg"
+cover:  "/assets/header_image.jpg"
 ---
 
 Brace yourselves, it's time for another "I migrated from X to
