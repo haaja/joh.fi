@@ -20,6 +20,8 @@ url: "https://joh.fi" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
+permalink: /:year/:month/:day/:title.html
+
 # Build settings
 markdown: kramdown
 paginate: 5
@@ -36,6 +38,9 @@ jekyll-archives:
     - tags
   layout: 'archive'
   permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
     category: '/category/:name/'
     tag: '/tag/:name/'
 
