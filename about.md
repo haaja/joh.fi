@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img src="{{ site.baseurl }}assets/janne.png" title="Profile Picture" class="profile">
+<img src="{{ site.baseurl }}/assets/janne.png" title="Profile Picture" class="profile">
 
 My name is Janne Haapsaari and I'm a CS student living in Helsinki, Finland.
 I also write code for a [living](http://airbusdefenceandspace.com/). It should
