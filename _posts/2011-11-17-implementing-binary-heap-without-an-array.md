@@ -5,9 +5,9 @@ author: Janne Haapsaari
 date: 2011-11-17 17:06:00
 comments: true
 categories:
-    - Programming
-    - Java
-    - Binary Heap
+    - programming
+    - java
+    - binary Heap
 cover:  "/assets/header_image.jpg"
 ---
 

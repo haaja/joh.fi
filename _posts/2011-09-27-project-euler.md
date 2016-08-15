@@ -5,8 +5,8 @@ layout: post
 comments: true
 title: "Project Euler"
 categories:
-    - Programming
-    - Python
+    - programming
+    - python
 cover:  "/assets/header_image.jpg"
 ---
 

@@ -5,7 +5,7 @@ author: Janne Haapsaari
 comments: true
 title: "NTMLv2 authentication on Linux"
 categories:
-    - NTLMv2
+    - ntlmv2
     - linux
 cover:  "/assets/header_image.jpg"
 ---

@@ -7,7 +7,7 @@ comments: true
 title: "Still in Shihanoukville"
 categories:
     - trip2009
-    - Cambodia
+    - cambodia
 cover:  "/assets/header_image.jpg"
 ---
 

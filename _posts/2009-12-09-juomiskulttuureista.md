@@ -6,7 +6,7 @@ comments: true
 title: "Juomiskulttuureista"
 categories:
     - trip2009
-    - Cambodia
+    - cambodia
 cover:  "/assets/header_image.jpg"
 ---
 

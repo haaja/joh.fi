@@ -5,9 +5,9 @@ author: Janne Haapsaari
 comments: true
 title: "Note to self"
 categories:
-    - Reissut
-    - Miscellaneous
-    - Valmistelut
+    - reissut
+    - miscellaneous
+    - valmistelut
 cover:  "/assets/header_image.jpg"
 ---
 

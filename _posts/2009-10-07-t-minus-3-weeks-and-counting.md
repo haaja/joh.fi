@@ -7,7 +7,7 @@ comments: true
 title: "T-minus 3 weeks and counting"
 categories:
     - trip2009
-    - Valmistelut
+    - valmistelut
 cover:  "/assets/header_image.jpg"
 ---
 

@@ -6,7 +6,7 @@ comments: true
 title: "Goodbye Jungle Beach"
 categories:
     - trip2009
-    - Vietnam
+    - vietnam
 cover:  "/assets/header_image.jpg"
 ---
 

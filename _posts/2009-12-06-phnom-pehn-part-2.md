@@ -6,7 +6,7 @@ comments: true
 title: "Phnom Pehn part 2"
 categories:
     - trip2009
-    - Cambodia
+    - cambodia
 cover:  "/assets/header_image.jpg"
 ---
 

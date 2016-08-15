@@ -7,7 +7,7 @@ comments: true
 title: "Shihanouk Ville"
 categories:
     - trip2009
-    - Cambodia
+    - cambodia
 cover:  "/assets/header_image.jpg"
 ---
 

@@ -7,7 +7,7 @@ comments: true
 title: "Angkor Wat"
 categories:
     - trip2009
-    - Cambodia
+    - cambodia
 cover:  "/assets/header_image.jpg"
 ---
 

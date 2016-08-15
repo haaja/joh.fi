@@ -5,7 +5,7 @@ comments: true
 title: "Jungle Beach"
 categories:
     - trip2009
-    - Vietnam
+    - vietnam
 cover:  "/assets/header_image.jpg"
 ---
 

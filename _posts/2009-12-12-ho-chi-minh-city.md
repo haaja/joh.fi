@@ -6,7 +6,7 @@ comments: true
 title: "Ho Chi Minh City"
 categories:
     - trip2009
-    - Vietnam
+    - vietnam
 cover:  "/assets/header_image.jpg"
 ---
 

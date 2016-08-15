@@ -7,7 +7,7 @@ title: "Muutos suunnitelmiin"
 comments: true
 categories:
     - trip2009
-    - Thailand
+    - thailand
 cover:  "/assets/header_image.jpg"
 ---
 

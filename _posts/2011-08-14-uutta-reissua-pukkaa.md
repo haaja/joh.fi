@@ -6,7 +6,7 @@ comments: true
 title: "Uutta reissua pukkaa"
 categories:
     - trip2011
-    - Valmistelut
+    - valmistelut
 cover:  "/assets/header_image.jpg"
 ---
 

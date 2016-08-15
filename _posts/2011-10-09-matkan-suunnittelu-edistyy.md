@@ -6,7 +6,7 @@ comments: true
 title: "Matkan suunnittelu edistyy"
 categories:
     - trip2011
-    - Indonesia
+    - indonesia
 cover:  "/assets/header_image.jpg"
 ---
 
