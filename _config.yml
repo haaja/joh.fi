@@ -31,6 +31,9 @@ highlightjs_theme: "monokai_sublime"
 
 exclude: [deploy.sh, README.md, Gemfile, Gemfile.lock, circle.yml]
 
+sass:
+    style: compressed
+
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
   enabled:
