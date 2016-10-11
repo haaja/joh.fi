@@ -7,7 +7,6 @@ comments: true
 categories:
     - owncloud
     - kapsi
-    - shared hosting
 cover:  "/assets/header_image.jpg"
 ---
 
