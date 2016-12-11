@@ -98,10 +98,10 @@ social:
 
   - name: LinkedIn
     icon: linkedin
-    username:
-    url:
+    username: Janne Haapsaari
+    url: https://fi.linkedin.com/in/jannehaapsaari
     desc: Connect with me on LinkedIn
-    share: false
+    share: true
 
   - name: Google+
     icon: google-plus
