@@ -185,7 +185,7 @@ social:
     username:
     url:
     desc: Share to Hacker News
-    share: false
+    share: true
 
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
