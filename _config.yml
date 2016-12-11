@@ -84,21 +84,21 @@ social:
 
   - name: Facebook
     icon: facebook
-    username: Janne Haapsaari
+    username: facebook
     url: https://www.facebook.com/jhaapsaari
     desc: Friend me on Facebook
     share: true
 
   - name: GitHub
     icon: github
-    username: haaja
+    username: GitHub
     url: https://github.com/haaja
     desc: Fork me on GitHub
     share: false
 
   - name: LinkedIn
     icon: linkedin
-    username: Janne Haapsaari
+    username: LinkedIn
     url: https://fi.linkedin.com/in/jannehaapsaari
     desc: Connect with me on LinkedIn
     share: true
@@ -182,8 +182,8 @@ social:
 
   - name: "Hacker News"
     icon: hacker-news
-    username:
-    url:
+    username: "Hacker News"
+    url: https://news.ycombinator.com/user?id=jhaaps
     desc: Share to Hacker News
     share: true
 
