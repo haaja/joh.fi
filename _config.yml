@@ -5,9 +5,6 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
 
-exclude:
-  - "/vendor/"
-
 # Site settings
 title: joh.fi
 subtitle: ""
@@ -29,7 +26,7 @@ paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "monokai_sublime"
 
-exclude: [deploy.sh, README.md, Gemfile, Gemfile.lock, circle.yml]
+exclude: [deploy.sh, README.md, Gemfile, Gemfile.lock, circle.yml, vendor]
 
 sass:
     style: compressed
