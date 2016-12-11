@@ -84,10 +84,10 @@ social:
 
   - name: Facebook
     icon: facebook
-    username:
-    url:
+    username: Janne Haapsaari
+    url: https://www.facebook.com/jhaapsaari
     desc: Friend me on Facebook
-    share: false
+    share: true
 
   - name: GitHub
     icon: github
