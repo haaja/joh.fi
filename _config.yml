@@ -24,7 +24,7 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
-highlightjs_theme: "monokai_sublime"
+highlightjs_theme: "tomorrow-night"
 
 exclude: [deploy.sh, README.md, Gemfile, Gemfile.lock, circle.yml, vendor]
 
