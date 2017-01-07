@@ -16,6 +16,7 @@ OPTIONS=(
     --exclude php5.fcgi
     --exclude nextcloud
     --exclude .htaccess
+    --exclude elinajajanne    
 )
 
 $RSYNC ${OPTIONS[@]} $PATH_TO_DEPLOY $USER@$HOST:$TARGET_DIR
