@@ -17,6 +17,7 @@ OPTIONS=(
     --exclude nextcloud
     --exclude .htaccess
     --exclude elinajajanne    
+    --exclude robots.txt
 )
 
 $RSYNC ${OPTIONS[@]} $PATH_TO_DEPLOY $USER@$HOST:$TARGET_DIR
