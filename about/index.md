@@ -6,7 +6,7 @@ title: About
 <img src="{{ site.baseurl }}/assets/janne.png" title="Profile Picture" class="profile">
 
 My name is Janne Haapsaari and I'm a CS student living in Helsinki, Finland.
-I also write code for a [living](https://www.relexsolutions.com/). It should
+I also write code for a [living](https://qvik.com). It should
 be clear without saying but this is my personal journal and opinnions
 reflected here are my own.
 

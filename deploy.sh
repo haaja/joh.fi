@@ -1,4 +1,4 @@
-#!/usr/bin/bash -e
+#!/usr/bin/env bash -e
 
 RSYNC=/usr/bin/rsync
 PATH_TO_DEPLOY="_site/"
