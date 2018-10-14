@@ -3,5 +3,5 @@
 My personal blog.
 
 Built with:
-* [Jekyll](https://jekyllrb.com)
-* [Centrarium](https://github.com/bencentra/centrarium)
+* [hugo](https://gohugo.io)
+* [hugo-goa](https://github.com/shenoybr/hugo-goa)

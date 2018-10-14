@@ -1,0 +1,63 @@
+baseURL = "https://joh.fi/"
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "Janne Haapsaari"
+title = "joh.fi"
+
+theme = "hugo-goa"
+
+## Hugo Built-in Features
+#disqusShortname = "haaja" # Comment out to disable Disqus.
+googleAnalytics = "UA-9365169-1"
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "Janne Haapsaari"
+intro = "Making software, writing bugs and travelling around the world. Tinkerer by heart. Cyclist."
+description = "Software Engineer [@Qvik](https://qvik.com). Previously @RELEX, @Airbus"
+authorimage = "janne_round.png"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Simple minimalist theme"
+keywords = "minimalist,blog,goa,hugo,developer"
+
+## Social Accounts
+[params.social]
+github = "haaja"
+#instagram = "<username>"
+#xing = "<username>"
+linkedin = "jannehaapsaari"
+twitter = "jhaaps"
+facebook = "jhaapsaari"
+#google = "<username>"
+#stackoverflow = "<username>"
+hackernews= "jhaaps"
+email = "haaja@iki.fi"
+
+## Extras
+[params.extra]
+copyright = "© 2018. Janne Haapsaari. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)." 
+poweredby = false
+highlightjs = true
+rss = true
+
+## Main Menu
+[[menu.main]]
+    name = "blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog/"
+[[menu.main]]
+    name = "about"
+    identifier = "about"
+    weight = 200
+    url = "/about/"

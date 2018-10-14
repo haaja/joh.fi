@@ -1,7 +1,7 @@
 #!/usr/bin/env bash -e
 
 RSYNC=/usr/bin/rsync
-PATH_TO_DEPLOY="_site/"
+PATH_TO_DEPLOY="public/"
 USER="haaja"
 HOST="lakka.kapsi.fi"
 TARGET_DIR="/home/users/haaja/sites/joh.fi/www"

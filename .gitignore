@@ -1,9 +1,4 @@
-# Compiled site
-_site
+.DS_Store
 
-# Sass garbage
-.sass-cache
+public/
 
-# Bundler
-.bundle/
-vendor/
