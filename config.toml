@@ -22,7 +22,7 @@ enableRobotsTXT = true
 author = "Janne Haapsaari"
 intro = "Making software, writing bugs and travelling around the world. Tinkerer by heart. Cyclist."
 description = "Software Engineer [@Qvik](https://qvik.com). Previously @RELEX, @Airbus"
-authorimage = "janne_round.png"
+authorimage = "janne.jpg"
 dateformat = "Jan 2, 2006"
 
 ## Site Meta Settings
@@ -45,7 +45,7 @@ email = "haaja@iki.fi"
 
 ## Extras
 [params.extra]
-copyright = "© 2018. Janne Haapsaari. [Some Rights Reserved](http://creativecommons.org/licenses/by/3.0/)." 
+copyright = "© 2018. Janne Haapsaari." 
 poweredby = false
 highlightjs = true
 rss = true
