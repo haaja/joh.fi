@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on joh.fi</title>
+    <link>https://joh.fi/categories/linux/</link>
+    <description>Recent content in Linux on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 15 Jun 2013 17:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Waiting for Haswell Macbook Pros</title>
+      <link>https://joh.fi/blog/2013-06-15-waiting-for-haswell-macbook-pros/</link>
+      <pubDate>Sat, 15 Jun 2013 17:56:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-06-15-waiting-for-haswell-macbook-pros/</guid>
+      <description>I am a strong believer of mobile computing and to me a perfect setup is a small laptop that can be connected to a bigger screen via docking station or similar setup. My current setup consists of two year old Lenovo X220 and a high resolution Dell U2711. I&amp;rsquo;ve been quite happy with it. Laptop is easy to take out from the docking station, which by the way comes with the device, and it serves as a desktop replacement while at home.</description>
+    </item>
+    
+    <item>
+      <title>My first patch to GNOME</title>
+      <link>https://joh.fi/blog/2012-12-16-my-first-patch-to-gnome/</link>
+      <pubDate>Sun, 16 Dec 2012 19:22:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-12-16-my-first-patch-to-gnome/</guid>
+      <description>I&amp;rsquo;ve used open source software for many years now but I haven&amp;rsquo;t really contributed back to any of the open source communities. I have filled some bug reports but other than that I&amp;rsquo;ve been simply a happy (and sometimes less happy) user. However yesterday I took the first step by doing tiny tiny contribution to GNOME or to be specific to gnome-session. The funny thing is that it was all because of selfish reasons.</description>
+    </item>
+    
+    <item>
+      <title>KDE and ssh-agent</title>
+      <link>https://joh.fi/blog/2012-07-09-kde-and-ssh-agent/</link>
+      <pubDate>Mon, 09 Jul 2012 15:21:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-07-09-kde-and-ssh-agent/</guid>
+      <description>Hello lazyweb!
+GNOME or to be more precise GNOME keyring has nice feature of including ssh-agent that integrates nicely with gnome-keyring. I find this feature very convenient since I don&amp;rsquo;t have to input my password every time I connect to a server. (I sincerely hope that no one is using ssh-keys without password protection).
+Things are quite not as convenient on KDE side of desktop environments even though KDE provides handy tool called KDE wallet.</description>
+    </item>
+    
+    <item>
+      <title>256 colors in vim and screen</title>
+      <link>https://joh.fi/blog/2011-11-03-256-colors-in-vim-and-screen/</link>
+      <pubDate>Thu, 03 Nov 2011 14:44:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-11-03-256-colors-in-vim-and-screen/</guid>
+      <description>For some strange reason at least Fedora ships screen and vim with 256 colors disabled. Here&amp;rsquo;s a quick guide how to enable 256 colors in vim and screen.
+ Add to you .vimrc file
+set t_Co=256  Add following lines to your .screenrc file
+attrcolor b &amp;quot;.I&amp;quot; termcapinfo xterm &#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39; defbce &amp;quot;on&amp;quot;   Also check that your terminal supports or has 256 colors enabled. At least gnome-terminals seems to have this by default.</description>
+    </item>
+    
+    <item>
+      <title>NTMLv2 authentication on Linux</title>
+      <link>https://joh.fi/blog/2011-09-15-ntmlv2-authentication-on-linux/</link>
+      <pubDate>Thu, 15 Sep 2011 12:04:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-09-15-ntmlv2-authentication-on-linux/</guid>
+      <description>Today at work I was trying to get my virtual machine, running Fedora, to access internet. Unfortunately the place I work is pretty much married to products from Microsoft. All the networking to the outside world go through proxies and in this case through Microsoft ISA. ISA uses NTLMv2 authentication mechanism which is not supported out of the box by Linux. Luckily there was multiple applications that were able to act as a man in the middle proxy, such as cntlm and NTLAMPS.</description>
+    </item>
+    
+    <item>
+      <title>Encrypted Windows and Arch Linux dual-boot installation using UEFI</title>
+      <link>https://joh.fi/blog/2016-03-05-encrypted-windows-and-arch-linux-dual-boot-installation-using-uefi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2016-03-05-encrypted-windows-and-arch-linux-dual-boot-installation-using-uefi/</guid>
+      <description>I will start this with a note that this is not a tutorial type of post. It&amp;rsquo;s just to remind myself how I did this myself. I&amp;rsquo;m way too lazy to keep updating tutorials and therefore it&amp;rsquo;s easier to just post some rough guidelines instead of step by step instructions.
+For some time now I&amp;rsquo;ve been running a pretty nice dual boot setup with my trusty old Lenovo X220. I have a 512GB Samsung 840 Pro SSD divided between a Windows 10 and Arch Linux installations.</description>
+    </item>
+    
+    <item>
+      <title>Spotify 0.6.1 on Fedora 15/16</title>
+      <link>https://joh.fi/blog/2011-10-03-spotify-0-6-1-on-fedora/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-10-03-spotify-0-6-1-on-fedora/</guid>
+      <description>Edit: This works for version 0.6.2 as well.
+Spotify is a popular music streaming service which unfortunately isn&amp;rsquo;t globally available. Here in Finland we have had the opportunity to enjoy Spotify from the begining which is a rare thing. For a minuscule amount of 9.99€ you&amp;rsquo;ll have pretty much unlimited collection of music at your hands and on your mobile phone. Ok, granted not every artist has their music in Spotify but the collection is huge!</description>
+    </item>
+    
+  </channel>
+</rss>

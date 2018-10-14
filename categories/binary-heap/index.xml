@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Binary Heap on joh.fi</title>
+    <link>https://joh.fi/categories/binary-heap/</link>
+    <description>Recent content in Binary Heap on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 17 Nov 2011 17:06:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/binary-heap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Implementing binary heap without an array</title>
+      <link>https://joh.fi/blog/2011-11-17-implementing-binary-heap-without-an-array/</link>
+      <pubDate>Thu, 17 Nov 2011 17:06:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-11-17-implementing-binary-heap-without-an-array/</guid>
+      <description>So I had this school assignment to implement a binary heap with a twist of not using an array to store the binary tree. You might think that this is an easy problem to solve and after some thinking it turns out that it isn&amp;rsquo;t much harder than the generic array implementation. However if this is the first time you&amp;rsquo;re implementing binary heap this way, you&amp;rsquo;ll likely find it difficult to insert new nodes in O(lg n) time.</description>
+    </item>
+    
+  </channel>
+</rss>

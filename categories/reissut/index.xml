@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reissut on joh.fi</title>
+    <link>https://joh.fi/categories/reissut/</link>
+    <description>Recent content in Reissut on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 23 Aug 2011 18:44:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/reissut/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Note to self</title>
+      <link>https://joh.fi/blog/2011-08-23-note-to-self/</link>
+      <pubDate>Tue, 23 Aug 2011 18:44:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-08-23-note-to-self/</guid>
+      <description>Kun olet lentolippusi ostanut, unohda lentoliput äläkä missään nimessä enää seuraa lentotarjouksia samalle ajankohdalle. Olisin säästänyt reilut 250 euroa jos olisin tarttunut Lufthansan tämän päivän tarjouksiin. :(
+Ostin tuossa Indonesian lounarin, mutta noin muuten suunnitelmat ovat jäissä. Odotellaan kesäduunit loppuun ja syksyn opinnot alkuun ennen kun aletaan pohtimaan talven rientoja sen tarkemmin.</description>
+    </item>
+    
+  </channel>
+</rss>

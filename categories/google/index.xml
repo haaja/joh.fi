@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on joh.fi</title>
+    <link>https://joh.fi/categories/google/</link>
+    <description>Recent content in Google on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 17 Jun 2013 20:51:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Newsblur</title>
+      <link>https://joh.fi/blog/2013-06-17-newsblur/</link>
+      <pubDate>Mon, 17 Jun 2013 20:51:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-06-17-newsblur/</guid>
+      <description>I recently wrote about leaving Google Reader. Of course this decision was made for me when Google announced that they will shutdown Google Creader on 1st of July. In the beginning I simply used thunderbird as my RSS reader but eventually this became too limited as for instance I couldn&amp;rsquo;t easily access my thunderbird installation from work. Then I switched to theoldreader which is more or less a Google Reader clone with additional features.</description>
+    </item>
+    
+    <item>
+      <title>Goodbye Google Reader</title>
+      <link>https://joh.fi/blog/2013-03-14-goodbye-google-reader/</link>
+      <pubDate>Thu, 14 Mar 2013 20:34:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-03-14-goodbye-google-reader/</guid>
+      <description>So yesterday Google announced that they will retire Google Reader. At first this annoyed me since to me Google Reader was their best service after Google Search of course. Luckily there are plenty of alternatives and for now I chose Thunderbird as I already use it for email.
+Good riddance!
+From your 55 subscriptions, over the last 30 days you read 9,443 items, clicked 480 items, starred 1 items, and emailed 0 items.</description>
+    </item>
+    
+  </channel>
+</rss>

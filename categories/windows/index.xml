@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on joh.fi</title>
+    <link>https://joh.fi/categories/windows/</link>
+    <description>Recent content in Windows on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://joh.fi/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Encrypted Windows and Arch Linux dual-boot installation using UEFI</title>
+      <link>https://joh.fi/blog/2016-03-05-encrypted-windows-and-arch-linux-dual-boot-installation-using-uefi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2016-03-05-encrypted-windows-and-arch-linux-dual-boot-installation-using-uefi/</guid>
+      <description>I will start this with a note that this is not a tutorial type of post. It&amp;rsquo;s just to remind myself how I did this myself. I&amp;rsquo;m way too lazy to keep updating tutorials and therefore it&amp;rsquo;s easier to just post some rough guidelines instead of step by step instructions.
+For some time now I&amp;rsquo;ve been running a pretty nice dual boot setup with my trusty old Lenovo X220. I have a 512GB Samsung 840 Pro SSD divided between a Windows 10 and Arch Linux installations.</description>
+    </item>
+    
+  </channel>
+</rss>

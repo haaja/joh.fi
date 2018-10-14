@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Encryption on joh.fi</title>
+    <link>https://joh.fi/categories/encryption/</link>
+    <description>Recent content in Encryption on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 18 Mar 2014 20:08:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/encryption/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Ubuntu 13.10 on top of encrypted lvm</title>
+      <link>https://joh.fi/blog/2014-03-15-ubuntu-13.10-encrypted-lvm-installation/</link>
+      <pubDate>Tue, 18 Mar 2014 20:08:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2014-03-15-ubuntu-13.10-encrypted-lvm-installation/</guid>
+      <description>Introduction Ubuntu&amp;rsquo;s installer provides a simple option for installing on top of encrypted lvm. The option however does not allow to modify partition layout and that for me is a showstopper. The other option is to create an encrypted container for all the partitions which works fine but then one has to enter the passphrase to each and every device individually.
+This guide explains how to install ubuntu on top of an encrypted lvm and also give user the power of specifying partition layout.</description>
+    </item>
+    
+    <item>
+      <title>Encrypted Windows and Arch Linux dual-boot installation using UEFI</title>
+      <link>https://joh.fi/blog/2016-03-05-encrypted-windows-and-arch-linux-dual-boot-installation-using-uefi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2016-03-05-encrypted-windows-and-arch-linux-dual-boot-installation-using-uefi/</guid>
+      <description>I will start this with a note that this is not a tutorial type of post. It&amp;rsquo;s just to remind myself how I did this myself. I&amp;rsquo;m way too lazy to keep updating tutorials and therefore it&amp;rsquo;s easier to just post some rough guidelines instead of step by step instructions.
+For some time now I&amp;rsquo;ve been running a pretty nice dual boot setup with my trusty old Lenovo X220. I have a 512GB Samsung 840 Pro SSD divided between a Windows 10 and Arch Linux installations.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on joh.fi</title>
+    <link>https://joh.fi/blog/</link>
+    <description>Recent content in Blogs on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 02 Jan 2015 11:18:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to fix your damaged gnupg database</title>
+      <link>https://joh.fi/blog/2015-01-02-howto-fix-your-damaged-gnupg-databse/</link>
+      <pubDate>Fri, 02 Jan 2015 11:18:14 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2015-01-02-howto-fix-your-damaged-gnupg-databse/</guid>
+      <description>Some time ago I had troubles with my gnupg installation. Namely gpg was unable to read keys from my trusted.db. I figured this had something to do with the upgrade to GnuPG 2.1.0.
+cd ~/.gnupg mv pubring.gpg pubring-$USER.gpg mv secring.gpg secring-$USER.gpg mv trustdb.gpg trustdb-$USER.gpg gpg --import pubring-$USER.gpg gpg --import secring-$USER.gpg rm pubring.$USER.gpg secring-$USER.gpg rm trustdb.gpg mv trustdb-cadw.gpg trustdb.gpg  That&amp;rsquo;s all for now folks and happy new year!</description>
+    </item>
+    
+    <item>
+      <title>Install Ubuntu 13.10 on top of encrypted lvm</title>
+      <link>https://joh.fi/blog/2014-03-15-ubuntu-13.10-encrypted-lvm-installation/</link>
+      <pubDate>Tue, 18 Mar 2014 20:08:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2014-03-15-ubuntu-13.10-encrypted-lvm-installation/</guid>
+      <description>Introduction Ubuntu&amp;rsquo;s installer provides a simple option for installing on top of encrypted lvm. The option however does not allow to modify partition layout and that for me is a showstopper. The other option is to create an encrypted container for all the partitions which works fine but then one has to enter the passphrase to each and every device individually.
+This guide explains how to install ubuntu on top of an encrypted lvm and also give user the power of specifying partition layout.</description>
+    </item>
+    
+    <item>
+      <title>IPv6</title>
+      <link>https://joh.fi/blog/2013-12-31-ipv6/</link>
+      <pubDate>Tue, 31 Dec 2013 22:38:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-12-31-ipv6/</guid>
+      <description>Just a quick note that the this site is now accessible via IPv6. :)
+Unlike many others I will not be doing recaps for the past year nor predictions or promises for the next one. Still I wish happy new year for everyone!</description>
+    </item>
+    
+    <item>
+      <title>Fresh new look</title>
+      <link>https://joh.fi/blog/2013-10-09-fresh-new-look/</link>
+      <pubDate>Wed, 09 Oct 2013 20:28:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-10-09-fresh-new-look/</guid>
+      <description>As you can see the site has a new fresh and responsive look. :)</description>
+    </item>
+    
+    <item>
+      <title>New Skype for Android</title>
+      <link>https://joh.fi/blog/2013-07-01-new-skype-for-android/</link>
+      <pubDate>Mon, 01 Jul 2013 17:16:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-07-01-new-skype-for-android/</guid>
+      <description>It&amp;rsquo;s about time! Finally the functional but otherwise not very attractive Skype on android has been updated. User interface has been totally revamped and follows the nowadays so popular flat style. With my initial testing the new version seems to work really well and so far I haven&amp;rsquo;t found anything to complain about. Well except for the most awkward ad I have seen in a long time.</description>
+    </item>
+    
+    <item>
+      <title>Post status format</title>
+      <link>https://joh.fi/blog/2013-06-27-post-status-format/</link>
+      <pubDate>Thu, 27 Jun 2013 15:57:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-06-27-post-status-format/</guid>
+      <description>I just found out that wordpress supports different post formats. Neato!</description>
+    </item>
+    
+    <item>
+      <title>Newsblur</title>
+      <link>https://joh.fi/blog/2013-06-17-newsblur/</link>
+      <pubDate>Mon, 17 Jun 2013 20:51:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-06-17-newsblur/</guid>
+      <description>I recently wrote about leaving Google Reader. Of course this decision was made for me when Google announced that they will shutdown Google Creader on 1st of July. In the beginning I simply used thunderbird as my RSS reader but eventually this became too limited as for instance I couldn&amp;rsquo;t easily access my thunderbird installation from work. Then I switched to theoldreader which is more or less a Google Reader clone with additional features.</description>
+    </item>
+    
+    <item>
+      <title>Waiting for Haswell Macbook Pros</title>
+      <link>https://joh.fi/blog/2013-06-15-waiting-for-haswell-macbook-pros/</link>
+      <pubDate>Sat, 15 Jun 2013 17:56:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-06-15-waiting-for-haswell-macbook-pros/</guid>
+      <description>I am a strong believer of mobile computing and to me a perfect setup is a small laptop that can be connected to a bigger screen via docking station or similar setup. My current setup consists of two year old Lenovo X220 and a high resolution Dell U2711. I&amp;rsquo;ve been quite happy with it. Laptop is easy to take out from the docking station, which by the way comes with the device, and it serves as a desktop replacement while at home.</description>
+    </item>
+    
+    <item>
+      <title>Goodbye Google Reader</title>
+      <link>https://joh.fi/blog/2013-03-14-goodbye-google-reader/</link>
+      <pubDate>Thu, 14 Mar 2013 20:34:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-03-14-goodbye-google-reader/</guid>
+      <description>So yesterday Google announced that they will retire Google Reader. At first this annoyed me since to me Google Reader was their best service after Google Search of course. Luckily there are plenty of alternatives and for now I chose Thunderbird as I already use it for email.
+Good riddance!
+From your 55 subscriptions, over the last 30 days you read 9,443 items, clicked 480 items, starred 1 items, and emailed 0 items.</description>
+    </item>
+    
+    <item>
+      <title>Installing ownCloud on a shared host</title>
+      <link>https://joh.fi/blog/2013-01-10-installing-owncloud-on-a-shared-host/</link>
+      <pubDate>Thu, 10 Jan 2013 18:45:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-01-10-installing-owncloud-on-a-shared-host/</guid>
+      <description>I&amp;rsquo;ve been using Dropbox and Google Calendar for as long as I can remember and I&amp;rsquo;ve rarely had any problems with them. As a matter of a fact both products work great, offer free service and have saved my ass on few occasions. Sounds too good? Yeah&amp;hellip; The old truth still stands: If you&amp;rsquo;re not paying for it; You&amp;rsquo;re the product (and sometimes even if you&amp;rsquo;re paying). The part of me that is concerned about privacy issues has never liked the situation but I&amp;rsquo;ve argued that the benefits are greater than lack of privacy.</description>
+    </item>
+    
+    <item>
+      <title>My first patch to GNOME</title>
+      <link>https://joh.fi/blog/2012-12-16-my-first-patch-to-gnome/</link>
+      <pubDate>Sun, 16 Dec 2012 19:22:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-12-16-my-first-patch-to-gnome/</guid>
+      <description>I&amp;rsquo;ve used open source software for many years now but I haven&amp;rsquo;t really contributed back to any of the open source communities. I have filled some bug reports but other than that I&amp;rsquo;ve been simply a happy (and sometimes less happy) user. However yesterday I took the first step by doing tiny tiny contribution to GNOME or to be specific to gnome-session. The funny thing is that it was all because of selfish reasons.</description>
+    </item>
+    
+    <item>
+      <title>Git subtree merge</title>
+      <link>https://joh.fi/blog/2012-10-29-git-subtree-merge/</link>
+      <pubDate>Mon, 29 Oct 2012 18:31:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-10-29-git-subtree-merge/</guid>
+      <description>Last week I took part to an intensive Clojure-course which was an introduction to functional programming using Clojure. The course itself was fairly well organized and interesting but that&amp;rsquo;s not the topic of this post.
+The course was built around solving small programming tasks using clojure. Each topic had their own separate git repository on github which we cloned and added our solutions in. The end result was that participants had many repositories (one for each exercise set) and this was fine during the course.</description>
+    </item>
+    
+    <item>
+      <title>Migration to Octopress</title>
+      <link>https://joh.fi/blog/2012-07-12-migration-to-octopress/</link>
+      <pubDate>Thu, 12 Jul 2012 21:43:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-07-12-migration-to-octopress/</guid>
+      <description>Brace yourselves, it&amp;rsquo;s time for another &amp;ldquo;I migrated from X to octopress&amp;rdquo; blog post. Try to bear with me.
+Like the title hints I have finally started my migration process from wordpress to octopress. I have nothing against wordpress per se but it&amp;rsquo;s way too big for my needs. I only need a simple way of creating posts every now and then and for that purpose octopress seems to be quite suitable.</description>
+    </item>
+    
+    <item>
+      <title>KDE and ssh-agent</title>
+      <link>https://joh.fi/blog/2012-07-09-kde-and-ssh-agent/</link>
+      <pubDate>Mon, 09 Jul 2012 15:21:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-07-09-kde-and-ssh-agent/</guid>
+      <description>Hello lazyweb!
+GNOME or to be more precise GNOME keyring has nice feature of including ssh-agent that integrates nicely with gnome-keyring. I find this feature very convenient since I don&amp;rsquo;t have to input my password every time I connect to a server. (I sincerely hope that no one is using ssh-keys without password protection).
+Things are quite not as convenient on KDE side of desktop environments even though KDE provides handy tool called KDE wallet.</description>
+    </item>
+    
+    <item>
+      <title>Disable arrow keys in Vim</title>
+      <link>https://joh.fi/blog/2012-06-15-disable-arrow-keys-in-vim/</link>
+      <pubDate>Fri, 15 Jun 2012 10:24:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-06-15-disable-arrow-keys-in-vim/</guid>
+      <description>I know this information can be found in n+1 other places but I will write it here anyway to be able to access it easily later.
+One of the most important things when starting to use Vim as your editor is to drop all old habits! Therefore we will disable the arrow keys so that you are forced to use h, j, k, l to navigate. So without further ado here are the changes one should add to their .</description>
+    </item>
+    
+    <item>
+      <title>Implementing binary heap without an array</title>
+      <link>https://joh.fi/blog/2011-11-17-implementing-binary-heap-without-an-array/</link>
+      <pubDate>Thu, 17 Nov 2011 17:06:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-11-17-implementing-binary-heap-without-an-array/</guid>
+      <description>So I had this school assignment to implement a binary heap with a twist of not using an array to store the binary tree. You might think that this is an easy problem to solve and after some thinking it turns out that it isn&amp;rsquo;t much harder than the generic array implementation. However if this is the first time you&amp;rsquo;re implementing binary heap this way, you&amp;rsquo;ll likely find it difficult to insert new nodes in O(lg n) time.</description>
+    </item>
+    
+    <item>
+      <title>256 colors in vim and screen</title>
+      <link>https://joh.fi/blog/2011-11-03-256-colors-in-vim-and-screen/</link>
+      <pubDate>Thu, 03 Nov 2011 14:44:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-11-03-256-colors-in-vim-and-screen/</guid>
+      <description>For some strange reason at least Fedora ships screen and vim with 256 colors disabled. Here&amp;rsquo;s a quick guide how to enable 256 colors in vim and screen.
+ Add to you .vimrc file
+set t_Co=256  Add following lines to your .screenrc file
+attrcolor b &amp;quot;.I&amp;quot; termcapinfo xterm &#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39; defbce &amp;quot;on&amp;quot;   Also check that your terminal supports or has 256 colors enabled. At least gnome-terminals seems to have this by default.</description>
+    </item>
+    
+    <item>
+      <title>Matkan suunnittelu edistyy</title>
+      <link>https://joh.fi/blog/2011-10-09-matkan-suunnittelu-edistyy/</link>
+      <pubDate>Sun, 09 Oct 2011 07:22:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-10-09-matkan-suunnittelu-edistyy/</guid>
+      <description>Pitkästä aikaa on jotain kerrottavaa matkasta. Olen tässä jonkin aikaa jo pohtinut, että mitä paikkoja käyn katsomassa Indonesiassa. Indonesia on valtavan kokoinen ja kunnollisen infran puuttuessa matkustaminen on hidasta. Lisäksi minulla on vain kuukausi aikaa matkustaa, joten joudun lentämään pidemmät etäisyydet. Mielenkiintoisia kohteita ovat muun muassa Togianin saaret Sulawesillä, Gili saaret ja Lombok, Komodon saari sekä Sumatran Lake Toba. Kaikkeen ei missään tapauksessa riitä aika, joten joudun valitsemaan listalta yhden tai kaksi paikkaa.</description>
+    </item>
+    
+    <item>
+      <title>Disabling URL trimming in Firefox 7</title>
+      <link>https://joh.fi/blog/2011-09-29-disabling-url-trimming-in-firefox-7/</link>
+      <pubDate>Thu, 29 Sep 2011 14:23:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-09-29-disabling-url-trimming-in-firefox-7/</guid>
+      <description>Mozilla released Firefox 7 released yesterday (actually day before yesterday since it&amp;rsquo;s already 29th here) and of course I did an upgrade as soon as RPM files were available in koji. Call me old fashioned but I didn&amp;rsquo;t like the new feature which trims the http:// part of URL. Perhaps it&amp;rsquo;s something that I&amp;rsquo;ll eventually get used to but for now I disabled it. Luckily disabling the feature was easy enough.</description>
+    </item>
+    
+    <item>
+      <title>Project Euler</title>
+      <link>https://joh.fi/blog/2011-09-27-project-euler/</link>
+      <pubDate>Tue, 27 Sep 2011 14:44:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-09-27-project-euler/</guid>
+      <description>Project Euler is a website containing computational problems intended to be solved by small programs. Currently there are 351 problems to be solved and all of the problems should be doable within one- minute-rule. In other words you are doing something wrong if computing the solution takes more than one minute (or at least your program could be optimized). If you&amp;rsquo;re interested in programming or mathematics then Project Euler is for you.</description>
+    </item>
+    
+    <item>
+      <title>NTMLv2 authentication on Linux</title>
+      <link>https://joh.fi/blog/2011-09-15-ntmlv2-authentication-on-linux/</link>
+      <pubDate>Thu, 15 Sep 2011 12:04:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-09-15-ntmlv2-authentication-on-linux/</guid>
+      <description>Today at work I was trying to get my virtual machine, running Fedora, to access internet. Unfortunately the place I work is pretty much married to products from Microsoft. All the networking to the outside world go through proxies and in this case through Microsoft ISA. ISA uses NTLMv2 authentication mechanism which is not supported out of the box by Linux. Luckily there was multiple applications that were able to act as a man in the middle proxy, such as cntlm and NTLAMPS.</description>
+    </item>
+    
+    <item>
+      <title>Note to self</title>
+      <link>https://joh.fi/blog/2011-08-23-note-to-self/</link>
+      <pubDate>Tue, 23 Aug 2011 18:44:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-08-23-note-to-self/</guid>
+      <description>Kun olet lentolippusi ostanut, unohda lentoliput äläkä missään nimessä enää seuraa lentotarjouksia samalle ajankohdalle. Olisin säästänyt reilut 250 euroa jos olisin tarttunut Lufthansan tämän päivän tarjouksiin. :(
+Ostin tuossa Indonesian lounarin, mutta noin muuten suunnitelmat ovat jäissä. Odotellaan kesäduunit loppuun ja syksyn opinnot alkuun ennen kun aletaan pohtimaan talven rientoja sen tarkemmin.</description>
+    </item>
+    
+    <item>
+      <title>Uutta reissua pukkaa</title>
+      <link>https://joh.fi/blog/2011-08-14-uutta-reissua-pukkaa/</link>
+      <pubDate>Sun, 14 Aug 2011 21:09:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-08-14-uutta-reissua-pukkaa/</guid>
+      <description>Morjensta pöytään!
+Long time no see, long time no ABC. Tässä on taas kesä ja osa kevättä lusittu duunissa ja vielä on muutama viikko jäljellä. Syksyn kurssit ovat vielä edessä mutta katse kääntyy jo talven reissuun. Viime talvi tuli vietettyä Suomessa, joten nyt on taas aika päästä lämpimään. En kuitenkaan pysty ottamaan omaa lomaa lipastolta, joten reissuun on nyt käytettävissä vain tuo noin kuukausi mitä joululomaa yliopistolta on. Olen tässä muutamat päivät katsellut lentoja Aasiaan.</description>
+    </item>
+    
+    <item>
+      <title>Back in Bangkok</title>
+      <link>https://joh.fi/blog/2010-01-11-back-in-bangkok/</link>
+      <pubDate>Mon, 11 Jan 2010 11:55:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2010-01-11-back-in-bangkok/</guid>
+      <description>Viimeisiä viedään. Tultiin tuossa eilen aamulla takaisin tänne Bangkokiin. Matka Don Detiltä Bangkokiin kesti kaikenkaikkiaan 21 tuntia. Hieman aikataulusta oltiin jäljessä, sillä Thaimaan puolella bussi alkoi keittämään ja edessä oli parin tunnin odotus. Uuden bussin tultua matka sujuikin sitten suhteellisen smoothisti perille saakka. Toki uusi bussi oli entistä karumpi. Loppu hyvin kaikki hyvin kuitenkin.
+Eilen käytiin pienten päiväunien jälkeen katsomassa Avatar IMAX-teatterissa 3D:nä. Ensimmäinen 3D -leffa vaati itseltä hieman totuttelua. Ensimmäiset 15 minuuttia meni suoraan laseihin tottumiseen.</description>
+    </item>
+    
+    <item>
+      <title>Don Det</title>
+      <link>https://joh.fi/blog/2010-01-02-don-det/</link>
+      <pubDate>Sat, 02 Jan 2010 06:33:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2010-01-02-don-det/</guid>
+      <description>Terve ja hyvaa uutta vuotta!
+Kuten otsikko kertoo, olen tällä hetkellä Etela-Laosissa Si Phan Donilla Don Detin saarella. Mutta palataan aikaan ennen saarelle tuloa. Lähdettiin tosiaan Hoi Anista hävyttoman aikaisin kohti Hueta ja sielta sitten bussilla kohti Laosia ja Paksea. Tuona päivänä matkustimme noin 19 tuntia putkeen. Melkoinen rupeama siis, bussikin oli täyteen ahdettu erilaisia hedelmiä ja tyynyjä. Samalla hoidetaan siis sekä tavaroiden maahantuonti etta matkustajat. Meidän oli tarkoitus miitata Shianoukvillessä tapaamamme Otto ja Jenni heti saavuttuamme Pakseen mutta matkan viivästymisestä johtuen suunnitelmat meni uusiksi.</description>
+    </item>
+    
+    <item>
+      <title>Hoi An</title>
+      <link>https://joh.fi/blog/2009-12-29-hoi-an/</link>
+      <pubDate>Tue, 29 Dec 2009 08:24:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2009-12-29-hoi-an/</guid>
+      <description>Lähdettiin siis edellispäivänä noin 23:30 junalla Nha Trangista kohti Danangia. Oltiin hankittu junaan ns. hard-sleeper paikat, eli kyseessä oli kuuden hengen loossi jossa on siis kuusi sänkyä. Yllätys yllätys kun löydettiin meidän paikat niin niissä jo makoili paikallista jengiä. No eipä siinä mitään tilaa kyllä syntyi kun näytettiin liput. No junamatka alkoi ihan mukavasti kunnes ilmastointi iskettiin päälle. Alkuun se ei pahemmin haitannut mutta yöllä suorastaan tärisin sängyssä. Minun sängystä oli joko napattu pois tai unohdettu laittaa peitto.</description>
+    </item>
+    
+    <item>
+      <title>Goodbye Jungle Beach</title>
+      <link>https://joh.fi/blog/2009-12-26-goodbye-jungle-beach/</link>
+      <pubDate>Sat, 26 Dec 2009 09:39:50 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2009-12-26-goodbye-jungle-beach/</guid>
+      <description>Viimeinkin on jäähyväisten aika. Reilu viikko täällä vierähti ja sääkin oli suotuisa. Jungle Beach on paikkana mahtava ja suosittelen paikkaa lämpimästi kaikille. Tällä hetkellä normi bunglalowi maksaa 450000 dongia yö (vajaa 17€) ja hinta sisältää aamupalan, lounaan, hedelmälautasen ja illallisen. Myös vesi ja sitruunamehu kuuluvat hintaan. Lisäksi hieman erillaisena piirteenä täällä on se, että kaikki vieraat syövät ruuat aamupalaa lukuunottamatta yhdessä. Rantaa on riittävästi ja olutta saa päärakennuksesta. Mitä muuta voi enää toivoa?</description>
+    </item>
+    
+    <item>
+      <title>Jungle Beach</title>
+      <link>https://joh.fi/blog/2009-12-18-jungle-beach/</link>
+      <pubDate>Fri, 18 Dec 2009 17:22:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2009-12-18-jungle-beach/</guid>
+      <description>Terve!
+No niin sairaudet ovat takana ja matka kulkee kohti uusia tuulia. Alunperin meidän oli tarkoitus lähteä jo eilen yöjunalla kohti Nah Trangia, mutta juna oli loppuunmyyty. Saatiin kuitenkin istumapaikat aamujunaan. Aamujuna lähti 05:30, joten tiedossa oli aikainen herätys&amp;hellip; Tai kuten lopulta päätettiin, eli skipataan nukkuminen ja keskitytään olennaiseen. Tässä kontekstissa olennainen tarkoittaa kaljanjuontia. Viikko Saigonissa on vierähtäny nopeasti, mutta nyt on aika jatkaa siirtymistä sillä reissua on enää kuukauden päivät jäljellä.</description>
+    </item>
+    
+    <item>
+      <title>Ho Chi Minh City</title>
+      <link>https://joh.fi/blog/2009-12-12-ho-chi-minh-city/</link>
+      <pubDate>Sat, 12 Dec 2009 06:39:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2009-12-12-ho-chi-minh-city/</guid>
+      <description>Terveisiä Vietnamista!
+Alunperin meidän piti siirtyä 10.12 Vietnamiin, mutta allekirjoittaneelle nousi pieni kuume, joten lykkäsimme matkaa päivällä. Saavuimme siis eilen illalla tänne HCMC:hen, tai kuten lähes jokainen täällä sanoo Saigoniin. High-season on täällä menossa ja guest houset ja minihotellit ovat suhteellisen täynnä. Me löydettiin ihan kiva pikkuhotelli nimeltään Red Sun. Maksetaan nyt kahden hengen huoneesta 15 taalaa yö. Huone on todella siisti ja kaikilla herkuilla: AC, CTV, lämmin vesi ja ilmainen wlan.</description>
+    </item>
+    
+    <item>
+      <title>Juomiskulttuureista</title>
+      <link>https://joh.fi/blog/2009-12-09-juomiskulttuureista/</link>
+      <pubDate>Wed, 09 Dec 2009 08:09:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2009-12-09-juomiskulttuureista/</guid>
+      <description>Viellä ollaan täällä Phon Penhissä, tosin viisumit Vietnamiin on jo hankittu. Huomenna alkaa siirtyminen kohti Vietnamia.
+Mutta sitten itse asiaan. Me suomalaisethan tunnetusti olemme kovia juomaan viinaa, tai niin ainakin luulin. Todellisuus paljastui minulle karvaasti eilen, sillä lähdettiin Janin kanssa ottamaan muussia paikallisten kämpille. Alkuun kerättiin kolehti ja yksi paikallisista lähti hakemaan keissin bisseä ja paistettua kanaa. Itse juominen tapahtuu seuraavalla tavalla. Kaikille osaanottajille jaetaan muovituopit, joihin pannaan isot jääkuutiot. Tämän jälkeen kaikille kaadetaan lasit täyteen olutta ja odotetaan minuutti tai kaksi että jääkuutio viilentää lämpimän oluen.</description>
+    </item>
+    
+    <item>
+      <title>Phnom Pehn part 2</title>
+      <link>https://joh.fi/blog/2009-12-06-phnom-pehn-part-2/</link>
+      <pubDate>Sun, 06 Dec 2009 10:12:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2009-12-06-phnom-pehn-part-2/</guid>
+      <description>Huomenta pöytään!
+Lähdettiin sitten eilen Shihanoukvillestä takaisin tänne Phnom Pehniin. Matka oli taas vaihteeksi yhtä helvettiä, lähinnä siksi etten ymmärtänyt sanaakaan paikallisesta stand-up komiikasta tai karaokesta. Ja molempiahan luukutettiin kuin viimeistä päivää. Matkustaminen on ihanaa, mutta siirtyminen paikasta a paikkaan b on lähes poikkeuksesta perseestä. Matkassa meni reilu viitisen tuntia, joka ei tosin ole mitään, ja lopulta saavuttiin Phnom Pehniin. Täältä napattiin tuktuk lakesidelle ja mentiin randomilla number 10 guest houseen.</description>
+    </item>
+    
+    <item>
+      <title>Koh Ru</title>
+      <link>https://joh.fi/blog/2009-12-01-koh-ru/</link>
+      <pubDate>Tue, 01 Dec 2009 07:47:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2009-12-01-koh-ru/</guid>
+      <description>Aluksi pahoitteluni puutteellisesta informaatiosta viimeiseltä viikolta. Matka tuli vähän yllätysnopeasti ja tämän takia en kerinnyt kirjoittelemaan sähköposteja tai blogiin mitään. Valitettavasti saarella ei ole sähköjä, eivätkä gsm-verkotkaan yllä sinne asti. Veneestä lähetin tekstiviestin äitille, mutten tiedä menikö viesti koskaan perille. Toivottavasti meni. Olen siis ollut viimeisen viikon täydellisessä uutispimennossa. Tällä kertaa olen päiväreissulla mantereen puolella, ja tarkoitukseni on nostaa rahaa ja käydä piipahtamassa netissä. Päivittäinhän täältä pääsisi mantereella käymään mutta välttelen viimeiseen asti näitä venereissuja, kun jostain syystä mahani menee melkein aina sekaisin.</description>
+    </item>
+    
+    <item>
+      <title>Still in Shihanoukville</title>
+      <link>https://joh.fi/blog/still-in-shihanoukville/</link>
+      <pubDate>Mon, 23 Nov 2009 06:41:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/still-in-shihanoukville/</guid>
+      <description>Pikainen päivitys vain tällä kertaa.. Ollaan edelleen täällä Shihanoukvillessa, vaihdettiin tosin guest housea Monkey Republiciin. Maksetaan nyt bungalowista 6 taalaa yöltä. Monkey Republic on aika suosittu paikka, käytännössä joka päivä täynnä. Meillä kävi eilen tuuri sillä saatiin viimeinen vapaa bungalowi.
+Tavattiin tuossa edellispäivänä myös sattumalta eräs suomalainen pariskunta Otto ja Jenni. Seurauksen saattoi arvata ja kolmisen toweria bisseä siinä sitten kaatui ja joitakin shotteja. Ollaan Janin kanssa suht sinuja oluen kanssa, joten se oli meille enemmänkin business as usual, kun taas Otto ja Jenni tekivät kuulemma enemmän tuttavuutta pöntön ja roskiksen kanssa.</description>
+    </item>
+    
+    <item>
+      <title>Shihanouk Ville</title>
+      <link>https://joh.fi/blog/shihanouk-ville/</link>
+      <pubDate>Wed, 18 Nov 2009 16:13:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/shihanouk-ville/</guid>
+      <description>Jees, taas on viime päivityksestä kulunut hetkonen. Tultiin siis bussilla Siem Reapista Phnom Phnemiin. Bussimatkasta sen verran että Phil Collins darra oli erittäin lähellä. Täällä bussikuskeilla on tapana töötätä aina kun joku ohitetaan, ja täällähän ohitetaan aina kun eteen tulee jokin. Sillä miten lujaa edessäoleva ajaa ei ole mitään merkitystä. Tuolla reilun viiden tunnin reissulla kuultiin bussin torvea varovasti arvioiden noin 500 kertaa, joten tappi otsassa kasvoi melko pitkäksi.
+Phnom Phnemissä jaettiin kahden argentiinalaisen kanssa tuktuk lakesidelle, jossa paikallinen backpacker ghetto sijaitsee.</description>
+    </item>
+    
+    <item>
+      <title>Angkor Wat</title>
+      <link>https://joh.fi/blog/angkor-wat/</link>
+      <pubDate>Mon, 16 Nov 2009 07:25:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/angkor-wat/</guid>
+      <description>Eilen oli jälleen sarjassa aikainen herätys. Herätyskello soi 04:30, eli huomattavasti ennen paikallisten kukkojen laulua. Olimme edellispäivänä sopineet Janin ja Geoffin kanssa että aikainen herätys, jotta näkisimme auringon nousun paikan päällä. Sovimme samalla erään tuktuk-kuskin kanssa, että hän kierrättää meidät päätemppeleillä hintaan 15 taalaa. Tässä vaiheessa on ehkää syytä huomauttaa että temppeleille on matkaa ehkä 15 kilometriä ja siellä kiertelyyn menee helposti 20 kilometria. Lisäksi kuski oli koko ajan meidän käytettävissämme.</description>
+    </item>
+    
+    <item>
+      <title>Siem Reap</title>
+      <link>https://joh.fi/blog/siem-reap/</link>
+      <pubDate>Fri, 13 Nov 2009 20:37:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/siem-reap/</guid>
+      <description>It&amp;rsquo;s a holiday in Cambodia, it&amp;rsquo;s tough kid but it&amp;rsquo;s life&amp;hellip;
+Herätyskello soi tänään 03.45 ja urheilunuorten kaksikko läksi kohti Bangkokin juna-asemaa. Paljastui sitten että Bangkokissa ei suinkaan aina ole ruuhkaa, vaan muun muassa aamu neljältä taksillä päräyttää Khao Sanin huudeilta juna-asemalle noin viiteen minuuttiin. No eipä tässä mitään, ostettiin liput aamujunaan kohti Aranyaprathetia. Matkaan kuluu noin kuusi tuntia ja hintaa matkalle tuli 48 bahtia. Ei paha kun vertaa, että bussilla matkaan menisi noin 200 bahtia, tosin aikaakin menisi vain neljä tuntia.</description>
+    </item>
+    
+    <item>
+      <title>Muutos suunnitelmiin</title>
+      <link>https://joh.fi/blog/muutos-suunnitelmiin/</link>
+      <pubDate>Wed, 11 Nov 2009 15:17:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/muutos-suunnitelmiin/</guid>
+      <description>Saavuttiin tänne Bangkokiin viime yönä kolmen aikoihin. Bussimatka oli yhtä helvettiä. V.I.P bussi up my ass. No ei siinä bussi oli ehkä verrattavissa Suomen expressbusseihin mutta ei niissä ole mukavaa matkustaa kellon ympäri. Pelle Miljoonaki vois muistella Goan aikojaan ennen ku menee mainosteleen iisistiicoolii. Lisäksi täällä on olemassa myös oikeasti hienoja busseja joissa on tyyliin lentokoneiden bisnesluokkien istuimet ja runsaasti tilaa. Selkä siinä vain on kovilla, eikä toivoakaan että saisi nukuttua.</description>
+    </item>
+    
+    <item>
+      <title>Koh Tao</title>
+      <link>https://joh.fi/blog/koh-tao/</link>
+      <pubDate>Tue, 10 Nov 2009 06:16:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/koh-tao/</guid>
+      <description>Terve!
+Tultiin tosiaan eilen tänne pienemmälle Koh Taon saarelle, sillä meillä oli tänne jo valmiiksi lauttaliput. Löydettiin suht ok bungalow hintaan 250BHT yö. Bungalowissa oli oma suihku, vessa tuuletin ja jopa televisio. Lisäksi lemmikkeinä vähän muurahaisia ja yksi noin 10 cm pitkä tuhatjalkainen. No mitäpä pienistä kun hintakin oli kohdallaan. Käytiin vielä samana iltana syömässä ja ostamassa liput Bangkokiin.
+Tämä Koh Taon saari on huomattavasti pienempi kuin Koh Phan-gan ja siten myös hieman rauhallisempi.</description>
+    </item>
+    
+    <item>
+      <title>Koh Phan-gan</title>
+      <link>https://joh.fi/blog/koh-phan-gan/</link>
+      <pubDate>Fri, 06 Nov 2009 15:13:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/koh-phan-gan/</guid>
+      <description>Kuten otsikosta voi päätellä suunnitelmat menivät uusiksi kovan merenkäynnin takia. No otettiin sitten liput Koht Taolle törkeään ylihintaan, mutta eipä siinä muitakaan vaihtoehtoja ollut. Merenkäynti oli melkoisen kovaa myös matkalla Koh Samuille ja Samui - Phangan välillä allekirjoittanutkin teki jo lähempää tuttavuutta paatin pöntön kanssa. Melkoisen kovaa otti vatsasta ja oikeastaan koko seuraava päiväkin oli vatsa kuralla. Lisäksi paloin kannella käsistä melkoi pahasti mutta eipä siinä after-sunia vaan pintaan.
+Ollaan tällä hetkellä täällä Koh Phanganin partysaarella.</description>
+    </item>
+    
+    <item>
+      <title>MBK</title>
+      <link>https://joh.fi/blog/mbk/</link>
+      <pubDate>Tue, 03 Nov 2009 12:02:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/mbk/</guid>
+      <description>Tänään oli vihdoin aika lähteä käymään MBK ostoskeskuksessa. Ihan pelkästään ostoskeskusta en mennyt katsomaan, vaan tarkoituksenani oli löytää kaiuttimet ipodiin. Nappasin taksin menomestoille. Nämä taksit on sinäänsä ihan hyviä ilmastointeineen ja nahkapenkkeineen. Taattua Toyota laatua! Autot ovat Suomen mittapuulla myös uusia. Matkaa Khao Sanilta MBK:hon kertyi ehkä 5-6 km ja hintaa taksille 63BHT per suunta.
+Itse kauppakeskus oli, kuten arvata saattaa, valtava. Kerroksia oli valtavasti ja liukoportaatkin ovelasti sunniteltu siten, ettei kaupasta päässyt pois kiertämättä huolella kerroksia.</description>
+    </item>
+    
+    <item>
+      <title>Enchanté!</title>
+      <link>https://joh.fi/blog/enchante/</link>
+      <pubDate>Mon, 02 Nov 2009 06:58:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/enchante/</guid>
+      <description>Eilen oli mielenkiintoinen päivä. Olin jälleen kerran herännyt aamuyöstä järjettömän pirteänä! Mikä minussa okein on? Aikaero on vain 5 tuntia, miten ihmeessä en vielä kolmen päivän jälkeen ole täysin tottunut aikaeroon? Olen normaalisti hyvin sikeästi nukkuva ihminen, seinät voivat kaatua päälleni ilman että herään. Tämän takia olen myös sitä mieltä, että jos uni ei tule 30 minuutin yrittämisen jälkeen, on parempi käyttää aika muuhun kuin sängyssä pyörimiseen. Lueskelin siinä sitten Benjamin Kunkelin esikoisteosta Indecision.</description>
+    </item>
+    
+    <item>
+      <title>Aikaeroa…</title>
+      <link>https://joh.fi/blog/aikaeroa/</link>
+      <pubDate>Fri, 30 Oct 2009 05:47:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/aikaeroa/</guid>
+      <description>Joo no kuten arvata saattaa suunnitelmat koneessa nukkumisesta jäivät suunnittelun asteelle ja eilinen päivä meni pitkälti nukkuessa. Heräsin reippaana urheilijanuorukaisena paikallista aikaa 03:00, pirteänä kuin peipponen. No turha siinä sitten enää yrittää nukkua. Aloitin siinä sitten lukemaan matkalukemiseksi hankkimaani kirjaa Rakkaudella Hynynen. Kirja ei ollut pitkä ja luin sen läpi suoraan. Mitään mahdottoman fiksua sanomista Hynysellä nyt ei ollut, mutta ei tämä hirveänä yllätyksenä tullut. Muutaman kerran hörähdin kunnon nauruunkin. :)</description>
+    </item>
+    
+    <item>
+      <title>Bangkok</title>
+      <link>https://joh.fi/blog/bangkok/</link>
+      <pubDate>Thu, 29 Oct 2009 09:20:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/bangkok/</guid>
+      <description>Noniin nyt on saavuttu tänne enkelten kaupunkiin. Lento meni muuten hyvin mutta myöhässä oltiin se about 1.5h. Kentällä hommat sujuivat rivakasti ja laukkukin selvisi perille asti. Lämmintä on vajaa 30 astetta ja sateesta ei ole tietoakaan.
+Kentältä nappasin AE2 bussin tännen Khao sanin huudeille hintaan 150BHT, ei paha. Bussi oli vielä sopivan tyhjä ja ilmastointikin pelasi. Tapasin siinä bussissa sitten kanadalaisen Sarahin, jonka kanssa pitäis lähtee jossain välissä viellä bisselle. Saa nyt nähdä miten jaksaa kun lentokoneessa ei juuri saanut nukutuksi.</description>
+    </item>
+    
+    <item>
+      <title>Lähtö</title>
+      <link>https://joh.fi/blog/lahto/</link>
+      <pubDate>Wed, 28 Oct 2009 10:10:10 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/lahto/</guid>
+      <description>Noniin lennon lähtöön on aikaa vajaat kahdeksan tuntia ja pakkaaminen vielä osittain kesken. Lähinnä käsimatkatavaroiden osalta. Check-inin hoitui kätevästi netissä ja onneksi ikkunapaikkoja oli vielä muutama vapaana. Samalla huomasin, että konetyyppi oli vaihdettu MD-11:sta uudempaan Airbus A340 laajarunkokoneeseen. Positiivinen yllätys! Mutta en tässä nyt jaksa enempää kirjoitella.. Seuraava päivitys sitten Bangkokista.
+See ya!</description>
+    </item>
+    
+    <item>
+      <title>Hankintoja</title>
+      <link>https://joh.fi/blog/hankintoja/</link>
+      <pubDate>Mon, 24 Aug 2009 17:27:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/hankintoja/</guid>
+      <description>Terve taas!
+Kirjoittelen tässä nyt pari postausta kerralla kun kerrankin on aikaa. Kesätyöt alkavat olla lopuillaan (onneksi) ja kohta pitäisi taas ilmottautua kursseille. Ihan mukava palata opiskelujen pariin kun on noita hanttihommia paiskinut melkoisesti. Nooh ovatpahan ainakin rahoittaneet opiskeluni ja tulevan reissun.
+Reissua varten olen tehnyt joitakin hankintoja. Ostin jo kesäkuussa otsalampun, mikrokuitupyyhkeen sekä pari rahavyötä. Otsalamppu on valovoimainen Petzl Tikka Plus joka lähti tarjouksesta mukaan hintaan 21.90€. Perusteluina otsalampulle on pieni koko ja se että käytettäessä molemmat kädet ovat vapaina.</description>
+    </item>
+    
+    <item>
+      <title>Rokotuksia</title>
+      <link>https://joh.fi/blog/rokotuksia/</link>
+      <pubDate>Mon, 24 Aug 2009 15:32:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/rokotuksia/</guid>
+      <description>Noniin alkaa tuo reissu tuolla muutaman kuukauden päässä lähestyä ja ajattelin pistää pientä päivitystä. Tarkalleen reissuun taitaa olla 65 päivää jäljellä.
+Tänään kävin iskemässä vähän rokotetta hihaan paikallisella matkailuklinikalla. Kuten arvata saattaa, ei visiitti tullut taas ihan halvaksi mut pitäähän sitä lääketeollisuutta ja heidän patetenttejaan tukea kun tässä kuitenkin ollaan rahamiehiä. Maksukuitista luntaten voin todeta että hintaa tuli yhteensä 155 euroa, joka sisälsi seuraavaa:
+ Twinrix-rokote (A- ja B-hepatiitti) ensimmäinen piikki kolmesta á 50€ Japanin aivokuume rokote, ensimmäinen kahdesta á 44€ Lääkärin vastaanotto max.</description>
+    </item>
+    
+    <item>
+      <title>Good Morning!</title>
+      <link>https://joh.fi/blog/good-morning/</link>
+      <pubDate>Wed, 17 Jun 2009 12:04:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/good-morning/</guid>
+      <description>Katsotaanpa jos sitä jaksais pitää reissusta jonkinlaista blogia. Voi tosin olla että luontainen laiskuuteni estää minua. Poistin liput Travelstartin kautta Bangkokkiin 28.10 hintaan 683€, paluupäivänä toimii 19.1. Lennot ovat Finnairin suorat lennot. Hinta ei ole paha, mutta hieman halvemmallakin pääsisi välilaskulla. Tuleepahan tuettua suomalaista lentoyhtiötä ja sen köyhiä lentäjiä.Tarkoituksenani on pistellä satunnaisesti blogientryjä reissuun valmistautumisesta ja sitten tiiviimmin matkan aikana.
+Reissuun on vielä jumalattomasti aikaa, joten palataan (a)asiaan syssymmällä.</description>
+    </item>
+    
+    <item>
+      <title>Business as usual</title>
+      <link>https://joh.fi/blog/business-as-usual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/business-as-usual/</guid>
+      <description>Huomenta pöytään!
+Vaihdoin sitten eilen guest housea My Houseen ja kyllä kannatti. My House on vähän syrjemmässä tuosta backpacker ghettosta, joten siellä saa suht rauhassa nukkua. Tämä huone on varusteltu kaikella tarpeellisella, tuuletin, suihku, vessa ja ikkuna löytyvät. Ensimmäisestä guest housesta oppineena voin todeta että ilmastointi on ihan hanurista. Ilmastointi pitää niin kovaa ääntä, ettei nukkumisesta tule mitään. Lisäksi pidemmän päälle aparaatin puhaltama ilma on niin kylmää että siinä tule kuin kipeäksi.</description>
+    </item>
+    
+    <item>
+      <title>Encrypted Windows and Arch Linux dual-boot installation using UEFI</title>
+      <link>https://joh.fi/blog/2016-03-05-encrypted-windows-and-arch-linux-dual-boot-installation-using-uefi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2016-03-05-encrypted-windows-and-arch-linux-dual-boot-installation-using-uefi/</guid>
+      <description>I will start this with a note that this is not a tutorial type of post. It&amp;rsquo;s just to remind myself how I did this myself. I&amp;rsquo;m way too lazy to keep updating tutorials and therefore it&amp;rsquo;s easier to just post some rough guidelines instead of step by step instructions.
+For some time now I&amp;rsquo;ve been running a pretty nice dual boot setup with my trusty old Lenovo X220. I have a 512GB Samsung 840 Pro SSD divided between a Windows 10 and Arch Linux installations.</description>
+    </item>
+    
+    <item>
+      <title>Spotify 0.6.1 on Fedora 15/16</title>
+      <link>https://joh.fi/blog/2011-10-03-spotify-0-6-1-on-fedora/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-10-03-spotify-0-6-1-on-fedora/</guid>
+      <description>Edit: This works for version 0.6.2 as well.
+Spotify is a popular music streaming service which unfortunately isn&amp;rsquo;t globally available. Here in Finland we have had the opportunity to enjoy Spotify from the begining which is a rare thing. For a minuscule amount of 9.99€ you&amp;rsquo;ll have pretty much unlimited collection of music at your hands and on your mobile phone. Ok, granted not every artist has their music in Spotify but the collection is huge!</description>
+    </item>
+    
+    <item>
+      <title>T-minus 3 weeks and counting</title>
+      <link>https://joh.fi/blog/t-minus-3-weeks-and-counting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/t-minus-3-weeks-and-counting/</guid>
+      <description>Morjensta pöytään!
+Alkaa pikkuhiljaa käymään aika vähiin. Koneen lähtöön on aikaa enää kolme viikkoa ja muutama tunti päälle. Sen kunniaksi sivustolle uusi ilme ja kuvagalleria! Galleriaa on tarkoitus päivittää reissun päältä, aina kun paikalliset nettiyhteydet sen sallivat. Viime päivityksestä on melkoisesti aikaa ja tässä välillä olen hoitanut muutamia reissuun liittyviä asioita, pääosin kuitenkin keskittynyt opiskeluun ja muihin asioihin. Hoidettavia asioita on vielä jonkin verran edessä, sillä viime maanantaina paljastui että tulee muuttokin viellä ennen reissua.</description>
+    </item>
+    
+    <item>
+      <title>Unmounting a busy drive</title>
+      <link>https://joh.fi/blog/2011-10-03-unmounting-a-busy-drive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-10-03-unmounting-a-busy-drive/</guid>
+      <description>My computer setup consists of Lenovo x220 with a docking station, two external screens and of course mouse and keyboard. Even though my laptop has a fast hard drive, it has only 120GB disk space which means I need external hard drives to store my data. I have one external hard drive and one docking station which accepts regular internal 3.5&amp;rdquo; and 2.5&amp;rdquo; hard drives. Since I prefer suspend over shutdown I sometimes get problems with my external docking station.</description>
+    </item>
+    
+  </channel>
+</rss>

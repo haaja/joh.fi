@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on joh.fi</title>
+    <link>https://joh.fi/categories/ubuntu/</link>
+    <description>Recent content in Ubuntu on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 18 Mar 2014 20:08:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Ubuntu 13.10 on top of encrypted lvm</title>
+      <link>https://joh.fi/blog/2014-03-15-ubuntu-13.10-encrypted-lvm-installation/</link>
+      <pubDate>Tue, 18 Mar 2014 20:08:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2014-03-15-ubuntu-13.10-encrypted-lvm-installation/</guid>
+      <description>Introduction Ubuntu&amp;rsquo;s installer provides a simple option for installing on top of encrypted lvm. The option however does not allow to modify partition layout and that for me is a showstopper. The other option is to create an encrypted container for all the partitions which works fine but then one has to enter the passphrase to each and every device individually.
+This guide explains how to install ubuntu on top of an encrypted lvm and also give user the power of specifying partition layout.</description>
+    </item>
+    
+  </channel>
+</rss>

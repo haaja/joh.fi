@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Screen on joh.fi</title>
+    <link>https://joh.fi/categories/screen/</link>
+    <description>Recent content in Screen on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 03 Nov 2011 14:44:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/screen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>256 colors in vim and screen</title>
+      <link>https://joh.fi/blog/2011-11-03-256-colors-in-vim-and-screen/</link>
+      <pubDate>Thu, 03 Nov 2011 14:44:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-11-03-256-colors-in-vim-and-screen/</guid>
+      <description>For some strange reason at least Fedora ships screen and vim with 256 colors disabled. Here&amp;rsquo;s a quick guide how to enable 256 colors in vim and screen.
+ Add to you .vimrc file
+set t_Co=256  Add following lines to your .screenrc file
+attrcolor b &amp;quot;.I&amp;quot; termcapinfo xterm &#39;Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm&#39; defbce &amp;quot;on&amp;quot;   Also check that your terminal supports or has 256 colors enabled. At least gnome-terminals seems to have this by default.</description>
+    </item>
+    
+  </channel>
+</rss>

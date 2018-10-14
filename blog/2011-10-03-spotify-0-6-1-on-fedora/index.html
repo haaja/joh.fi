@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="https://joh.fi/">
+
+<title>joh.fi</title>
+
+<meta name="generator" content="Hugo 0.49.2" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://joh.fi/css/main.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+
+<header class="row text-left title">
+  <h1 class="title">Spotify 0.6.1 on Fedora 15/16</h1>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+       
+      
+      
+      
+      —
+      
+      
+      <a class="meta" href="/categories/fedora">FEDORA</a>, 
+      
+      <a class="meta" href="/categories/linux">LINUX</a>, 
+      
+      <a class="meta" href="/categories/spotify">SPOTIFY</a>
+      
+      
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    <p>Edit: This works for version 0.6.2 as well.</p>
+
+<p><a href="http://www.spotify.com/">Spotify</a> is a popular music streaming service which
+unfortunately isn&rsquo;t globally available. Here in Finland we have had the
+opportunity to enjoy Spotify from the begining which is a rare thing. For a
+minuscule amount of 9.99€ you&rsquo;ll have pretty much unlimited collection of
+music at your hands and on your mobile phone. Ok, granted not every artist has
+their music in Spotify but the collection is huge! Better yet they &ldquo;support&rdquo;
+Linux with their preview client. The support is nothing compared to Windows or
+OS X but it&rsquo;s more than most services ever offer. While the service is
+certainly rewarding for the end-user, I&rsquo;ve heard stories about artists
+complaining that the money coming from Spotify is next to nothing. Personally
+I don&rsquo;t know what real situation is, probably record labels are taking most
+of the money. Enough said, lets get our hands dirty.</p>
+
+<p>Spotify used to have separate packages for
+<a href="https://fedoraproject.org/">Fedora</a>, but currently the repository is empty.
+This is a minor annoyance and with little work we can use the packages they
+provide for <a href="http://www.debian.org/">Debian</a>.</p>
+
+<p>Download the packages from the apt repository.</p>
+
+<pre><code class="language-sh">$ wget http://repository.spotify.com/pool/non-free/s/spotify/spotify-client-gnome-support_0.5.2.84.g6d797eb-1_all.deb
+$ wget http://repository.spotify.com/pool/non-free/s/spotify/spotify-client-qt_0.6.1.309.gb871a7d-1_amd64.deb
+</code></pre>
+
+<p>deb packages are ar archives which we can easily open (note that it is ar not
+tar ;) ).</p>
+
+<pre><code class="language-sh">$ ar vx spotify-client-gnome-support_0.5.2.84.g6d797eb-1_all.deb
+</code></pre>
+
+<p>Both packages have similar content so extract them into different directories
+or follow this guide for one package at a time. Following files should be
+extracted: contor.tar.gz, data.tar.gz and debian-binary. data.tar.gz file
+contains the files we need to make Spotify work on fedora.</p>
+
+<p>This step will require root privileges. Copy data.tar.gz into system root, cd
+yourself to root, extract the data.tar.gz and finally remove the data.tar.gz
+file.</p>
+
+<pre><code class="language-sh"># cp data.tar.gz /
+# cd /
+# tar -xzvf data.tar.gz
+# rm data.tar.gz
+</code></pre>
+
+<p>Repeat the procedure for the spotify-client as well.</p>
+
+<p>Now you can try to execute spotify from command line and it should fail to
+launch with following errors. You only get the first error until spotify can
+successfully find libssl.so, but to save time I&rsquo;ve listed both errors here. On
+a side note ldd is a great tool for finding out dynamic library dependencies.</p>
+
+<pre><code class="language-sh">spotify: error while loading shared libraries: libssl.so.0.9.8: cannot open shared object file: No such file or directory
+spotify: error while loading shared libraries: libcrypto.so.0.9.8: cannot open shared object file: No such file or directory
+</code></pre>
+
+<p>Fedora uses newer versions of openssl and Spotify does not check the version
+of the library correctly. First make sure you have openssl-devel package
+installed and then help spotify to find libssl.so by creating a symbolic link
+to the correct path depending on your architecture.</p>
+
+<pre><code class="language-sh"># This is for 64 bit installations
+ln -s /usr/lib64/libssl.so /usr/lib64/libssl.so.0.9.8
+ln -s /usr/lib64/libcrypto.so /usr/lib64/libcrypto.so.0.9.8
+
+# This is for 32 bit installations
+ln -s /usr/lib/libssl.so /usr/lib/libssl.so.0.9.8
+ln -s /usr/lib/libcrypto.so /usr/lib/libcrypto.so.0.9.8
+</code></pre>
+
+<p>Now you should be able to start Spotify and enjoy some great music with native
+linux client!</p>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/t-minus-3-weeks-and-counting/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/2016-03-05-encrypted-windows-and-arch-linux-dual-boot-installation-using-uefi/"> | next &gt;</a></span>
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="https://joh.fi/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2018. Janne Haapsaari.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-9365169-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

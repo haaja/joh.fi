@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kde on joh.fi</title>
+    <link>https://joh.fi/categories/kde/</link>
+    <description>Recent content in Kde on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 09 Jul 2012 15:21:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/kde/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>KDE and ssh-agent</title>
+      <link>https://joh.fi/blog/2012-07-09-kde-and-ssh-agent/</link>
+      <pubDate>Mon, 09 Jul 2012 15:21:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-07-09-kde-and-ssh-agent/</guid>
+      <description>Hello lazyweb!
+GNOME or to be more precise GNOME keyring has nice feature of including ssh-agent that integrates nicely with gnome-keyring. I find this feature very convenient since I don&amp;rsquo;t have to input my password every time I connect to a server. (I sincerely hope that no one is using ssh-keys without password protection).
+Things are quite not as convenient on KDE side of desktop environments even though KDE provides handy tool called KDE wallet.</description>
+    </item>
+    
+  </channel>
+</rss>

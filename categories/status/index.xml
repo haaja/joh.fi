@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Status on joh.fi</title>
+    <link>https://joh.fi/categories/status/</link>
+    <description>Recent content in Status on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 27 Jun 2013 15:57:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/status/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Post status format</title>
+      <link>https://joh.fi/blog/2013-06-27-post-status-format/</link>
+      <pubDate>Thu, 27 Jun 2013 15:57:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-06-27-post-status-format/</guid>
+      <description>I just found out that wordpress supports different post formats. Neato!</description>
+    </item>
+    
+  </channel>
+</rss>

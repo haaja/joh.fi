@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Trip2011 on joh.fi</title>
+    <link>https://joh.fi/categories/trip2011/</link>
+    <description>Recent content in Trip2011 on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 09 Oct 2011 07:22:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/trip2011/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Matkan suunnittelu edistyy</title>
+      <link>https://joh.fi/blog/2011-10-09-matkan-suunnittelu-edistyy/</link>
+      <pubDate>Sun, 09 Oct 2011 07:22:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-10-09-matkan-suunnittelu-edistyy/</guid>
+      <description>Pitkästä aikaa on jotain kerrottavaa matkasta. Olen tässä jonkin aikaa jo pohtinut, että mitä paikkoja käyn katsomassa Indonesiassa. Indonesia on valtavan kokoinen ja kunnollisen infran puuttuessa matkustaminen on hidasta. Lisäksi minulla on vain kuukausi aikaa matkustaa, joten joudun lentämään pidemmät etäisyydet. Mielenkiintoisia kohteita ovat muun muassa Togianin saaret Sulawesillä, Gili saaret ja Lombok, Komodon saari sekä Sumatran Lake Toba. Kaikkeen ei missään tapauksessa riitä aika, joten joudun valitsemaan listalta yhden tai kaksi paikkaa.</description>
+    </item>
+    
+    <item>
+      <title>Uutta reissua pukkaa</title>
+      <link>https://joh.fi/blog/2011-08-14-uutta-reissua-pukkaa/</link>
+      <pubDate>Sun, 14 Aug 2011 21:09:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-08-14-uutta-reissua-pukkaa/</guid>
+      <description>Morjensta pöytään!
+Long time no see, long time no ABC. Tässä on taas kesä ja osa kevättä lusittu duunissa ja vielä on muutama viikko jäljellä. Syksyn kurssit ovat vielä edessä mutta katse kääntyy jo talven reissuun. Viime talvi tuli vietettyä Suomessa, joten nyt on taas aika päästä lämpimään. En kuitenkaan pysty ottamaan omaa lomaa lipastolta, joten reissuun on nyt käytettävissä vain tuo noin kuukausi mitä joululomaa yliopistolta on. Olen tässä muutamat päivät katsellut lentoja Aasiaan.</description>
+    </item>
+    
+  </channel>
+</rss>

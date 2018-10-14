@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source on joh.fi</title>
+    <link>https://joh.fi/categories/open-source/</link>
+    <description>Recent content in Open Source on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 16 Dec 2012 19:22:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My first patch to GNOME</title>
+      <link>https://joh.fi/blog/2012-12-16-my-first-patch-to-gnome/</link>
+      <pubDate>Sun, 16 Dec 2012 19:22:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-12-16-my-first-patch-to-gnome/</guid>
+      <description>I&amp;rsquo;ve used open source software for many years now but I haven&amp;rsquo;t really contributed back to any of the open source communities. I have filled some bug reports but other than that I&amp;rsquo;ve been simply a happy (and sometimes less happy) user. However yesterday I took the first step by doing tiny tiny contribution to GNOME or to be specific to gnome-session. The funny thing is that it was all because of selfish reasons.</description>
+    </item>
+    
+  </channel>
+</rss>

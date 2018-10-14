@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="https://joh.fi/">
+
+<title>joh.fi</title>
+
+<meta name="generator" content="Hugo 0.49.2" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://joh.fi/css/main.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+
+<header class="row text-left title">
+  <h1 class="title">Install Ubuntu 13.10 on top of encrypted lvm</h1>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+        PUBLISHED ON MAR 18, 2014 
+      
+      
+      
+      —
+      
+      
+      <a class="meta" href="/categories/cryptsetup">CRYPTSETUP</a>, 
+      
+      <a class="meta" href="/categories/encryption">ENCRYPTION</a>, 
+      
+      <a class="meta" href="/categories/lvm">LVM</a>, 
+      
+      <a class="meta" href="/categories/ubuntu">UBUNTU</a>
+      
+      
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Ubuntu&rsquo;s installer provides a simple option for installing on top of encrypted
+lvm. The option however does not allow to modify partition layout and that for
+me is a showstopper. The other option is to create an encrypted container for
+all the partitions which works fine but then one has to enter the passphrase
+to each and every device individually.</p>
+
+<p>This guide explains how to install ubuntu on top of an encrypted lvm and also
+give user the power of specifying partition layout. Using LVM makes it
+possible to specify partition sizes and unlock the encrypted device with a
+single passphrase. The alternative is to use encrypted devices for each
+partition and store keyfiles, that are used to unlock the other devices, on
+the root device.</p>
+
+<p>In this example I&rsquo;m installing Ubuntu on my laptop with a single SSD drive but
+this guide can be adapted to work on other distributions as well. I started by
+creating two partitions <em>/dev/sda1</em> and <em>/dev/sda2</em>. The former will not be
+encrypted and will be mounted as /boot in our system. The latter partition will
+be encrypted and used as base for our lvm setup.</p>
+
+<h3 id="partitioning">Partitioning</h3>
+
+<p>To do the actual partitioning the Ubuntu live environment provides gparted,
+disks and fdisk. Choose whichever suits you best or install an alternative
+from the repositories.</p>
+
+<h3 id="filesystems">Filesystems</h3>
+
+<p>Now that you&rsquo;ve created the partitions described in the previous chapter it&rsquo;s
+time to write filesystems on them. I&rsquo;m still prefering ext4 instead of btrfs
+but your free to chose your favorite.</p>
+
+<pre><code class="language-sh">sudo mkfs.ext4 /dev/sda1
+sudo mkfs.ext4 /dev/sda2
+</code></pre>
+
+<h3 id="luks-container">LUKS container</h3>
+
+<p>The cryptsetup package shipping with Ubuntu 13.10 still uses the cbc-essiv
+cipher mode. The current cryptsetup package has since then switched to use
+aes-xts-plain64 mode. The default values are also plenty safe so do as you
+wish, just pick a really good passphrase. Also the cryptsetup package will
+be upgraded in Ubuntu 14.04 to use the values I specify here by default.</p>
+
+<ol>
+<li><p>Create the LUKS container</p>
+
+<pre><code class="language-sh">sudo cryptsetup --cipher aes-xts-plain64 --key-size 512 --hash sha512 /dev/sda2
+</code></pre>
+
+<p>Verify the command with YES in capital letters. Then write your passphrase twice.</p></li>
+
+<li><p>Open the LUKS container.</p>
+
+<pre><code class="language-sh">sudo cryptsetup luksOpen /dev/sda2 luks_container
+</code></pre></li>
+</ol>
+
+<h3 id="create-lvm-volumes">Create LVM volumes</h3>
+
+<ol>
+<li><p>Create LVM physical volume</p>
+
+<pre><code class="language-sh">sudo pvcreate /dev/mapper/luks_container
+</code></pre></li>
+
+<li><p>Create LVM volume group</p>
+
+<pre><code class="language-sh">sudo vgcreate vg_system /dev/mapper/luks_container
+</code></pre></li>
+
+<li><p>Create logical volumes
+You can think of logical volumes as partitions. I will create two
+partitions, one for root and one for home. If you need a swap space then you
+can create one for yourself now. The root partition will be 40GB and home
+shall have all the remaining space.</p></li>
+</ol>
+
+<pre><code class="language-sh">sudo lvcreate -n lv_root -L 40G vg_system
+sudo lvcreate -n lv_home -l 100%FREE vg_system
+</code></pre>
+
+<ol>
+<li>Write filesystems on the logical volumes</li>
+</ol>
+
+<pre><code class="language-sh">sudo mkfs.ext4 /dev/mapper/vg_system-lv_root
+sudo mkfs.ext4 /dev/mapper/vg_system-lv_home
+</code></pre>
+
+<h3 id="installation-of-ubuntu">Installation of Ubuntu</h3>
+
+<p>Use the graphical installer to install Ubuntu like always. If you don&rsquo;t know
+how to install Ubuntu then google some of the many fine guides. During the
+filesystem layout options, clikc <em>something else</em> and choose the logical
+volumes we just created. Mount them as / and /home. Do not forget to add
+regular unencrypted partition <em>/dev/sda1</em> to /boot. Otherwise you will not be
+able to boot later on.</p>
+
+<p>The important thing is to <strong>NOT</strong> restart the machine when the installation
+finishes! Click <em>continue testing</em> as we are not yet done.</p>
+
+<h3 id="where-the-magic-happens">Where the magic happens</h3>
+
+<p>No it&rsquo;s time for the tricky part.</p>
+
+<ol>
+<li><p>Find out the UUID of your encrypted luks container</p>
+
+<pre><code class="language-sh">sudo blkid /dev/sda2
+/dev/sda2: UUID=&quot;93xbb3a7-9x55-4kb1-87ce-7f1l6l45cv4af&quot; TYPE=&quot;crypto_LUKS&quot;
+</code></pre>
+
+<p>Write the UUID down as we will need it later.</p></li>
+
+<li><p>Mount the logical volumes chroot to it</p>
+
+<pre><code class="language-sh">sudo mkdir /mnt/root
+sudo mount /dev/mapper/vg_system-lv_root /mnt/root
+sudo mount /dev/mapper/vg_system-lv_home /mnt/root/home
+sudo mount --bind /dev /mnt/root/dev
+chroot /mnt/root
+</code></pre>
+
+<p>And then within chroot do the following</p>
+
+<pre><code class="language-sh">mount -t proc proc /proc
+mount -t sysfs sys /sys
+mount -t devpts devpts /dev/pts
+</code></pre>
+
+<p>After this point all the commands are run in the chrooted environment!</p></li>
+
+<li><p>Create file <em>/etc/crypttab</em> in the chrooted environment with following line.
+Replace the UUID with the UUID of your luks container.</p>
+
+<pre><code class="language-sh"># &lt;target name&gt; &lt;source device&gt; &lt;key file&gt; &lt;options&gt;
+luks_container UUID=93xbb3a7-9x55-4kb1-87ce-7f1l6l45cv4af none luks,retry=1,lvm=vg_system
+</code></pre></li>
+
+<li><p>Create a file named <em>/etc/initramfs-tools/conf.d/cryptroot</em> in the chrooted
+environment with following line. Replace the UUID with your luks containers
+UUID.</p>
+
+<pre><code class="language-sh">CRYPTROOT=target=luks_container,source=/dev/disk/by-uuid/93xbb3a7-9x55-4kb1-87ce-7f1l6l45cv4af
+</code></pre></li>
+
+<li><p>Update your initrd image.</p>
+
+<pre><code class="language-sh">update-initramfs -k all -c
+</code></pre></li>
+
+<li><p>Edit file named <em>/etc/default/grub</em> and find a line that looks like this</p>
+
+<pre><code class="language-sh">GRUB_CMDLINE_LINX=&quot;&quot;
+</code></pre>
+
+<p>And replace it with following. Again replace the UUID with the one your luks container.</p>
+
+<pre><code class="language-sh">GRUB_CMDLINE_LINUX=&quot;cryptopts=target=luks_system,source=/dev/disk/by-uuid/93xbb3a7-9x55-4kb1-87ce-7f1l6l45cv4af,lvm=vg_system&quot;
+</code></pre></li>
+
+<li><p>Update GRUB config with following command</p>
+
+<pre><code class="language-sh">update-grub
+</code></pre></li>
+</ol>
+
+<p>Reboot your machine and you should be prompted for password.</p>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/2013-12-31-ipv6/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/2015-01-02-howto-fix-your-damaged-gnupg-databse/"> | next &gt;</a></span>
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="https://joh.fi/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2018. Janne Haapsaari.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-9365169-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on joh.fi</title>
+    <link>https://joh.fi/categories/blog/</link>
+    <description>Recent content in Blog on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 31 Dec 2013 22:38:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IPv6</title>
+      <link>https://joh.fi/blog/2013-12-31-ipv6/</link>
+      <pubDate>Tue, 31 Dec 2013 22:38:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-12-31-ipv6/</guid>
+      <description>Just a quick note that the this site is now accessible via IPv6. :)
+Unlike many others I will not be doing recaps for the past year nor predictions or promises for the next one. Still I wish happy new year for everyone!</description>
+    </item>
+    
+    <item>
+      <title>Fresh new look</title>
+      <link>https://joh.fi/blog/2013-10-09-fresh-new-look/</link>
+      <pubDate>Wed, 09 Oct 2013 20:28:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-10-09-fresh-new-look/</guid>
+      <description>As you can see the site has a new fresh and responsive look. :)</description>
+    </item>
+    
+    <item>
+      <title>Migration to Octopress</title>
+      <link>https://joh.fi/blog/2012-07-12-migration-to-octopress/</link>
+      <pubDate>Thu, 12 Jul 2012 21:43:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2012-07-12-migration-to-octopress/</guid>
+      <description>Brace yourselves, it&amp;rsquo;s time for another &amp;ldquo;I migrated from X to octopress&amp;rdquo; blog post. Try to bear with me.
+Like the title hints I have finally started my migration process from wordpress to octopress. I have nothing against wordpress per se but it&amp;rsquo;s way too big for my needs. I only need a simple way of creating posts every now and then and for that purpose octopress seems to be quite suitable.</description>
+    </item>
+    
+  </channel>
+</rss>

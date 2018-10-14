@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gadgets on joh.fi</title>
+    <link>https://joh.fi/categories/gadgets/</link>
+    <description>Recent content in Gadgets on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 15 Jun 2013 17:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/gadgets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Waiting for Haswell Macbook Pros</title>
+      <link>https://joh.fi/blog/2013-06-15-waiting-for-haswell-macbook-pros/</link>
+      <pubDate>Sat, 15 Jun 2013 17:56:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-06-15-waiting-for-haswell-macbook-pros/</guid>
+      <description>I am a strong believer of mobile computing and to me a perfect setup is a small laptop that can be connected to a bigger screen via docking station or similar setup. My current setup consists of two year old Lenovo X220 and a high resolution Dell U2711. I&amp;rsquo;ve been quite happy with it. Laptop is easy to take out from the docking station, which by the way comes with the device, and it serves as a desktop replacement while at home.</description>
+    </item>
+    
+  </channel>
+</rss>

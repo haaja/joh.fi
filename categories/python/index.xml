@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on joh.fi</title>
+    <link>https://joh.fi/categories/python/</link>
+    <description>Recent content in Python on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 27 Sep 2011 14:44:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Project Euler</title>
+      <link>https://joh.fi/blog/2011-09-27-project-euler/</link>
+      <pubDate>Tue, 27 Sep 2011 14:44:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2011-09-27-project-euler/</guid>
+      <description>Project Euler is a website containing computational problems intended to be solved by small programs. Currently there are 351 problems to be solved and all of the problems should be doable within one- minute-rule. In other words you are doing something wrong if computing the solution takes more than one minute (or at least your program could be optimized). If you&amp;rsquo;re interested in programming or mathematics then Project Euler is for you.</description>
+    </item>
+    
+  </channel>
+</rss>

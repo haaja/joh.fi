@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="https://joh.fi/">
+
+<title>joh.fi</title>
+
+<meta name="generator" content="Hugo 0.49.2" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://joh.fi/css/main.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+
+<header class="row text-left title">
+  <h1 class="title">KDE and ssh-agent</h1>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+        PUBLISHED ON JUL 9, 2012 
+      
+      
+      
+      —
+      
+      
+      <a class="meta" href="/categories/kde">KDE</a>, 
+      
+      <a class="meta" href="/categories/linux">LINUX</a>, 
+      
+      <a class="meta" href="/categories/ssh">SSH</a>
+      
+      
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    <p>Hello lazyweb!</p>
+
+<p><a href="http://www.gnome.org/">GNOME</a> or to be more precise
+<a href="http://live.gnome.org/GnomeKeyring">GNOME keyring</a> has nice feature of
+including ssh-agent that integrates nicely with gnome-keyring. I find this
+feature very convenient since I don&rsquo;t have to input my password every time I
+connect to a server. (I sincerely hope that no one is using ssh-keys without
+password protection).</p>
+
+<p>Things are quite not as convenient on <a href="http://kde.org/">KDE</a> side of desktop
+environments even though KDE provides handy tool called
+<a href="http://utils.kde.org/projects/kwalletmanager/">KDE wallet</a>. Luckily with few
+simple scripts we can use the combination of KDE wallet and ssh-agent to
+provide similar functionality on KDE. So without further ado here is the
+guide.</p>
+
+<ol>
+<li><p>Open your favorite text editor and create file ~/.kde/env/ssh-agent.sh.
+Add following lines into file and save it.</p>
+
+<pre><code class="language-sh">#!/bin/bash
+eval `ssh-agent`
+</code></pre></li>
+
+<li><p>Create file ~/.kde/Autostart/ssh-add.sh and add following lines.</p>
+
+<pre><code class="language-sh">#!/bin/bash
+export SSH_ASKPASS=/usr/bin/ksshaskpass
+/usr/bin/ssh-add
+</code></pre></li>
+
+<li><p>Create file ~/.kde/shutdown/ssh-agent.sh and add following lines.</p>
+
+<pre><code class="language-sh">#!/bin/bash
+eval `ssh-agent -k`
+</code></pre></li>
+
+<li><p>As a last step you need to give execute rights for the scripts that we just
+created.</p>
+
+<pre><code class="language-sh">chmod +x ~/.kde/env/ssh-agent.sh
+chmod +x ~/.kde/Autostart/ssh-add.sh
+chmod +x ~/.kde/shutdown/ssh-agent.sh
+</code></pre></li>
+</ol>
+
+<p>That&rsquo;s it! Now simply log out and log back in and notice how kde-wallet will
+prompt for password and also your ssh-key password will be asked. In case you
+want check the &ldquo;remember this password&rdquo; option and your ssh-key password will
+be remembered by kde-wallet. One could argue that this type of functionality
+should be on default KDE installation but then again it wasn&rsquo;t too hard to
+achieve this way either.</p>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/2012-06-15-disable-arrow-keys-in-vim/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/2012-07-12-migration-to-octopress/"> | next &gt;</a></span>
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="https://joh.fi/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2018. Janne Haapsaari.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-9365169-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

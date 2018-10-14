@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on joh.fi</title>
+    <link>https://joh.fi/categories/android/</link>
+    <description>Recent content in Android on joh.fi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 01 Jul 2013 17:16:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://joh.fi/categories/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Skype for Android</title>
+      <link>https://joh.fi/blog/2013-07-01-new-skype-for-android/</link>
+      <pubDate>Mon, 01 Jul 2013 17:16:00 +0000</pubDate>
+      
+      <guid>https://joh.fi/blog/2013-07-01-new-skype-for-android/</guid>
+      <description>It&amp;rsquo;s about time! Finally the functional but otherwise not very attractive Skype on android has been updated. User interface has been totally revamped and follows the nowadays so popular flat style. With my initial testing the new version seems to work really well and so far I haven&amp;rsquo;t found anything to complain about. Well except for the most awkward ad I have seen in a long time.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="https://joh.fi/">
+
+<title>joh.fi</title>
+
+<meta name="generator" content="Hugo 0.49.2" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://joh.fi/css/main.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+
+<header class="row text-left title">
+  <h1 class="title">My first patch to GNOME</h1>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+        PUBLISHED ON DEC 16, 2012 
+      
+      
+      
+      —
+      
+      
+      <a class="meta" href="/categories/gnome">GNOME</a>, 
+      
+      <a class="meta" href="/categories/linux">LINUX</a>, 
+      
+      <a class="meta" href="/categories/open-source">OPEN SOURCE</a>, 
+      
+      <a class="meta" href="/categories/programming">PROGRAMMING</a>
+      
+      
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    <p>I&rsquo;ve used open source software for many years now but I haven&rsquo;t really
+contributed back to any of the open source communities. I have filled some
+bug reports but other than that I&rsquo;ve been simply a happy (and sometimes less
+happy) user. However yesterday I took the first step by doing tiny tiny
+contribution to <a href="http://www.gnome.org">GNOME</a> or to be specific to
+gnome-session. The funny thing is that it was all because of selfish reasons.</p>
+
+<p>I was writing my script called <a href="https://github.com/haaja/osinfo">osinfo</a> and
+found out that gnome-session gave exit value 1 when called with &ndash;version
+argument. This was easily tested doing the following.</p>
+
+<pre><code class="language-sh">[haaja@jarvis ~]$ gnome-session --version
+gnome-session 3.6.2
+[haaja@jarvis ~]$ echo $?
+1
+</code></pre>
+
+<p>Exit value 1 with non-error cases is problematic because usually exit values
+other than 0 are interpreted as an error. This was also the case with
+<a href="http://www.python.org/">Python&rsquo;s</a> subprocess module and specifically its
+check_output function.</p>
+
+<p>Since I knew that this was trivial to fix I thought that I might just as well
+fix it. The problem was that I had never before contributed to GNOME so I had
+no clue how and where to send patches. Luckily after some help from google and
+I was directed to their bugzilla. <del>Unfortunately GNOME documentation isn&rsquo;t
+the easiest for the beginner because they are quite dated and I really didn&rsquo;t
+want setup IRC client to join their IRC channels and ask for help.</del> So I
+spent most of the time browsing their bugzilla and reading git logs to
+determine conventions used for commit messages and bug reports.</p>
+
+<p>EDIT: I finally did find the documentation
+<a href="https://live.gnome.org/Git/Developers#Contributing_patches">Contributing patches</a>.</p>
+
+<p>Finally I created a <a href="https://bugzilla.gnome.org/show_bug.cgi?id=690273">bug report</a>
+and attached a patch for the bug. Few minutes later one of the developers
+reviewed my patch and a while later I received email that my patch was
+<a href="http://git.gnome.org/browse/gnome-session/commit/?id=f18652d38f5b739dbb2086c5e6fe9629a0a49295">committed</a>
+to the master branch. Everything went smoothly and surprisingly fast so I
+might just do this again next time I find something that bothers me in GNOME.</p>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/2012-10-29-git-subtree-merge/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/2013-01-10-installing-owncloud-on-a-shared-host/"> | next &gt;</a></span>
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="https://joh.fi/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2018. Janne Haapsaari.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-9365169-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+

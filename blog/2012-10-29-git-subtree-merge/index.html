@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="description" content="Simple minimalist theme">
+<meta name="keywords" content="minimalist,blog,goa,hugo,developer">
+
+<base href="https://joh.fi/">
+
+<title>joh.fi</title>
+
+<meta name="generator" content="Hugo 0.49.2" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto+Slab:400,700|Roboto:300,300i,400,400i,500,500i,700,700i">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://joh.fi/css/main.css">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body lang="en-US">
+<div class="container">
+
+
+<header class="row text-left title">
+  <h1 class="title">Git subtree merge</h1>
+</header>
+<section id="category-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-left meta">
+        PUBLISHED ON OCT 29, 2012 
+      
+    </h6>
+  </div>
+  
+</section>
+<section id="content-pane" class="row">
+  <div class="col-md-12 text-justify content">
+    <p>Last week I took part to an intensive
+<a href="http://iloveponies.github.com/">Clojure-course</a> which was an introduction to
+functional programming using <a href="http://clojure.org/">Clojure</a>. The course itself
+was fairly well organized and interesting but that&rsquo;s not the topic of this
+post.</p>
+
+<p>The course was built around solving small programming tasks using clojure.
+Each topic had their own separate git repository on
+<a href="http://www.github.com">github</a> which we cloned and added our solutions in.
+The end result was that participants had many repositories (one for each
+exercise set) and this was fine during the course. Now that I&rsquo;ve successfully
+passed the course I wanted to get rid of all the separate repositories and
+combine them to a single git repository. I could have simply created a new
+repository and copied the files into it but this way I would have lost all
+commit history. I have previously used git submodules but since I won&rsquo;t be
+developing these assignments further I would rather not user that method. Few
+minutes of googling and I found a solution for my problem,
+<a href="http://git-scm.com/book/ch6-7.html">git subtree merge</a>.
+Subtree merge is perfect for my use case since I my repositories were separate
+but they shared no data with each other. In other words there would not be any
+merge conflicts.</p>
+
+<p>Here is a quick tutorial of the steps that I did.</p>
+
+<p>First I created a new folder called Clojure and two subdirectories called
+exercises and material.</p>
+
+<pre><code class="language-sh">$ tree Clojure/
+Clojure/
+├── exercises
+└── material
+</code></pre>
+
+<p>Then I initialized an empty git repository to the Clojure directory.</p>
+
+<pre><code class="language-sh">$ cd Clojure/ &amp;&amp; git init
+</code></pre>
+
+<p>Next I created a subdirectory which I will use as a prefix to a following
+merge.</p>
+
+<pre><code class="language-sh">mkdir exercises/old_project
+</code></pre>
+
+<p>Now it was just a matter of adding the old repository as a remote repository
+to our newly created main repository.</p>
+
+<pre><code class="language-sh">git remote add -f old_project http://www.example.com/repo/old_project.git
+</code></pre>
+
+<p>Then do the merge without doing the actual commit.</p>
+
+<pre><code class="language-sh">git merge -s ours --no-commit old_project/master
+</code></pre>
+
+<p>Next we actually add the old_project repository to our new repository. This
+happens with git read-tree command which reads the master tree of the
+old_project repository and stores it under the path given with prefi
+argument.</p>
+
+<pre><code class="language-sh">git read-tree --prefix=exercises/old_project -u old_project/master
+</code></pre>
+
+<p>Now we are almost done. Final step is to actually do the commit.</p>
+
+<pre><code class="language-sh">git commit -m &quot;Merged old_project repository to Clojure repository&quot;
+</code></pre>
+
+<p>In my case I had multiple repositories so I just repeated those steps for
+every repository I wanted to combine. My final repository structure looks like
+the one below.</p>
+
+<pre><code class="language-sh">$ tree -d Clojure/
+Clojure/
+├── exercises
+│   ├── blorg
+│   │   ├── src
+│   │   │   └── blorg
+│   │   └── test
+│   │       └── blorg
+│   ├── i-am-a-horse-in-the-land-of-booleans
+│   │   ├── src
+│   │   └── test
+│   ├── looping-is-recursion
+│   │   ├── src
+│   │   └── test
+│   ├── one-function-to-rule-them-all
+│   │   ├── doc
+│   │   ├── src
+│   │   └── test
+│   ├── p-p-p-pokerface
+│   │   ├── src
+│   │   └── test
+│   ├── predicates
+│   │   ├── src
+│   │   └── test
+│   ├── recursion
+│   │   ├── src
+│   │   └── test
+│   ├── structured-data
+│   │   ├── src
+│   │   └── test
+│   ├── sudoku
+│   │   ├── src
+│   │   │   └── sudoku
+│   │   └── test
+│   │       └── sudoku
+│   └── training-day
+│       ├── src
+│       ├── target
+│       │   ├── classes
+│       │   └── stale
+│       └── test
+└── material
+    └── 120-hour-epic-sax-marathon
+            ├── bin
+                    ├── css
+                            └── img
+</code></pre>
+
+<p>The first level subdirectories below exercise and material directories were
+originally separate git repositories. Now I have one single repository that
+contains the data of all the old repositories which I can easily push to
+github.</p>
+
+  </div>
+</section>
+<section id="tag-pane" class="row meta">
+  
+  <div class="col-md-12">
+    <h6 class="text-right meta">
+      
+    </h6>
+  </div>
+  
+</section>
+
+
+
+
+
+
+
+
+<section id="menu-pane" class="row menu text-center">
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/2012-07-12-migration-to-octopress/">&lt; prev | </a></span>
+  
+  
+  <span><a class="menu-item" href="/blog">blog</a></span>
+  
+  
+  <span><a class="menu-item" href="https://joh.fi/blog/2012-12-16-my-first-patch-to-gnome/"> | next &gt;</a></span>
+  
+  
+  <h4 class="text-center"><a class="menu-item" href="https://joh.fi/">home</a></h4>
+</section>
+
+
+
+<footer class="row text-center footer">
+  <hr />
+  
+  <h6 class="text-center copyright">© 2018. Janne Haapsaari.</h6>
+  
+  
+</footer>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+
+<script type="text/javascript">
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-9365169-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
