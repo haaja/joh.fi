@@ -1,5 +1,5 @@
 ---
-date: 2011-10-03 18:31
+date: 2011-10-03 18:31:00
 author: Janne Haapsaari
 layout: post
 comments: true

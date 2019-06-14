@@ -1,5 +1,5 @@
 ---
-date: 2009-10-07 12:40
+date: 2009-10-07 12:40:00
 layout: post
 author: Janne Haapsaari
 slug: t-minus-3-weeks-and-counting
