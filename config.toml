@@ -21,7 +21,7 @@ enableRobotsTXT = true
 [params]
 author = "Janne Haapsaari"
 intro = "Making software, writing bugs and travelling around the world. Tinkerer by heart. Cyclist."
-description = "Software Engineer [@Qvik](https://qvik.com). Previously @RELEX, @Airbus"
+description = "Senior Software Engineer @[Qvik](https://qvik.com). Previously @RELEX, @Airbus"
 authorimage = "janne.jpg"
 dateformat = "Jan 2, 2006"
 
