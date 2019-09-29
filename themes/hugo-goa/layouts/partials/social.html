@@ -32,10 +32,22 @@
   {{ with .Site.Params.social.hackernews }}
   <a href="https://news.ycombinator.com/user?id={{.}}"><i class="fa fa-hacker-news" aria-hidden="true"></i></a>
   {{ end }}
-  {{ with .Site.Params.social.email }}
-  <a href="mailto:{{.}}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-  {{ end }}
-  {{ if and ( .Site.Params.extra.rss ) ( .RSSLink ) }}
+	{{ with .Site.Params.social.youtube}}
+	<a href="https://youtube.com/channel/{{.}}" aria-label="Youtube" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+	{{ end }}
+	{{ with .Site.Params.social.reddit}}
+	<a href="https://www.reddit.com/user/{{.}}" aria-label="Reddit" target="_blank"><i class="fab fa-reddit" aria-hidden="true"></i></a>
+	{{ end }}
+	{{ with .Site.Params.social.strava}}
+	<a href="https://www.strava.com/athletes/{{.}}" aria-label="Strava" target="_blank"><i class="fab fa-strava" aria-hidden="true"></i></a>
+	{{ end }}
+	{{ with .Site.Params.social.flickr}}
+	<a href="https://flickr.com/photos/{{.}}" aria-label="Flickr" target="_blank"><i class="fab fa-flickr" aria-hidden="true"></i></a>
+	{{ end }}
+	{{ with .Site.Params.social.email }}
+	<a href="mailto:{{.}}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+	{{ end }}
+	{{ if and ( .Site.Params.extra.rss ) ( .RSSLink ) }}
   <a href="{{ .RSSLink }}"><i class="fa fa-rss" aria-hidden="true"></i></a>
   {{ end }}
 </section>
