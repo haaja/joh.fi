@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -e
+#!/usr/bin/env bash
 
 RSYNC=/usr/bin/rsync
 PATH_TO_DEPLOY="public/"
