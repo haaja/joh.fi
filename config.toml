@@ -45,7 +45,7 @@ email = "haaja@iki.fi"
 
 ## Extras
 [params.extra]
-copyright = "© 2021. Janne Haapsaari."
+copyright = "© 2022. Janne Haapsaari."
 poweredby = false
 highlightjs = true
 rss = true
