@@ -45,7 +45,7 @@ email = "janne@joh.fi"
 
 ## Extras
 [params.extra]
-copyright = "© 2022. Janne Haapsaari."
+copyright = "© 2023. Janne Haapsaari."
 poweredby = false
 highlightjs = true
 rss = true
