@@ -56,7 +56,8 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.pages.outputs.base_url }}" \
+            -t hugo-goa
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
