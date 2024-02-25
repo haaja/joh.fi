@@ -23,10 +23,6 @@ Test the generated site:
 hugo server -t hugo-goa
 ```
 
-Deploy to the site:
-```sh
-./deploy.sh
-```
 
 ## Built with:
 * [hugo](https://gohugo.io)
