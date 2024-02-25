@@ -1,8 +1,6 @@
 ---
 date: 2011-09-15 12:04:00
-layout: post
 author: Janne Haapsaari
-comments: true
 title: "NTMLv2 authentication on Linux"
 categories:
     - ntlmv2

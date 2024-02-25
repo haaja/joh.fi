@@ -1,9 +1,7 @@
 ---
 date: 2009-11-23 06:41:00
 author: Janne Haapsaari
-layout: post
 slug: still-in-shihanoukville
-comments: true
 title: "Still in Shihanoukville"
 categories:
     - trip2009

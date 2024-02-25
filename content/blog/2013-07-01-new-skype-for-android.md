@@ -1,8 +1,6 @@
 ---
-comments: true
 date: 2013-07-01 17:16:00
 author: Janne Haapsaari
-layout: post
 title: "New Skype for Android"
 categories:
     - skype

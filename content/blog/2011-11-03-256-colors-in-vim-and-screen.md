@@ -1,8 +1,6 @@
 ---
 date: 2011-11-03 14:44:00
 author: Janne Haapsaari
-layout: post
-comments: true
 title: "256 colors in vim and screen"
 categories:
     - vim

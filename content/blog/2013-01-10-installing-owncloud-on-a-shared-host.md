@@ -1,9 +1,7 @@
 ---
-layout: post
 title: Installing ownCloud on a shared host
 author: Janne Haapsaari
 date: 2013-01-10 18:45:00
-comments: true
 categories:
     - owncloud
     - kapsi

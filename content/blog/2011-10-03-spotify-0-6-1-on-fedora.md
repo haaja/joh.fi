@@ -1,8 +1,6 @@
 ---
 date: 2011-10-03 18:31:00
 author: Janne Haapsaari
-layout: post
-comments: true
 title: "Spotify 0.6.1 on Fedora 15/16"
 categories:
     - linux

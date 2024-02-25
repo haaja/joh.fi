@@ -1,9 +1,7 @@
 ---
-layout: post
 title: "Git subtree merge"
 author: Janne Haapsaari
 date: 2012-10-29 18:31:00
-comments: true
 category: git
 cover:  "/assets/header_image.jpg"
 ---

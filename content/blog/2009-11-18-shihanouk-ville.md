@@ -1,9 +1,7 @@
 ---
 date: 2009-11-18 16:13:00
-layout: post
 author: Janne Haapsaari
 slug: shihanouk-ville
-comments: true
 title: "Shihanouk Ville"
 categories:
     - trip2009

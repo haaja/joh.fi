@@ -1,8 +1,6 @@
 ---
 date: 2009-12-26 09:39:50
-layout: post
 author: Janne Haapsaari
-comments: true
 title: "Goodbye Jungle Beach"
 categories:
     - trip2009

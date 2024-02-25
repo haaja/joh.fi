@@ -7,57 +7,46 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 
-author = "Janne Haapsaari"
-title = "joh.fi"
-
-theme = "hugo-goa"
-
-## Hugo Built-in Features
-#disqusShortname = "haaja" # Comment out to disable Disqus.
-#googleAnalytics = "UA-9365169-1"
 enableRobotsTXT = true
 
-## Site Settings
 [params]
 author = "Janne Haapsaari"
+title = "joh.fi"
 intro = "Making software, writing bugs and travelling around the world. Tinkerer by heart. Cyclist."
 description = "Senior Software Engineer @[Qvik](https://qvik.com). Previously @RELEX, @Airbus"
 authorimage = "janne.jpg"
 dateformat = "Jan 2, 2006"
 
-## Site Meta Settings
-[params.meta]
-description = "Simple minimalist theme"
-keywords = "minimalist,blog,goa,hugo,developer"
+theme = "hugo-goa"
 
 ## Social Accounts
 [params.social]
 github = "haaja"
-#instagram = "<username>"
-#xing = "<username>"
 linkedin = "jannehaapsaari"
 twitter = "jhaaps"
 facebook = "jhaapsaari"
-#google = "<username>"
-#stackoverflow = "<username>"
 hackernews= "jhaaps"
 email = "janne@joh.fi"
+pgp = "77100465A7C26396D344F8A589F620C92FB9DEF6"
 
 ## Extras
 [params.extra]
-copyright = "© 2023. Janne Haapsaari."
+copyright = "© 2024. Janne Haapsaari."
 poweredby = false
 highlightjs = true
-rss = true
+socialmarkup = false
+toc = true
+displayrssicon = true
 
 ## Main Menu
 [[menu.main]]
-    name = "blog"
-    weight = 100
-    identifier = "blog"
-    url = "/blog/"
+name = "blog"
+weight = 100
+identifier = "blog"
+url = "/blog/"
+
 [[menu.main]]
-    name = "about"
-    identifier = "about"
-    weight = 200
-    url = "/about/"
+name = "about"
+identifier = "about"
+weight = 200
+url = "/about/"

@@ -1,8 +1,6 @@
 ---
 date: 2009-12-09 08:09:00
-layout: post
 author: Janne Haapsaari
-comments: true
 title: "Juomiskulttuureista"
 categories:
     - trip2009

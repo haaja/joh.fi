@@ -1,9 +1,7 @@
 ---
-layout: post
 title: "My first patch to GNOME"
 author: Janne Haapsaari
 date: 2012-12-16 19:22:00
-comments: true
 categories:
     - gnome
     - linux

@@ -1,9 +1,8 @@
 ---
 date: 2009-08-24 17:27:00
-layout: post
 author: Janne Haapsaari
 slug: hankintoja
-comments: true
+
 title: "Hankintoja"
 categories:
     - trip2009

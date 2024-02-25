@@ -1,7 +1,5 @@
 ---
 date: 2009-12-18 17:22:00
-layout: post
-comments: true
 title: "Jungle Beach"
 categories:
     - trip2009

@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "How to fix your damaged gnupg database"
 author: Janne Haapsaari
 date:   2015-01-02 11:18:14

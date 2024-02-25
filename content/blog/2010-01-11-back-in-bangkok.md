@@ -1,8 +1,6 @@
 ---
 date: 2010-01-11 11:55:00
-layout: post
 author: Janne Haapsaari
-comments: true
 title: "Back in Bangkok"
 categories:
     - trip2009

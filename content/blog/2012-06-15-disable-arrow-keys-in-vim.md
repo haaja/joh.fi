@@ -1,8 +1,6 @@
 ---
 date: 2012-06-15 10:24:00
-layout: post
 author: Janne Haapsaari
-comments: true
 title: "Disable arrow keys in Vim"
 category: vim
 cover:  "/assets/header_image.jpg"

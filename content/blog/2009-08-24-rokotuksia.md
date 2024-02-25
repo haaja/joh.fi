@@ -1,9 +1,8 @@
 ---
 date: 2009-08-24 15:32:00
-layout: post
 author: Janne Haapsaari
 slug: rokotuksia
-comments: true
+
 title: "Rokotuksia"
 categories:
     - trip2009

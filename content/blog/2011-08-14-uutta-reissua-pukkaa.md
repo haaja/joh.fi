@@ -1,8 +1,6 @@
 ---
 date: 2011-08-14 21:09:00
-layout: post
 author: Janne Haapsaari
-comments: true
 title: "Uutta reissua pukkaa"
 categories:
     - trip2011

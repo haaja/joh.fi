@@ -1,9 +1,7 @@
 ---
-layout: post
 title: Goodbye Google Reader
 author: Janne Haapsaari
 date: 2013-03-14 20:34:00
-comments: true
 categories:
     - google
     - rss

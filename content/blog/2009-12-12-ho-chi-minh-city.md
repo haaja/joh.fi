@@ -1,8 +1,6 @@
 ---
 date: 2009-12-12 06:39:00
-layout: post
 author: Janne Haapsaari
-comments: true
 title: "Ho Chi Minh City"
 categories:
     - trip2009

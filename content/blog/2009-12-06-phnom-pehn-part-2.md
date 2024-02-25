@@ -1,8 +1,6 @@
 ---
 date: 2009-12-06 10:12:00
-layout: post
 author: Janne Haapsaari
-comments: true
 title: "Phnom Pehn part 2"
 categories:
     - trip2009

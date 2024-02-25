@@ -1,9 +1,7 @@
 ---
 date: 2009-11-16 07:25:00
 author: Janne Haapsaari
-layout: post
 slug: angkor-wat
-comments: true
 title: "Angkor Wat"
 categories:
     - trip2009

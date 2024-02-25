@@ -1,8 +1,6 @@
 ---
-comments: true
 date: 2013-06-27 15:57:00
 author: Janne Haapsaari
-layout: post
 title: "Post status format"
 categories:
     - status

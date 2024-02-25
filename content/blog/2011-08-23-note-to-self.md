@@ -1,8 +1,6 @@
 ---
 date: 2011-08-23 18:44:00
-layout: post
 author: Janne Haapsaari
-comments: true
 title: "Note to self"
 categories:
     - reissut

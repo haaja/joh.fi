@@ -1,9 +1,7 @@
 ---
-layout: post
 title: "Migration to Octopress"
 author: Janne Haapsaari
 date: 2012-07-12 21:43:00
-comments: true
 categories:
     - blog
     - wordpress

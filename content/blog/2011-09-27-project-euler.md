@@ -1,8 +1,6 @@
 ---
 date: 2011-09-27 14:44:00
 author: Janne Haapsaari
-layout: post
-comments: true
 title: "Project Euler"
 categories:
     - programming

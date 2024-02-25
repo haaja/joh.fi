@@ -1,8 +1,6 @@
 ---
 date: 2011-10-09 07:22:00
 author: Janne Haapsaari
-layout: post
-comments: true
 title: "Matkan suunnittelu edistyy"
 categories:
     - trip2011

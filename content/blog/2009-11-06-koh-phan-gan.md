@@ -1,9 +1,7 @@
 ---
 date: 2009-11-06 15:13:00
-layout: post
 author: Janne Haapsaari
 slug: koh-phan-gan
-comments: true
 title: "Koh Phan-gan"
 categories:
     - trip2009

@@ -1,9 +1,8 @@
 ---
 date: 2009-06-17 12:04:00
-layout: post
 author: Janne Haapsaari
 slug: good-morning
-comments: true
+
 title: "Good Morning!"
 categories:
     - trip2009

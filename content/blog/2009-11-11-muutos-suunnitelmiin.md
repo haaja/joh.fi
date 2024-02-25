@@ -1,10 +1,8 @@
 ---
 date: 2009-11-11 15:17:00
-layout: post
 author: Janne Haapsaari
 slug: muutos-suunnitelmiin
 title: "Muutos suunnitelmiin"
-comments: true
 categories:
     - trip2009
     - thailand

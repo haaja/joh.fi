@@ -1,9 +1,7 @@
 ---
 date: 2009-11-01 05:31:00
-layout: post
 author: Janne Haapsaari
 slug: business-as-usual
-comments: true
 title: "Business as usual"
 categories:
     - trip2009

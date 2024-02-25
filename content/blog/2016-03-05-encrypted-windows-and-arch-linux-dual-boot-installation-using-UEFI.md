@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title:  "Encrypted Windows and Arch Linux dual-boot installation using UEFI"
 author: Janne Haapsaari
 date:   2016-03-05 13:30:00
