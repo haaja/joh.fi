@@ -1,0 +1,85 @@
+==================================================================
+https://keybase.io/haaja
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://joh.fi
+  * I am haaja (https://keybase.io/haaja) on keybase.
+  * I have a public key with fingerprint 7710 0465 A7C2 6396 D344  F8A5 89F6 20C9 2FB9 DEF6
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101796346dd7fc5353a674aec5da881e2e1ef31552e6092cb569da8ce33727e8af00a",
+      "fingerprint": "77100465a7c26396d344f8a589f620c92fb9def6",
+      "host": "keybase.io",
+      "key_id": "89f620c92fb9def6",
+      "kid": "0101796346dd7fc5353a674aec5da881e2e1ef31552e6092cb569da8ce33727e8af00a",
+      "uid": "1a2a3843c468fb2fd3ee1690a7c8c800",
+      "username": "haaja"
+    },
+    "merkle_root": {
+      "ctime": 1708973625,
+      "hash_meta": "51a614bd1af1d8a82bd6f29e9e68429c6569371fd0e40afdc77a9e31437339a8",
+      "seqno": 25495693
+    },
+    "revoke": {
+      "sig_ids": [
+        "f51f2c368fdd6811730bdd141a13170b0af02f30997eb9677c82ff85b8d1447c0f"
+      ]
+    },
+    "service": {
+      "hostname": "joh.fi",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1708973636,
+  "expire_in": 157680000,
+  "prev": "af771149afaeb009ca3c73fc6adb3e00a868b0211a194d370d304f57e133c226",
+  "seqno": 27,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtU31sFEUcvZaTQpVavkVaPrZEbb3Czs7uzO4VKZSv2qgNWvlqzXV2d7bdttwe
+d8thgVMqEAoGr6BUpRITkY8CgqARgVQIxjalEIJEoFRrCkohELkDaTFG4mwDiTH+
+6V+bnXnv/d57M1M3qJ9rQMK6nnGtkw539iS0XVdd9MfO/OWcaunVnHc5V0n7PrRK
+pyHbV2nqnJfjAQ+wgqCIdB0bmgQlSBAWCdUkncgyoAIF1IBAkgSKeEXQVAkpbEej
+EGIBU5kYPE84D2eY/jIaDARNv81kMQY8LyKJYE1AUEE6FEVDJpKsGEjgNUUwVEWn
+BmLEcivkMJg5lYToRNNia+zH12fvP/D/s+8lfXKACATKItREJBuqYOiQUoAUnvmX
+NZnnHWCIBv1kEWXockIqCBfxcItosLKK+oKWZTvNarbp7APMywqGSJBYOhIq9y2i
+NmE0CRAERFUHxAC6TGRB1ZEhKFShSBYFRUPMIsTA0Hkq8sTQNYyJQiEQIYZQITIz
+EaKL/RbnFSRRccDMQpCGrUrqTA+ZZay0EOct5gwJGIJ23IIsja4jGQAMeVXXgQgI
+gMyfyvR5wYC8omCqKgiznIJhyJIqM5CINd7gXos484JhU+uTd87pQf4Kq3yiYTI7
+gaBlW5pV5XRi24GQ1ynFrg44oKVU9T2g+1TTr7P7wRhhGgyZlp+VxJD/6gsiD0df
+D5hB6jMdhIQRq57nnTk0zCSJwe4VEBViEKryvKIRqGFoaIjoKqTsPGUkq7wAWEhF
+1CHmdciLhoQpgFATBPSPAjHzScqYJmvNT+wlQcpFktclQrcrYYArfcR499JUN915
+Qqs/N+Pe9odv6pFE50G5kgemPlz59k6qq6au1ownTjyz4/NjidvFvKuotHn0F3os
+Y/rRZyf161zV/XPX2faeg9GrPWP23mh8bObm+T1bt7W9+X3Nec/peEtyrOB+24Ez
+p1Db7cGeJ4f6pae317iOvALHZN/buHNDbWbBvoU/pOxaMHzt4JbJ0uAjDVbWlj1r
+j53rHdKaGT1pX62f4F5d7+2qmXSzqziy7s5T57fI9sd7apTdf4xKf9vOnFeSnTwn
+XI6HbXu0a3Inzs25n1B0MPL+3fiE/j8FkuauufJCRtn+DanRlNlFF7piL3akJO3O
+LIsWTkPtRz96N/9kzq0nNo3OSS3kmldM3/VWxiX3nOxDc4uGHLi96mJt1e2Bbe6x
+h+3uGYPeS3Of6qwuzlwfX9keXjmypeP6oDe+GqH3X/zBmMZoYPIzyZFZs4r2F0vf
+NXx9Aey5dV1f35F3MzUJbLx5YWhu+qWDpe1Kv1+bbtQcqm2JN6UX5vbGdmyLloA1
+U171V/tnz08vXZXx18VrRz/xe8icrZEvc2aOfS6WuGLJjvNNOckn8nrfSRhVFF/9
+e91vC1Gs7e7Zyl92d4w8ndualje6OfzN/UMv4Zcvb8yaV7rvcGRZ2eMlC0Z46uuy
+Kq8ck7yf/jl+arCzsDqaP29Y72cfgoHLjmyqKCQp7vil7gVpPce9FZvVhQfSpqDG
+xr3X5KRYVXX3lOwrXQX507j5Q7NOZ926PHxcQ/fzfwM=
+=bdRW
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/haaja
+
+==================================================================
