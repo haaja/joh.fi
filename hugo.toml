@@ -23,8 +23,6 @@ theme = "hugo-goa"
 [params.social]
 github = "haaja"
 linkedin = "jannehaapsaari"
-twitter = "jhaaps"
-facebook = "jhaapsaari"
 hackernews= "jhaaps"
 email = "janne@joh.fi"
 pgp = "77100465A7C26396D344F8A589F620C92FB9DEF6"
