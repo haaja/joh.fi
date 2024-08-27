@@ -6,12 +6,12 @@ languageCode = "en-US"
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
+title = "joh.fi"
 
 enableRobotsTXT = true
 
 [params]
 author = "Janne Haapsaari"
-title = "joh.fi"
 intro = "Making software, writing bugs and travelling around the world. Tinkerer by heart. Cyclist."
 description = "Senior Software Engineer @[Qvik](https://qvik.com). Previously @RELEX, @Airbus"
 authorimage = "janne.jpg"
