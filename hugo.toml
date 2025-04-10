@@ -12,8 +12,8 @@ enableRobotsTXT = true
 
 [params]
 author = "Janne Haapsaari"
-intro = "Making software, writing bugs and travelling around the world. Tinkerer by heart. Cyclist."
-description = "Senior Software Engineer @[Qvik](https://qvik.com). Previously @RELEX, @Airbus"
+intro = "Making software, writing bugs and family life. Tinkerer by heart."
+description = "Principal Software Engineer @[Qvik](https://qvik.com). Previously @RELEX, @Airbus"
 authorimage = "janne.jpg"
 dateformat = "Jan 2, 2006"
 
@@ -29,7 +29,7 @@ pgp = "77100465A7C26396D344F8A589F620C92FB9DEF6"
 
 ## Extras
 [params.extra]
-copyright = "© 2024. Janne Haapsaari."
+copyright = "© 2025. Janne Haapsaari."
 poweredby = false
 highlightjs = true
 socialmarkup = false
