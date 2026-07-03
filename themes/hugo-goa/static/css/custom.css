@@ -1,1 +1,136 @@
-/* Add custom CSS here. */
+/* ---------------------------------------------------------------------------
+   Modern theme layer.
+   Loaded after main.css, so these rules win. Keeps the base theme untouched
+   for clean upgrades and centralizes color in CSS custom properties.
+   --------------------------------------------------------------------------- */
+
+:root {
+  color-scheme: light dark;
+
+  --bg: #fcfcfc;
+  --fg: #27272a;         /* primary text / headings */
+  --fg-muted: #3f3f46;   /* body copy */
+  --fg-subtle: #71717a;  /* meta, captions */
+  --accent: #991b1b;     /* links, menu */
+  --border: #e4e4e7;
+  --code-bg: #f4f4f5;    /* inline code */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #18181b;
+    --fg: #f4f4f5;
+    --fg-muted: #d4d4d8;
+    --fg-subtle: #a1a1aa;
+    --accent: #f87171;
+    --border: #3f3f46;
+    --code-bg: #27272a;
+  }
+}
+
+/* --- base ---------------------------------------------------------------- */
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+a,
+a:hover,
+a:visited,
+a:link {
+  color: var(--fg);
+}
+
+/* --- author / headings --------------------------------------------------- */
+
+.author,
+.title,
+header.title .title {
+  color: var(--fg);
+}
+
+.intro {
+  color: var(--fg-muted);
+}
+
+.description {
+  color: var(--fg-subtle);
+}
+
+/* --- content ------------------------------------------------------------- */
+
+/* Darker + slightly heavier than the theme default (#777 / weight 300)
+   for legible body copy that also holds up in dark mode. */
+div.content {
+  color: var(--fg-muted);
+  font-weight: 400;
+}
+
+.content a {
+  color: var(--accent);
+  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
+  text-underline-offset: 2px;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* Bootstrap 5 dropped the .text-justify utility; keep prose left-aligned
+   explicitly so justified rivers never creep back in. */
+.text-justify {
+  text-align: left !important;
+}
+
+/* --- meta / lists -------------------------------------------------------- */
+
+.meta,
+h6.meta,
+.excerpt,
+.copyright,
+.powered {
+  color: var(--fg-subtle);
+}
+
+a.meta {
+  color: var(--accent);
+}
+
+.list-entry,
+.list-entry a {
+  color: var(--fg);
+}
+
+.menu-item {
+  color: var(--accent) !important;
+}
+
+/* --- code ---------------------------------------------------------------- */
+
+/* Inline code (highlight.js styles fenced blocks; this covers `inline`). */
+:not(pre) > code {
+  background-color: var(--code-bg);
+  color: var(--fg);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  border-radius: 6px;
+}
+
+/* --- misc ---------------------------------------------------------------- */
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+/* Slightly soften the avatar in dark mode so it doesn't glare. */
+@media (prefers-color-scheme: dark) {
+  .headshot {
+    filter: brightness(0.9);
+  }
+}

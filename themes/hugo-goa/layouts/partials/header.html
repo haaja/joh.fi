@@ -24,7 +24,8 @@
         {{ end -}}
 
         {{ if .Site.Params.extra.highlightjs }}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" media="(prefers-color-scheme: light)">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" media="(prefers-color-scheme: dark)">
         {{ end }}
 
         <link rel="stylesheet"
@@ -40,7 +41,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#fcfcfc" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)">
         {{- with .OutputFormats.Get "RSS" -}}
         <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}" />
         <link rel="alternate" type="application/json" title="{{ $.Site.Title }}" href="{{ "feed.json" | absURL }}" />
