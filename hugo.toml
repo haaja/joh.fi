@@ -29,7 +29,7 @@ pgp = "77100465A7C26396D344F8A589F620C92FB9DEF6"
 
 ## Extras
 [params.extra]
-copyright = "© 2025. Janne Haapsaari."
+copyright = "© 2026. Janne Haapsaari."
 poweredby = false
 highlightjs = true
 socialmarkup = false
