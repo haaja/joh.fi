@@ -7,6 +7,7 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 title = "joh.fi"
+theme = "hugo-goa"
 
 enableRobotsTXT = true
 
@@ -16,8 +17,6 @@ intro = "Making software, writing bugs and family life. Tinkerer by heart."
 description = "Principal Software Engineer @[Qvik](https://qvik.com). Previously @RELEX, @Airbus"
 authorimage = "janne.jpg"
 dateformat = "Jan 2, 2006"
-
-theme = "hugo-goa"
 
 ## Social Accounts
 [params.social]
