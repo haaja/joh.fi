@@ -1,0 +1,18 @@
+{{- /*
+  Inline SVG icon partial. Replaces Font Awesome for the handful of icons
+  this site uses, avoiding a large render-blocking webfont/CSS dependency.
+
+  Usage: {{ partial "icon.html" (dict "name" "github") }}
+  SVG sources live in assets/icons/<name>.svg (Font Awesome Free, CC BY 4.0).
+
+  The wrapping <a> already carries an aria-label, so the glyph is decorative:
+  it is marked aria-hidden and focusable="false".
+*/ -}}
+{{- $name := .name -}}
+{{- with resources.Get (printf "icons/%s.svg" $name) -}}
+  {{- $svg := .Content | replaceRE `(?s)<!--.*?-->` "" -}}
+  {{- $svg = replaceRE `<svg ` `<svg class="icon" aria-hidden="true" focusable="false" ` $svg -}}
+  {{- $svg | safeHTML -}}
+{{- else -}}
+  {{- warnf "icon partial: missing SVG for %q" $name -}}
+{{- end -}}

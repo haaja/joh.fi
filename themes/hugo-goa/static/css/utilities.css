@@ -1,0 +1,117 @@
+/* ---------------------------------------------------------------------------
+   Minimal replacement for Bootstrap.
+   The theme only used Bootstrap's Reboot baseline plus a small set of layout
+   utilities and never used any Bootstrap JS component. This file reproduces
+   exactly those pieces so the full Bootstrap CSS/JS CDN payload can be dropped.
+   Values mirror Bootstrap 5's defaults to preserve the original layout.
+   --------------------------------------------------------------------------- */
+
+/* --- Reboot subset ------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
+}
+
+/* --- Layout utilities (only those referenced in the templates) ----------- */
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.d-block { display: block !important; }
+.d-flex { display: flex !important; }
+
+.flex-column { flex-direction: column !important; }
+
+.justify-content-center { justify-content: center !important; }
+.justify-content-between { justify-content: space-between !important; }
+
+.text-center { text-align: center !important; }
+.text-start { text-align: left !important; }
+.text-end { text-align: right !important; }
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+.mt-3 { margin-top: 1rem !important; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded-circle { border-radius: 50% !important; }
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .flex-md-row { flex-direction: row !important; }
+}

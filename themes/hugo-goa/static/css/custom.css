@@ -121,6 +121,26 @@ pre {
   border-radius: 6px;
 }
 
+/* --- inline SVG icons (replace Font Awesome) ----------------------------- */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+/* A touch of breathing room + a hover cue for the social row. */
+.social a {
+  display: inline-block;
+  transition: opacity 0.15s ease;
+}
+
+.social a:hover {
+  opacity: 0.7;
+}
+
 /* --- misc ---------------------------------------------------------------- */
 
 hr {
