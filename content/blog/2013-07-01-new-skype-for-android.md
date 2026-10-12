@@ -5,7 +5,6 @@ title: "New Skype for Android"
 categories:
     - skype
     - android
-cover:  "/assets/header_image.jpg"
 ---
 
 It's about time! Finally the functional but otherwise not very attractive

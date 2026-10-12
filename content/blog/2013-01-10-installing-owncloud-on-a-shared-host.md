@@ -5,7 +5,6 @@ date: 2013-01-10 18:45:00
 categories:
     - owncloud
     - kapsi
-cover:  "/assets/header_image.jpg"
 ---
 
 I've been using [Dropbox](https://www.dropbox.com/) and
@@ -18,15 +17,15 @@ part of me that is concerned about privacy issues has never liked the
 situation but I've argued that the benefits are greater than lack of privacy.
 Also lately I've been syncing more files to my Dropbox and my free disk quota
 is running out. Therefore I need to either find a better alternative or start
-paying for the service. Well yesteday I had some free time on my hands and
+paying for the service. Well yesterday I had some free time on my hands and
 decided to look for an alternative to Dropbox. Ideal replacement should be
-easy to use, work well and preferably be open souce. It didn't take me long to
+easy to use, work well and preferably be open source. It didn't take me long to
 bump into [ownCloud](http://owncloud.org/).
 
-At first sight ownCloud looked great: nice user inteface, open source, media
-streaming, suppot for applications and most importantly solid enough to have
+At first sight ownCloud looked great: nice user interface, open source, media
+streaming, support for applications and most importantly solid enough to have
 [multiple companies offering services using
-ownCloud](http://owncloud.org/providers/). Let's take ownCloud into a test as
+ownCloud](http://owncloud.org/providers/). Let's put ownCloud to the test as
 I happen to have some extra [web space](http://www.kapsi.fi). I have to say
 though that ownCloud uses the word *cloud* pretty vaguely as by default
 ownCloud is installed on one server and the support for external storage is
@@ -40,7 +39,7 @@ installation was successful as I managed to import my calendar and contacts
 from google and create files and folders with the web ui. However when I tried
 to configure desktop sync client to work with my ownCloud installation, things
 didn't go as planned. The sync client accepted my credentials during the
-initial setup but complained that credentials were invalid when ever it tried
+initial setup but complained that credentials were invalid whenever it tried
 to sync.
 
 To make WebDAV work I had to edit the .htaccess file in the installation
@@ -48,30 +47,28 @@ directory.
 
 I changed the existing
 
-```sh
+```apache
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteRule ^.well-known/host-meta /public.php?service=host-meta [QSA,L]
 RewriteRule ^.well-known/carddav /remote.php/carddav/ [R]
 RewriteRule ^.well-known/caldav /remote.php/caldav/ [R]
-RewriteRule ^apps/([^/]*)/(.*\.(css|php))$ index.php?app=$1&getfile=$2
-[QSA,L]
+RewriteRule ^apps/([^/]*)/(.*\.(css|php))$ index.php?app=$1&getfile=$2 [QSA,L]
 RewriteRule ^remote/(.*) remote.php [QSA,L]
 </IfModule>
 ```
 
 To
 
-```sh
+```apache
 <IfModule mod_rewrite.c>
 RewriteEngine on
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
 RewriteRule ^.well-known/host-meta /public.php?service=host-meta [QSA,L]
 RewriteRule ^.well-known/carddav /remote.php/carddav/ [R]
 RewriteRule ^.well-known/caldav /remote.php/caldav/ [R]
-RewriteRule ^apps/([^/]*)/(.*\.(css|php))$ index.php?app=$1&getfile=$2
-[QSA,L]
+RewriteRule ^apps/([^/]*)/(.*\.(css|php))$ index.php?app=$1&getfile=$2 [QSA,L]
 RewriteRule ^remote/(.*) remote.php [QSA,L]
 </IfModule>
 ```
@@ -87,16 +84,16 @@ by server configuration: <INSTALL_DIR>/owncloud/remote.php
 ```
 
 
-As as solution I added to the .htaccess file following lines.
+As a solution I added to the .htaccess file following lines.
 
-```sh
+```apache
 Order allow,deny
 Allow from all
 ```
 
-Voilá and the sync client managed to synchronize everything.
+Voilà and the sync client managed to synchronize everything.
 
 Next step is to configure my desktop and mobile calendar, email client and
 mobile phone for contacts and of course sync client to synchronize everything
-important. I have to test ownCloud for few months until I'm confident enought
+important. I have to test ownCloud for few months until I'm confident enough
 to ditch my current solutions but so far everything looks great.

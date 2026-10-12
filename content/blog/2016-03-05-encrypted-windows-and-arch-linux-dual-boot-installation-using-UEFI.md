@@ -1,5 +1,4 @@
 ---
-
 title:  "Encrypted Windows and Arch Linux dual-boot installation using UEFI"
 author: Janne Haapsaari
 date:   2016-03-05 13:30:00
@@ -9,7 +8,6 @@ categories:
   - encryption
   - uefi
   - dual-boot
-cover:  "/assets/header_image.jpg"
 ---
 
 I will start this with a note that this is not a tutorial type of post. It's just
@@ -43,7 +41,7 @@ I chose to share the EFI-partition created by Windows installation between the
 two operating systems. The mount point for shared EFI-partition is /boot/efi.
 
 After Arch linux installation reboot the machine and try booting into both
-operating systems. GRUB bootloader should show up an allow you to choose between
+operating systems. GRUB bootloader should show up and allow you to choose between
 Windows and Arch linux. The windows installation is still not encrypted and the
 next step is to fix that.
 
@@ -55,7 +53,7 @@ than optimal but it's the only way I've managed to get my Windows installation
 encrypted. Do choose a really good and long passphrase!
 
 Windows does not allow BitLocker to encrypt using passphrase by default. One has
-to change registry to allow BitLocker to do that. Here are steps to do that:
+to change a group policy to allow BitLocker to do that. Here are steps to do that:
 
 1. Press Windows key and type gpedit.msc. Right click the application and choose Run as Administrator.
 2. On the left-hand panel navigate to the Computer Configuration -> Administrative Templates -> Windows Components -> BitLocker Drive Encryption -> Operating System Drives
@@ -63,7 +61,7 @@ to change registry to allow BitLocker to do that. Here are steps to do that:
 4. Check the Enabled radio box and Allow BitLocker without a compatible TPM (requires a password or a startup key on a USB flash drive) checkbox.
 5. Click Apply and OK.
 
-Now all that is required is to setup the BitLocker encryption for your installation
+Now all that is required is to set up the BitLocker encryption for your installation
 drive.
 
 1. Press Windows key and type "This PC"

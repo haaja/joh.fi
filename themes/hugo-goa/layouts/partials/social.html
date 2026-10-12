@@ -19,9 +19,6 @@
   {{ with .Site.Params.social.pgp }}
   <a href="{{ . }}.txt" aria-label="PGP public key" name="{{ . }}">{{ partial "icon.html" (dict "name" "key") }}</a>
   {{ end }}
-  {{ if and (.Site.Params.extra.rss) (.RSSLink) }}
-  <a href="{{ .RSSLink }}" aria-label="RSS" target="_blank" rel="noopener">{{ partial "icon.html" (dict "name" "rss") }}</a>
-  {{ end }}
 </section>
 {{ if .Site.Params.extra.socialmarkup }}
 <script type="application/ld+json">

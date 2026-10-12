@@ -6,14 +6,13 @@ categories:
     - linux
     - fedora
     - spotify
-cover:  "/assets/header_image.jpg"
 ---
 
 Edit: This works for version 0.6.2 as well.
 
 [Spotify](http://www.spotify.com/) is a popular music streaming service which
 unfortunately isn't globally available. Here in Finland we have had the
-opportunity to enjoy Spotify from the begining which is a rare thing. For a
+opportunity to enjoy Spotify from the beginning which is a rare thing. For a
 minuscule amount of 9.99€ you'll have pretty much unlimited collection of
 music at your hands and on your mobile phone. Ok, granted not every artist has
 their music in Spotify but the collection is huge! Better yet they "support"
@@ -21,8 +20,8 @@ Linux with their preview client. The support is nothing compared to Windows or
 OS X but it's more than most services ever offer. While the service is
 certainly rewarding for the end-user, I've heard stories about artists
 complaining that the money coming from Spotify is next to nothing. Personally
-I don't know what real situation is, probably record labels are taking most
-of the money. Enough said, lets get our hands dirty.
+I don't know what the real situation is, probably record labels are taking most
+of the money. Enough said, let's get our hands dirty.
 
 Spotify used to have separate packages for
 [Fedora](https://fedoraproject.org/), but currently the repository is empty.
@@ -47,7 +46,7 @@ $ ar vx spotify-client-gnome-support_0.5.2.84.g6d797eb-1_all.deb
 
 Both packages have similar content so extract them into different directories
 or follow this guide for one package at a time. Following files should be
-extracted: contor.tar.gz, data.tar.gz and debian-binary. data.tar.gz file
+extracted: control.tar.gz, data.tar.gz and debian-binary. data.tar.gz file
 contains the files we need to make Spotify work on fedora.
 
 This step will require root privileges. Copy data.tar.gz into system root, cd

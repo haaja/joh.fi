@@ -15,12 +15,13 @@ brew install hugo
 Generate html files
 
 ```sh
-hugo -t hugo-goa
+hugo
 ```
 
 Test the generated site:
-```hs
-hugo server -t hugo-goa
+
+```sh
+hugo server
 ```
 
 

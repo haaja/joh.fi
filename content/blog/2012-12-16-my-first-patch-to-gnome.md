@@ -7,11 +7,10 @@ categories:
     - linux
     - open source
     - programming
-cover:  "/assets/header_image.jpg"
 ---
 
 I've used open source software for many years now but I haven't really
-contributed back to any of the open source communities. I have filled some
+contributed back to any of the open source communities. I have filed some
 bug reports but other than that I've been simply a happy (and sometimes less
 happy) user. However yesterday I took the first step by doing tiny tiny
 contribution to [GNOME](http://www.gnome.org) or to be specific to
@@ -35,10 +34,10 @@ check_output function.
 
 Since I knew that this was trivial to fix I thought that I might just as well
 fix it. The problem was that I had never before contributed to GNOME so I had
-no clue how and where to send patches. Luckily after some help from google and
+no clue how and where to send patches. Luckily after some help from google
 I was directed to their bugzilla. ~~Unfortunately GNOME documentation isn't
 the easiest for the beginner because they are quite dated and I really didn't
-want setup IRC client to join their IRC channels and ask for help.~~ So I
+want to set up an IRC client to join their IRC channels and ask for help.~~ So I
 spent most of the time browsing their bugzilla and reading git logs to
 determine conventions used for commit messages and bug reports.
 

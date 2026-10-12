@@ -1,14 +1,13 @@
 ---
 date: 2013-06-15 17:56:00
 author: Janne Haapsaari
-title: "Waiting for Haswell Macbook Pros"
+title: "Waiting for Haswell MacBook Pros"
 categories:
     - macbook
     - apple
     - gadgets
     - linux
     - osx
-cover:  "/assets/header_image.jpg"
 ---
 
 I am a strong believer of mobile computing and to me a perfect setup is a
@@ -22,11 +21,11 @@ station, which by the way comes with the device, and it serves as a desktop
 replacement while at home. However two years is a long time in technology and
 I constantly find myself drooling after newer laptops.
 
-I've been an full time linux (check out
+I've been a full-time linux (check out
 [Arch linux](https://www.archlinux.org/), it's awesome!) user for the past
 eight years, albeit I did own a first generation intel macbook for almost two
-years. However lately I've been less and less interested about tuning your
-computer and more interested getting things done. I've also learned to love my
+years. However lately I've been less and less interested in tuning my
+computer and more interested in getting things done. I've also learned to love my
 external monitor color capabilities and high resolution which makes sure that
 I will not buy another laptop with 1366x768 resolution. Unfortunately Apple is
 currently pretty much the only manufacturer with laptops with truly high
@@ -39,7 +38,7 @@ mac user I am seriously considering buying the next generation macbook pro. I
 feel [OS X](https://en.wikipedia.org/wiki/OS_X) is a good middle ground
 between productivity and application support. I will have access to most
 developer tools I'm used to on linux but also services like Netflix will work
-just fine. Also Apples devices are well built and look gorgeous. That being
+just fine. Also Apple's devices are well built and look gorgeous. That being
 said I still have my doubts too, mostly regarding restrictions set by Apple.
 However I am fairly convinced that I can successfully run linux on the device
 should OS X turn out to be too restrictive for me.

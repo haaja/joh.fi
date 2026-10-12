@@ -5,13 +5,12 @@ title: "Project Euler"
 categories:
     - programming
     - python
-cover:  "/assets/header_image.jpg"
 ---
 
 [Project Euler](http://projecteuler.net) is a website containing computational
 problems intended to be solved by small programs. Currently there are 351
-problems to be solved and all of the problems should be doable within one-
-minute-rule. In other words you are doing something wrong if computing the
+problems to be solved and all of the problems should be doable within the
+one-minute rule. In other words you are doing something wrong if computing the
 solution takes more than one minute (or at least your program could be
 optimized). If you're interested in programming or mathematics then
 Project Euler is for you. Solving problems is fun and along the way you may

@@ -6,7 +6,6 @@ categories:
     - blog
     - wordpress
     - octopress
-cover:  "/assets/header_image.jpg"
 ---
 
 Brace yourselves, it's time for another "I migrated from X to
@@ -26,11 +25,11 @@ complained that they've had some encoding issues with exitwp but I didn't have
 any.
 
 So far I have only customized the default theme little bit and transferred the
-about page and blog posts. I don't know yet wheter I will transfer the gallery
+about page and blog posts. I don't know yet whether I will transfer the gallery
 I had on my old blog or not. I think I might just upload my images to picasa
 or flickr and just link to it. Also I might enable few more plugins if I find
-any interesting ones. I can already say that Octopress had the best out-of-
-the-box experience I've had. Default theme was gorgeous and few interesting
+any interesting ones. I can already say that Octopress had the best
+out-of-the-box experience I've had. Default theme was gorgeous and few interesting
 plugins were built in.
 
 Right now everything seems to work and I am more than happy with octopress.

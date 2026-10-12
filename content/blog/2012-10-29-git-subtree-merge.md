@@ -2,12 +2,12 @@
 title: "Git subtree merge"
 author: Janne Haapsaari
 date: 2012-10-29 18:31:00
-category: git
-cover:  "/assets/header_image.jpg"
+categories:
+    - git
 ---
 
-Last week I took part to an intensive
-[Clojure-course](http://iloveponies.github.com/) which was an introduction to
+Last week I took part in an intensive
+[Clojure-course](http://iloveponies.github.io/) which was an introduction to
 functional programming using [Clojure](http://clojure.org/). The course itself
 was fairly well organized and interesting but that's not the topic of this
 post.
@@ -21,10 +21,10 @@ passed the course I wanted to get rid of all the separate repositories and
 combine them to a single git repository. I could have simply created a new
 repository and copied the files into it but this way I would have lost all
 commit history. I have previously used git submodules but since I won't be
-developing these assignments further I would rather not user that method. Few
+developing these assignments further I would rather not use that method. Few
 minutes of googling and I found a solution for my problem,
-[git subtree merge](http://git-scm.com/book/ch6-7.html).
-Subtree merge is perfect for my use case since I my repositories were separate
+[git subtree merge](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging).
+Subtree merge is perfect for my use case since my repositories were separate
 but they shared no data with each other. In other words there would not be any
 merge conflicts.
 
@@ -68,7 +68,7 @@ git merge -s ours --no-commit old_project/master
 
 Next we actually add the old_project repository to our new repository. This
 happens with git read-tree command which reads the master tree of the
-old_project repository and stores it under the path given with prefi
+old_project repository and stores it under the path given with prefix
 argument.
 
 ```sh
@@ -129,9 +129,9 @@ Clojure/
 │       └── test
 └── material
     └── 120-hour-epic-sax-marathon
-            ├── bin
-                    ├── css
-                            └── img
+        ├── bin
+        ├── css
+        └── img
 ```
 
 The first level subdirectories below exercise and material directories were

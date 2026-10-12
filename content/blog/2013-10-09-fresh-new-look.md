@@ -6,7 +6,6 @@ categories:
     - blog
     - theme
     - octopress
-cover:  "/assets/header_image.jpg"
 ---
 
 As you can see the site has a new fresh and responsive look. :)

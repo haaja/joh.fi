@@ -2,8 +2,8 @@
 date: 2011-10-03 18:45:00
 author: Janne Haapsaari
 title: "Unmounting a busy drive"
-category: linux
-cover:  "/assets/header_image.jpg"
+categories:
+    - linux
 ---
 
 My computer setup consists of
@@ -25,7 +25,7 @@ umount: /media/storage1: device is busy
 
 
 Luckily there is a great tool called
-[fuser](https://secure.wikimedia.org/wikipedia/en/wiki/Fuser_%28Unix%29) which
+[fuser](https://en.wikipedia.org/wiki/Fuser_%28Unix%29) which
 lets you identify the process using a file or socket. This means that I can
 easily find out which process is keeping my drive busy and simply kill the
 process.
@@ -40,7 +40,7 @@ To find out which process is keeping your drive busy
 In the command letter X is the drive letter and letter Y is the number of
 partition. The output gives the process id that prevents mounting/unmounting
 the drive by using the resources. Even though fuser can kill the processes
-using resources, it is generally safer to first find out what you going to
+using resources, it is generally safer to first find out what you're going to
 kill.
 
 ```sh
@@ -50,7 +50,7 @@ haaja 6772 0.4 2.7 219212 56792 ? SLl Oct 3 02:25 banshee
 
 Here we can see that I have banshee open and still accessing media files on my
 external hard drive. This was just a staged situation where I intentionally
-left banshee open and dried unmounting. Usually I have some terminal tab still
+left banshee open and tried unmounting. Usually I have some terminal tab still
 open accessing the hard drive. I think that outputting the process information
 should be the default behavior of umount in this type of error situations.
 Kill the process and proceed to unmounting the no-longer-busy drive.

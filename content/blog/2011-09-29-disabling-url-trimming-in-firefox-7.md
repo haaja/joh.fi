@@ -2,13 +2,13 @@
 date: 2011-09-29 14:23:00
 author: Janne Haapsaari
 title: "Disabling URL trimming in Firefox 7"
-category: firefox
-cover:  "/assets/header_image.jpg"
+categories:
+    - firefox
 ---
 
 Mozilla released
 [Firefox 7](https://blog.mozilla.com/blog/2011/09/27/mozilla-firefox-significantly-reduces-memory-use-to-make-web-browsing-faster/)
-released yesterday (actually day before yesterday since it's already 29th
+yesterday (actually day before yesterday since it's already 29th
 here) and of course I did an upgrade as soon as RPM files were available in
 [koji](http://koji.fedoraproject.org/koji/). Call me old fashioned but I
 didn't like the new feature which trims the http:// part of URL. Perhaps it's

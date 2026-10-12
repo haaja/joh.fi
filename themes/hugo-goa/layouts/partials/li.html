@@ -5,7 +5,7 @@
       <a class="list-entry-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
       <p class="meta">
         {{ if not .Date.IsZero }} {{ .Date.Format (default "Jan 2, 2006" .Site.Params.dateformat) | upper }} {{ end }}
-        - {{ math.Round (div (countwords .Content) 220.0) }} MIN READ
+        - {{ .ReadingTime }} MIN READ
         <span class="category">
           {{ if isset .Params "categories" }}
           {{ $total := len .Params.categories }}
@@ -14,7 +14,7 @@
           {{ $total := sub $total 1 }}
           {{ range $i, $cat := sort .Params.categories }}
           <a class="category-link"
-            href="{{ "categories/" | relURL }}{{ $cat | humanize | urlize }}">{{ $cat | upper }}</a>{{ if lt $i $total }},
+            href="{{ "categories/" | relURL }}{{ $cat | urlize }}">{{ $cat | upper }}</a>{{ if lt $i $total }},
           {{ end }}
           {{ end }}
           {{ end }}

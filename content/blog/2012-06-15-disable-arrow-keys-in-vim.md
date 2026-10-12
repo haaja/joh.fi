@@ -2,8 +2,8 @@
 date: 2012-06-15 10:24:00
 author: Janne Haapsaari
 title: "Disable arrow keys in Vim"
-category: vim
-cover:  "/assets/header_image.jpg"
+categories:
+    - vim
 ---
 
 I know this information can be found in n+1 other places but I will write it
@@ -14,15 +14,15 @@ to drop all old habits! Therefore we will disable the arrow keys so that you
 are forced to use h, j, k, l to navigate. So without further ado here are the
 changes one should add to their .vimrc file.
 
-```sh
-noremap "
-noremap!
-noremap ""
-noremap!
-noremap ""
-noremap!
-noremap ""
-noremap!
+```vim
+noremap  <Up> ""
+noremap! <Up> <Esc>
+noremap  <Down> ""
+noremap! <Down> <Esc>
+noremap  <Left> ""
+noremap! <Left> <Esc>
+noremap  <Right> ""
+noremap! <Right> <Esc>
 ```
 
 

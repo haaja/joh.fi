@@ -7,15 +7,14 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        {{ with .Site.Params.meta.description }}
-        <meta name="description" content="{{ . }}">{{ end }}
+        {{ $description := .Description }}
+        {{ if and (not $description) .IsPage }}{{ $description = .Summary }}{{ end }}
+        {{ with $description | default .Site.Params.intro }}
+        <meta name="description" content="{{ . | plainify | replaceRE `\s+` " " | truncate 160 }}">{{ end }}
         {{ with .Site.Params.meta.keywords }}
         <meta name="keywords" content="{{.}}">{{ end }}
 
-        <title>
-            {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }} {{ if eq $url "" }} {{ .Site.Title }}
-            {{ else }} {{ .Site.Title }} - {{ .Title }} {{ end }}
-        </title>
+        <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 
         {{ hugo.Generator }}
 
@@ -44,8 +43,6 @@
         <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)">
         {{- with .OutputFormats.Get "RSS" -}}
         <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .RelPermalink }}" />
-        <link rel="alternate" type="application/json" title="{{ $.Site.Title }}" href="{{ "feed.json" | absURL }}" />
-        <link rel="EditURI" type="application/rsd+xml" href="{{ "rsd.xml" | absURL }}" />
         {{- end -}}
 
     </head>

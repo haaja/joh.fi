@@ -5,7 +5,6 @@ date: 2013-03-14 20:34:00
 categories:
     - google
     - rss
-cover:  "/assets/header_image.jpg"
 ---
 
 So yesterday Google announced that they will retire Google Reader. At first

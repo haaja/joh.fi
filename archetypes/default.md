@@ -1,11 +1,6 @@
-+++
-draft = false 
-comments = false 
-slug = "" 
-tags = []
-categories = []
-
-showpagemeta = false
-showcomments = false
-+++
-
+---
+title: '{{ replace .File.ContentBaseName "-" " " | title }}'
+date: {{ .Date }}
+draft: true
+categories: []
+---

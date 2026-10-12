@@ -1,15 +1,14 @@
 baseURL = "https://joh.fi/"
-builddrafts = false
-canonifyurls = false
 locale = "en-US"
-
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
 title = "joh.fi"
 theme = "hugo-goa"
 
 enableRobotsTXT = true
+
+# Code is highlighted client-side by highlight.js (light/dark aware),
+# so keep Hugo's Chroma from also styling fenced code blocks.
+[markup.highlight]
+codeFences = false
 
 [params]
 author = "Janne Haapsaari"

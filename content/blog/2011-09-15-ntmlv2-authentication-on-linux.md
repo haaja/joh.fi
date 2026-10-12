@@ -1,26 +1,25 @@
 ---
 date: 2011-09-15 12:04:00
 author: Janne Haapsaari
-title: "NTMLv2 authentication on Linux"
+title: "NTLMv2 authentication on Linux"
 categories:
     - ntlmv2
     - linux
-cover:  "/assets/header_image.jpg"
 ---
 
 Today at work I was trying to get my virtual machine, running Fedora, to
-access internet. Unfortunately the place I work is pretty much married to
-products from Microsoft. All the networking to the outside world go through
+access the internet. Unfortunately the place I work is pretty much married to
+products from Microsoft. All the networking to the outside world goes through
 proxies and in this case through Microsoft ISA. ISA uses NTLMv2 authentication
-mechanism which is not supported out of the box by Linux. Luckily there was
+mechanism which is not supported out of the box by Linux. Luckily there were
 multiple applications that were able to act as a man in the middle proxy, such
 as [cntlm](http://cntlm.sourceforge.net/) and
-[NTLAMPS](http://ntlmaps.sourceforge.net/).
+[NTLMAPS](http://ntlmaps.sourceforge.net/).
 
 These proxies are installed locally and then applications will talk to them.
 In turn these proxies will relay the requests to the actual proxy. This way we
 can point our whole system to use this locally installed proxy and everything
-just works. There are few applications, such as Firefox, that can authenticate
+just works. There are a few applications, such as Firefox, that can authenticate
 to NTLMv2 proxy but this is not the overall case.
 
 I managed to get both of the replacement proxies working but ended up using
@@ -32,7 +31,7 @@ the installation part, it should apply to other distributions as well.
 1. Install cntlm
 
     ```sh
-    # yum install cntl
+    # yum install cntlm
     ```
 
 2. Test your authentication method
@@ -80,7 +79,7 @@ the installation part, it should apply to other distributions as well.
     # /etc/init.d/cntlmd start
     ```
 
-If everything works, you should be able to access internet normally. Remember
+If everything works, you should be able to access the internet normally. Remember
 you need to create new hash every time your password changes!
 
 Also you might want to start cntlm automatically on start-up:

@@ -6,7 +6,6 @@ categories:
     - vim
     - screen
     - linux
-cover:  "/assets/header_image.jpg"
 ---
 
 For some strange reason at least [Fedora](http://fedoraproject.org/) ships
@@ -14,9 +13,9 @@ For some strange reason at least [Fedora](http://fedoraproject.org/) ships
 256 colors disabled. Here's a quick guide how to enable 256 colors in vim and
 screen.
 
-1. Add to you .vimrc file
+1. Add to your .vimrc file
 
-    ```sh
+    ```vim
     set t_Co=256
     ```
 
@@ -31,5 +30,5 @@ screen.
 
 
 Also check that your terminal supports or has 256 colors enabled. At least
-gnome-terminals seems to have this by default. Enjoy combination of vim and
+gnome-terminal seems to have this by default. Enjoy combination of vim and
 screen with 256 colors. :)
