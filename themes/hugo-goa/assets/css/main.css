@@ -74,11 +74,11 @@ div.content {
 .copyright {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
 }
 .description {
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   color: rgb(161 161 170);
   font-size: 16px;
 }
@@ -103,7 +103,7 @@ div.content {
 .excerpt {
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
 
   color: #555;
   margin-bottom: 20px;
@@ -174,7 +174,7 @@ h3.intro {
 .meta {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
   color: rgb(113 113 122);
 }
 a.meta {
@@ -183,7 +183,7 @@ a.meta {
 h6.meta {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
-  font-weight: 200;
+  font-weight: 300;
   color: rgb(113 113 122);
 }
 section.meta {

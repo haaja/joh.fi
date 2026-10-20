@@ -1,19 +1,16 @@
 {{ partial "sub_footer.html" . }}
 </div>
 
-{{ with .Site.Params.extra }}
-{{ if .highlightjs }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-{{ range .highlightjslanguages }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/{{.}}.min.js"></script>
+{{ if .Store.Get "highlightjs" }}
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+{{ range .Site.Params.extra.highlightjslanguages }}
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/{{.}}.min.js"></script>
 {{ end }}
 
-<script>hljs.highlightAll();</script>
-{{ end }}
+<script>document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());</script>
 {{ end }}
 
 {{ template "_internal/google_analytics.html" . }}
-<script src="/js/custom.js"></script>
 </body>
 
 </html>

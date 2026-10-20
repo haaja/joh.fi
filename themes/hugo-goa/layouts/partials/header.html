@@ -22,18 +22,22 @@
         <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
         {{ end -}}
 
-        {{ if .Site.Params.extra.highlightjs }}
+        {{/* Only pages that actually contain code blocks pay for highlight.js. */}}
+        {{ .Store.Set "highlightjs" (and .Site.Params.extra.highlightjs .IsPage (strings.Contains .Content "<pre")) }}
+        {{ if .Store.Get "highlightjs" }}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css" media="(prefers-color-scheme: light)">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" media="(prefers-color-scheme: dark)">
         {{ end }}
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" />
-        <link rel="stylesheet" href="{{ "css/utilities.css" | absURL }}">
-        <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
-        <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
+        <link rel="preload" href="{{ "fonts/roboto.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="{{ "fonts/roboto-slab.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+        {{ $css := slice
+            (resources.Get "css/fonts.css")
+            (resources.Get "css/utilities.css")
+            (resources.Get "css/main.css")
+            (resources.Get "css/custom.css")
+            | resources.Concat "css/site.css" | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
