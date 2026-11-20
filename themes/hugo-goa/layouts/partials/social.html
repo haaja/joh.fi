@@ -17,6 +17,6 @@
   <a href="mailto:{{ . }}" aria-label="Email">{{ partial "icon.html" (dict "name" "envelope") }}</a>
   {{ end }}
   {{ with .Site.Params.social.pgp }}
-  <a href="{{ . }}.txt" aria-label="PGP public key" name="{{ . }}">{{ partial "icon.html" (dict "name" "key") }}</a>
+  <a href="{{ printf "%s.txt" . | relURL }}" aria-label="PGP public key">{{ partial "icon.html" (dict "name" "key") }}</a>
   {{ end }}
 </section>

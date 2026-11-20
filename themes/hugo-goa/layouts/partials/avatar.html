@@ -3,7 +3,7 @@
   {{ with or (resources.Get (printf "images/%s" .)) (resources.Get (printf "img/%s" .)) }}
   {{/* Displayed at 180px (.headshot); 360px covers 2x screens. */}}
   {{ $img := .Resize "360x webp q80" }}
-  <img src="{{ $img.RelPermalink }}" width="180" height="180" alt="Author Image" fetchpriority="high"
+  <img src="{{ $img.RelPermalink }}" width="180" height="180" alt="{{ $.Site.Params.author }}" fetchpriority="high"
     class="img-fluid rounded-circle mx-auto d-block headshot">
   {{ end }}
   {{ end }}
