@@ -6,10 +6,10 @@
       <p class="meta">
         {{ if not .Date.IsZero }} {{ .Date.Format (default "Jan 2, 2006" .Site.Params.dateformat) | upper }} {{ end }}
         - {{ .ReadingTime }} MIN READ
-        <span class="category">
+        <span class="tags">
           {{ with sort (.GetTerms "tags") "LinkTitle" }}
           —
-          {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a class="category-link" href="{{ $t.RelPermalink }}">{{ $t.LinkTitle | upper }}</a>{{ end }}
+          {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a class="tag-link" href="{{ $t.RelPermalink }}">{{ $t.LinkTitle | upper }}</a>{{ end }}
           {{ end }}
         </span>
       </p>
