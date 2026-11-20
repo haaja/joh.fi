@@ -4,7 +4,7 @@ licenselink = "https://github.com/kaapiandcode/hugo-goa/blob/master/LICENSE.md"
 description = "Simple Minimalist Hugo Theme"
 homepage = "https://github.com/kaapiandcode/hugo-goa"
 tags = ["Roboto", "Lato", "Roboto Slab", "minimal", "clean"]
-features = ["blog", "pages", "minimal", "responsive", "404", "icons", "disqus", "analytics"]
+features = ["blog", "pages", "minimal", "responsive", "404", "icons"]
 min_version = "v0.112.0"
 
 [author]

@@ -3,14 +3,10 @@
 
 {{ if .Store.Get "highlightjs" }}
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-{{ range .Site.Params.extra.highlightjslanguages }}
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/{{.}}.min.js"></script>
-{{ end }}
 
 <script>document.addEventListener("DOMContentLoaded", () => hljs.highlightAll());</script>
 {{ end }}
 
-{{ template "_internal/google_analytics.html" . }}
 </body>
 
 </html>
