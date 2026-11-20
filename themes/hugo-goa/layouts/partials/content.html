@@ -27,8 +27,11 @@
 
 <section id="content-pane">
   <div class="text-justify content">
-    {{ if and (ne .Params.toc false) (gt .WordCount 300) }}
-    {{ .TableOfContents }}
+    {{ if and (ne .Params.toc false) (gt .WordCount 300) (strings.Contains .TableOfContents "<li") }}
+    <div class="toc">
+      <p class="toc-title">Contents</p>
+      {{ .TableOfContents }}
+    </div>
     {{ end }}
     {{ .Content }}
   </div>
