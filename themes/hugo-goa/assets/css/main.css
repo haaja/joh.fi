@@ -132,7 +132,7 @@ div.content {
   font-size: 20px;
   color: rgb(82 82 91);
 }
-h3.intro {
+p.intro {
   margin-top: 0px;
 }
 .list {
@@ -179,12 +179,6 @@ h3.intro {
 }
 a.meta {
   color: rgb(153 27 27);
-}
-h6.meta {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  color: rgb(113 113 122);
 }
 section.meta {
   margin-top: 20px;

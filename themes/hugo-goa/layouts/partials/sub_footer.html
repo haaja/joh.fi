@@ -1,16 +1,16 @@
 <footer class="text-center footer">
   <hr />
   {{ with .Site.Params.extra }}
-  <h6 class="text-center copyright">{{ .copyright | markdownify }}</h6>
+  <p class="text-center copyright">{{ .copyright | markdownify }}</p>
   {{ if ne .poweredby false }}
-  <h6 class="text-center powered"><a href="https://gohugo.io/">Hugo</a> <a
+  <p class="text-center powered"><a href="https://gohugo.io/">Hugo</a> <a
       href="https://github.com/kaapiandcode/hugo-goa">Goa</a> by <a href="https://kaapiandco.de">KaapiandCode</a> and <a
-      href="https://incirclemedia.com">Incircle Media</a></h6>
+      href="https://incirclemedia.com">Incircle Media</a></p>
   {{ end }}
   {{ if ne .displayrssicon false }}
-  <h6>
+  <p class="rss">
     <a href="{{ "index.xml" | absURL }}" aria-label="RSS Feed">{{ partial "icon.html" (dict "name" "rss") }}</a>
-  </h6>
+  </p>
   {{ end }}
   {{ end }}
 

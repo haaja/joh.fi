@@ -86,7 +86,6 @@ div.content {
 /* --- meta / lists -------------------------------------------------------- */
 
 .meta,
-h6.meta,
 .excerpt,
 .copyright,
 .powered {
@@ -105,6 +104,29 @@ a.meta {
 .menu-item {
   color: var(--accent) !important;
 }
+
+/* --- former headings ----------------------------------------------------
+   These were <h3>/<h4>/<h6> only for their size, which broke the page's
+   heading outline. Now that they are <p>/<li>, restore the heading box
+   metrics (utilities.css) they relied on. */
+
+section.meta p.meta,
+.copyright,
+.powered,
+.rss,
+.intro,
+.description,
+.menu-line {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.rss { font-size: 1rem; }
+.menu-line { font-size: 1.5rem; }
+
+.main-menu ul { margin: 0; }
+.main-menu li { text-align: center; }
 
 /* --- code ---------------------------------------------------------------- */
 
