@@ -4,6 +4,8 @@ author: Janne Haapsaari
 title: "Disabling URL trimming in Firefox 7"
 categories:
     - firefox
+aliases:
+  - /2011/09/29/disabling-url-trimming-in-firefox-7.html
 ---
 
 Mozilla released

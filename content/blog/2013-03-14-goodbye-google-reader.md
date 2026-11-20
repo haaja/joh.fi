@@ -5,6 +5,8 @@ date: 2013-03-14 20:34:00
 categories:
     - google
     - rss
+aliases:
+  - /2013/03/14/goodbye-google-reader.html
 ---
 
 So yesterday Google announced that they will retire Google Reader. At first

@@ -6,6 +6,8 @@ categories:
     - linux
     - fedora
     - spotify
+aliases:
+  - /2011/10/03/spotify-0-6-1-on-fedora.html
 ---
 
 Edit: This works for version 0.6.2 as well.

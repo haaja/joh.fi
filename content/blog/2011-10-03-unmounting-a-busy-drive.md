@@ -4,6 +4,8 @@ author: Janne Haapsaari
 title: "Unmounting a busy drive"
 categories:
     - linux
+aliases:
+  - /2011/10/03/unmounting-a-busy-drive.html
 ---
 
 My computer setup consists of

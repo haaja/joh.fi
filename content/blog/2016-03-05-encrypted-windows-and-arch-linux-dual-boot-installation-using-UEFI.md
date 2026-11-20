@@ -8,6 +8,8 @@ categories:
   - encryption
   - uefi
   - dual-boot
+aliases:
+  - /2016/03/05/encrypted-windows-and-arch-linux-dual-boot-installation-using-UEFI.html
 ---
 
 I will start this with a note that this is not a tutorial type of post. It's just

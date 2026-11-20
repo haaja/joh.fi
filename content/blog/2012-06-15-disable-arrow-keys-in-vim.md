@@ -4,6 +4,8 @@ author: Janne Haapsaari
 title: "Disable arrow keys in Vim"
 categories:
     - vim
+aliases:
+  - /2012/06/15/disable-arrow-keys-in-vim.html
 ---
 
 I know this information can be found in n+1 other places but I will write it

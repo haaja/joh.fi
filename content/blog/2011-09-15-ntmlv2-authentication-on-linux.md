@@ -5,6 +5,8 @@ title: "NTLMv2 authentication on Linux"
 categories:
     - ntlmv2
     - linux
+aliases:
+  - /2011/09/15/ntmlv2-authentication-on-linux.html
 ---
 
 Today at work I was trying to get my virtual machine, running Fedora, to

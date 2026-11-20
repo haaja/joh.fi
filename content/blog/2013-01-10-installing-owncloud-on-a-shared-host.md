@@ -5,6 +5,8 @@ date: 2013-01-10 18:45:00
 categories:
     - owncloud
     - kapsi
+aliases:
+  - /2013/01/10/installing-owncloud-on-a-shared-host.html
 ---
 
 I've been using [Dropbox](https://www.dropbox.com/) and

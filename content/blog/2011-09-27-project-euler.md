@@ -5,6 +5,8 @@ title: "Project Euler"
 categories:
     - programming
     - python
+aliases:
+  - /2011/09/27/project-euler.html
 ---
 
 [Project Euler](http://projecteuler.net) is a website containing computational

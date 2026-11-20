@@ -8,6 +8,8 @@ categories:
     - gadgets
     - linux
     - osx
+aliases:
+  - /2013/06/15/waiting-for-haswell-macbook-pros.html
 ---
 
 I am a strong believer of mobile computing and to me a perfect setup is a

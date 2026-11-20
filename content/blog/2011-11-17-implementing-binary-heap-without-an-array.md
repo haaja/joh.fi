@@ -6,6 +6,8 @@ categories:
     - programming
     - java
     - binary heap
+aliases:
+  - /2011/11/17/implementing-binary-heap-without-an-array.html
 ---
 
 So I had this school assignment to implement a

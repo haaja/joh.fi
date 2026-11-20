@@ -7,6 +7,8 @@ categories:
     - linux
     - open source
     - programming
+aliases:
+  - /2012/12/16/my-first-patch-to-gnome.html
 ---
 
 I've used open source software for many years now but I haven't really

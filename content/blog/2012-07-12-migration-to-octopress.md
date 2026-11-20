@@ -6,6 +6,8 @@ categories:
     - blog
     - wordpress
     - octopress
+aliases:
+  - /2012/07/12/migration-to-octopress.html
 ---
 
 Brace yourselves, it's time for another "I migrated from X to

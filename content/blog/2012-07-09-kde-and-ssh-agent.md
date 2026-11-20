@@ -6,6 +6,8 @@ categories:
     - kde
     - ssh
     - linux
+aliases:
+  - /2012/07/09/kde-and-ssh-agent.html
 ---
 
 Hello lazyweb!

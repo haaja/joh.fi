@@ -6,6 +6,8 @@ categories:
     - vim
     - screen
     - linux
+aliases:
+  - /2011/11/03/256-colors-in-vim-and-screen.html
 ---
 
 For some strange reason at least [Fedora](http://fedoraproject.org/) ships

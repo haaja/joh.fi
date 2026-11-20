@@ -4,6 +4,8 @@ author: Janne Haapsaari
 date:   2015-01-02 11:18:14
 categories:
     - gnupg
+aliases:
+  - /2015/01/02/howto-fix-your-damaged-gnupg-databse.html
 ---
 Some time ago I had troubles with my gnupg installation. Namely gpg was unable
 to read keys from my trustdb.gpg. I figured this had something to do with the

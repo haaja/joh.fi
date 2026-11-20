@@ -5,6 +5,8 @@ title: "New Skype for Android"
 categories:
     - skype
     - android
+aliases:
+  - /2013/07/01/new-skype-for-android.html
 ---
 
 It's about time! Finally the functional but otherwise not very attractive
