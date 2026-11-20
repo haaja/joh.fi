@@ -17,6 +17,15 @@
   <a href="mailto:{{ . }}" aria-label="Email">{{ partial "icon.html" (dict "name" "envelope") }}</a>
   {{ end }}
   {{ with .Site.Params.social.pgp }}
-  <a href="{{ printf "%s.txt" . | relURL }}" aria-label="PGP public key">{{ partial "icon.html" (dict "name" "key") }}</a>
+  {{ $fingerprint := . }}
+  {{ with resources.Get "pgp/public-key.asc" }}
+  {{- /* One key file, published at two URLs: /<fingerprint>.txt (linked here)
+         and /pgp/haaja_public_key.asc (linked from the about page until 2023). */ -}}
+  {{ $key := resources.Copy (printf "%s.txt" $fingerprint) . }}
+  {{ (resources.Copy "pgp/haaja_public_key.asc" .).Publish }}
+  <a href="{{ $key.RelPermalink }}" aria-label="PGP public key">{{ partial "icon.html" (dict "name" "key") }}</a>
+  {{ else }}
+  {{ warnf "social.html: params.social.pgp is set but assets/pgp/public-key.asc is missing" }}
+  {{ end }}
   {{ end }}
 </section>
