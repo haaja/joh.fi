@@ -18,6 +18,20 @@
 
         {{ hugo.Generator }}
 
+        <link rel="canonical" href="{{ .Permalink }}">
+        {{ template "_internal/opengraph.html" . }}
+        {{ template "_internal/twitter_cards.html" . }}
+        {{/* No page images exist, so the author avatar serves as the share image. */}}
+        {{ with .Site.Params.authorimage }}
+        {{ with or (resources.Get (printf "images/%s" .)) (resources.Get (printf "img/%s" .)) }}
+        {{ $og := .Process "jpg q80" }}
+        <meta property="og:image" content="{{ $og.Permalink }}">
+        <meta property="og:image:width" content="{{ $og.Width }}">
+        <meta property="og:image:height" content="{{ $og.Height }}">
+        <meta name="twitter:image" content="{{ $og.Permalink }}">
+        {{ end }}
+        {{ end }}
+
         {{ range .AlternativeOutputFormats -}}
         <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
         {{ end -}}
