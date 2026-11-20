@@ -2,23 +2,16 @@
   <h1 class="title">{{ .Title }}</h1>
 </header>
 
-<section id="category-pane" class="meta">
+<section id="meta-pane" class="meta">
   {{ if ne .Params.showpagemeta false }}
   <div class="d-flex flex-column flex-md-row justify-content-between">
     <p class="text-start meta">
       {{ if not .Date.IsZero }} PUBLISHED ON {{ .Date.Format (default "Jan 2, 2006" .Site.Params.dateformat) | upper }}
       {{ end }}
       / {{ .ReadingTime }} MIN READ
-      {{ if isset .Params "categories" }}
-      {{ $total := len .Params.categories }}
-      {{ if gt $total 0 }}
+      {{ with sort (.GetTerms "tags") "LinkTitle" }}
       —
-      {{ $total := sub $total 1 }}
-      {{ range $i, $cat := sort $.Params.categories }}
-      <a class="meta"
-        href="{{ printf "categories/%s/" ($cat | urlize) | relURL }}">{{ $cat | upper }}</a>{{ if lt $i $total }}, {{ end }}
-      {{ end }}
-      {{ end }}
+      {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a class="meta" href="{{ $t.RelPermalink }}">{{ $t.LinkTitle | upper }}</a>{{ end }}
       {{ end }}
     </p>
   </div>
@@ -37,22 +30,3 @@
   </div>
 </section>
 
-<section id="tag-pane" class="meta">
-  {{ if ne .Params.showpagemeta false }}
-  <div class="d-flex flex-column flex-md-row justify-content-between">
-    <p class="text-end meta">
-      {{ if isset .Params "tags" }}
-      {{ $total := len .Params.tags }}
-      {{ if gt $total 0 }}
-      TAGS:
-      {{ $subtotal := sub $total 1 }}
-      {{ range $i, $tag := sort $.Params.tags }}
-      <a class="meta" href="{{ printf "tags/%s/" ($tag | urlize) | relURL }}">{{ $tag | upper }}</a>{{ if lt $i $subtotal }},
-      {{ end }}
-      {{ end }}
-      {{ end }}
-      {{ end }}
-    </p>
-  </div>
-  {{ end }}
-</section>

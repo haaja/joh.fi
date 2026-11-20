@@ -2,7 +2,7 @@
 date: 2013-06-15 17:56:00
 author: Janne Haapsaari
 title: "Waiting for Haswell MacBook Pros"
-categories:
+tags:
     - macbook
     - apple
     - gadgets

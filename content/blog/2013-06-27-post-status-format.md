@@ -2,7 +2,7 @@
 date: 2013-06-27 15:57:00
 author: Janne Haapsaari
 title: "Post status format"
-categories:
+tags:
     - status
     - wordpress
 aliases:

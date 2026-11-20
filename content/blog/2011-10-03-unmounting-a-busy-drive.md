@@ -2,7 +2,7 @@
 date: 2011-10-03 18:45:00
 author: Janne Haapsaari
 title: "Unmounting a busy drive"
-categories:
+tags:
     - linux
 aliases:
   - /2011/10/03/unmounting-a-busy-drive.html

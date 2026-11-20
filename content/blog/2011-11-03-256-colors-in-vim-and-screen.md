@@ -2,7 +2,7 @@
 date: 2011-11-03 14:44:00
 author: Janne Haapsaari
 title: "256 colors in vim and screen"
-categories:
+tags:
     - vim
     - screen
     - linux

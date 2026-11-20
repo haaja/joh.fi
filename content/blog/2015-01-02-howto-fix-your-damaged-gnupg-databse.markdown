@@ -2,7 +2,7 @@
 title:  "How to fix your damaged gnupg database"
 author: Janne Haapsaari
 date:   2015-01-02 11:18:14
-categories:
+tags:
     - gnupg
 aliases:
   - /2015/01/02/howto-fix-your-damaged-gnupg-databse.html

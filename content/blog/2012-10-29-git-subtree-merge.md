@@ -2,7 +2,7 @@
 title: "Git subtree merge"
 author: Janne Haapsaari
 date: 2012-10-29 18:31:00
-categories:
+tags:
     - git
 aliases:
   - /2012/10/29/git-subtree-merge.html

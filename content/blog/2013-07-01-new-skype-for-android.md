@@ -2,7 +2,7 @@
 date: 2013-07-01 17:16:00
 author: Janne Haapsaari
 title: "New Skype for Android"
-categories:
+tags:
     - skype
     - android
 aliases:

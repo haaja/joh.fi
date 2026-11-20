@@ -2,7 +2,7 @@
 date: 2012-07-09 15:21:00
 author: Janne Haapsaari
 title: "KDE and ssh-agent"
-categories:
+tags:
     - kde
     - ssh
     - linux

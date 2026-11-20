@@ -7,6 +7,15 @@ enableRobotsTXT = true
 
 # Code is highlighted client-side by highlight.js (light/dark aware),
 # so keep Hugo's Chroma from also styling fenced code blocks.
+# Posts are labelled with tags only; categories are not used. Term pages
+# don't get their own RSS feeds (one site-wide feed is enough).
+[taxonomies]
+tag = "tags"
+
+[outputs]
+taxonomy = ["html"]
+term = ["html"]
+
 [markup.highlight]
 codeFences = false
 

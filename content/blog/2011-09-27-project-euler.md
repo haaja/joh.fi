@@ -2,7 +2,7 @@
 date: 2011-09-27 14:44:00
 author: Janne Haapsaari
 title: "Project Euler"
-categories:
+tags:
     - programming
     - python
 aliases:

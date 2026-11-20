@@ -7,17 +7,9 @@
         {{ if not .Date.IsZero }} {{ .Date.Format (default "Jan 2, 2006" .Site.Params.dateformat) | upper }} {{ end }}
         - {{ .ReadingTime }} MIN READ
         <span class="category">
-          {{ if isset .Params "categories" }}
-          {{ $total := len .Params.categories }}
-          {{ if gt $total 0 }}
+          {{ with sort (.GetTerms "tags") "LinkTitle" }}
           —
-          {{ $total := sub $total 1 }}
-          {{ range $i, $cat := sort .Params.categories }}
-          <a class="category-link"
-            href="{{ printf "categories/%s/" ($cat | urlize) | relURL }}">{{ $cat | upper }}</a>{{ if lt $i $total }},
-          {{ end }}
-          {{ end }}
-          {{ end }}
+          {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a class="category-link" href="{{ $t.RelPermalink }}">{{ $t.LinkTitle | upper }}</a>{{ end }}
           {{ end }}
         </span>
       </p>

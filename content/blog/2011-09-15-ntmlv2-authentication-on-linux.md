@@ -2,7 +2,7 @@
 date: 2011-09-15 12:04:00
 author: Janne Haapsaari
 title: "NTLMv2 authentication on Linux"
-categories:
+tags:
     - ntlmv2
     - linux
 aliases:

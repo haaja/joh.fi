@@ -2,7 +2,7 @@
 title: "Fresh new look"
 author: Janne Haapsaari
 date: 2013-10-09 20:28:00
-categories:
+tags:
     - blog
     - theme
     - octopress
