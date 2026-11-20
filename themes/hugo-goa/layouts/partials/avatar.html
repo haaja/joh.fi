@@ -1,9 +1,10 @@
 <header class="text-center header">
   {{ with .Site.Params.authorimage }}
   {{ with or (resources.Get (printf "images/%s" .)) (resources.Get (printf "img/%s" .)) }}
-  {{/* Displayed at 180px (.headshot); 360px covers 2x screens. */}}
+  {{/* Displayed at 180px (.headshot); 360px covers 2x screens. Decorative:
+     the author name is the <h1> right below, so alt is empty. */}}
   {{ $img := .Resize "360x webp q80" }}
-  <img src="{{ $img.RelPermalink }}" width="180" height="180" alt="{{ $.Site.Params.author }}" fetchpriority="high"
+  <img src="{{ $img.RelPermalink }}" width="180" height="180" alt="" fetchpriority="high"
     class="img-fluid rounded-circle mx-auto d-block headshot">
   {{ end }}
   {{ end }}
