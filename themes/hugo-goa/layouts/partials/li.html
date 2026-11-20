@@ -21,9 +21,9 @@
           {{ end }}
         </span>
       </p>
-      <p class="excerpt">
-        {{ .Description }}
-      </p>
+      {{ with .Description | default .Summary }}
+      <p class="excerpt">{{ . | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 200 }}</p>
+      {{ end }}
     </li>
     {{ end }}
   </ul>

@@ -10,7 +10,7 @@
         {{ $description := .Description }}
         {{ if and (not $description) .IsPage }}{{ $description = .Summary }}{{ end }}
         {{ with $description | default .Site.Params.intro }}
-        <meta name="description" content="{{ . | plainify | replaceRE `\s+` " " | truncate 160 }}">{{ end }}
+        <meta name="description" content="{{ . | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 160 }}">{{ end }}
         {{ with .Site.Params.meta.keywords }}
         <meta name="keywords" content="{{.}}">{{ end }}
 
