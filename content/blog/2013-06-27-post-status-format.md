@@ -3,8 +3,7 @@ date: 2013-06-27 15:57:00
 author: Janne Haapsaari
 title: "Post status format"
 tags:
-    - status
-    - wordpress
+    - blog
 aliases:
   - /2013/06/27/post-status-format.html
 ---

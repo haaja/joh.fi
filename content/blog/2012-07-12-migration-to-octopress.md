@@ -4,8 +4,6 @@ author: Janne Haapsaari
 date: 2012-07-12 21:43:00
 tags:
     - blog
-    - wordpress
-    - octopress
 aliases:
   - /2012/07/12/migration-to-octopress.html
 ---

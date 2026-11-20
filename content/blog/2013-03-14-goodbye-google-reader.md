@@ -3,7 +3,6 @@ title: Goodbye Google Reader
 author: Janne Haapsaari
 date: 2013-03-14 20:34:00
 tags:
-    - google
     - rss
 aliases:
   - /2013/03/14/goodbye-google-reader.html

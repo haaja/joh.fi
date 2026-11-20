@@ -3,11 +3,9 @@ date: 2013-06-15 17:56:00
 author: Janne Haapsaari
 title: "Waiting for Haswell MacBook Pros"
 tags:
-    - macbook
     - apple
     - gadgets
     - linux
-    - osx
 aliases:
   - /2013/06/15/waiting-for-haswell-macbook-pros.html
 ---

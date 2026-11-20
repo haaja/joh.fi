@@ -4,8 +4,6 @@ author: Janne Haapsaari
 date: 2013-10-09 20:28:00
 tags:
     - blog
-    - theme
-    - octopress
 aliases:
   - /2013/10/09/fresh-new-look.html
 ---
